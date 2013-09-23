@@ -94,6 +94,10 @@
 
       .margin-base-vertical { margin: 40px 0; }
 
+      #subnav {
+        border-radius: 0 0 0 0;
+      }
+
       .navbar-collapse {
         padding-left: 0;
         padding-right: 0;
