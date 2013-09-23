@@ -127,6 +127,7 @@
 
       #subnav {
         border-radius: 0 0 0 0;
+        min-height: 0;
       }
 
       .navbar-collapse {
@@ -284,23 +285,17 @@
 <div id="subnav-wrapper"><!-- wrapper so that when we magicly JS this from inline to fixed we don't lose layout -->
   <nav class="navbar navbar-default navbar-inverse" role="navigation" id="subnav">
     <!-- let screenreaders ditch this toy -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>  <!-- 'icon-bar' is one-third of the 'hamburger nav' -->
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
   
-    <ul class="nav navbar-nav pull-right">
-      <li class="active"><a href="#what" title="what">What do we do?</a></li>
-      <li><a href="#how" title="how">How do we do it?</a></li>
-      <li><a href="#who" title="who">Who's part of it?</a></li>
-      <li><a href="#where" title="where">Where are we?</a></li>
-      <li><a href="#social" title="social">Who's talking about it?</a></li>
-      <li><a href="#sponsors" title="sponsors">Who's supporting it?</a>
-    </ul>
+    <div class="collapse navbar-collapse navbar-secondary-collapse">
+      <ul class="nav navbar-nav pull-right">
+        <li class="active"><a href="#what" title="what">What do we do?</a></li>
+        <li><a href="#how" title="how">How do we do it?</a></li>
+        <li><a href="#who" title="who">Who's part of it?</a></li>
+        <li><a href="#where" title="where">Where are we?</a></li>
+        <li><a href="#social" title="social">Who's talking about it?</a></li>
+        <li><a href="#sponsors" title="sponsors">Who's supporting it?</a>
+      </ul>
+    </div>
   </nav>
 </div>
 
