@@ -130,6 +130,10 @@
         min-height: 0;
       }
 
+      nav#subnav.navbar div ul li a {
+        font-size: 11px;
+      }
+
       .navbar-collapse {
         padding-left: 0;
         padding-right: 0;
