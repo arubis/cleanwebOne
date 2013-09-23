@@ -135,7 +135,7 @@
       }
 
       nav#subnav.navbar div ul li a {
-        font-size: 11px;
+        font-size: 10px;
       }
 
       .navbar-collapse {
@@ -295,7 +295,8 @@
     <!-- let screenreaders ditch this toy -->
   
     <div class="collapse navbar-collapse navbar-secondary-collapse">
-      <ul class="nav navbar-nav pull-right">
+      <div class="container" style="margin: 0 auto; width: 768px;">
+      <ul class="nav navbar-nav">
         <li class="active"><a href="#what" title="what">What do we do?</a></li>
         <li><a href="#how" title="how">How do we do it?</a></li>
         <li><a href="#who" title="who">Who's part of it?</a></li>
@@ -303,6 +304,7 @@
         <li><a href="#social" title="social">Who's talking about it?</a></li>
         <li><a href="#sponsors" title="sponsors">Who's supporting it?</a>
       </ul>
+    </div>
     </div>
   </nav>
 </div>
