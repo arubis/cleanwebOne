@@ -1,0 +1,109 @@
+
+body {
+  padding-top: 0px;
+  font-size: 16px;
+  font-family: "Open Sans",serif;
+  background: transparent;
+}
+
+#what {
+  background: url("img/6133364748_89f2365922_o.jpg") no-repeat center center;
+}
+
+#sell {
+  background: rgba(220, 182, 37, 1);
+
+}
+
+#how {
+  background: rgba(238, 249, 233, 1);
+
+}
+
+#who {
+  background: rgba(224, 93, 85, 1);
+}
+
+#where {
+  background: rgba(178, 209, 255, 1);
+}
+
+#events {
+  background: rgba(223, 183, 36, 1);
+}
+
+#social {
+  background: rgba(224, 93, 85, 1);
+}
+
+#sponsors {
+  background: rgba(248, 248, 248, 1);
+}
+
+div.frame {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 0px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h1 {
+  font-family: "Abel", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  text-transform: uppercase;
+}
+
+/* override B3 .panel with translucency */
+.panel {
+  background-color: rgba(255,255,255,0.9);
+}
+
+.margin-base-vertical { margin: 40px 0; }
+
+.boxy {
+  border-radius: 0 0 0 0;
+}
+
+#subnav {
+  min-height: 0;
+  background-color: rgba(51, 51, 51, 0.9);
+}
+
+nav#subnav.navbar div ul li a {
+  font-size: 10px;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.jumbotron {
+  background-color: rgba(255,255,255,0.8);
+  margin-top: 0px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  text-decoration: underline;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+#subnav.affix {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+}
+
+
