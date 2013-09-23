@@ -74,7 +74,7 @@
         $(function() {
           $('#subnav-wrapper').height($("#subnav").height());
           $('#subnav').affix({
-          offset: { top: $('#subnav').offset().top - 50 }
+          offset: { top: $('#subnav').offset().top - 100 }
           });
         });
       });//]]> 
@@ -100,7 +100,7 @@
 
   <header id="header">
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="nav">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="nav" style="height: 100px;">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
@@ -109,7 +109,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Cleanweb Initiative Logo</a>
+        <a class="navbar-brand" href="/" style="padding: 0;">
+          <img src="/img/cleanweb-logo.png" height="100px">
+        </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -119,7 +121,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Offerings&nbsp;<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="#">APIs</a></li>
-              <li><a href="#">Technical Resources"</a></li>
+              <li><a href="#">Technical Resources</a></li>
               <li><a href="#">Datasets</a></li>
             </ul>
           </li>
