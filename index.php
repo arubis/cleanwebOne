@@ -94,6 +94,10 @@
 
       .margin-base-vertical { margin: 40px 0; }
 
+      .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0;
+      }
 
       .jumbotron {
         background-color: rgba(255,255,255,0.8);
@@ -294,13 +298,15 @@
   </div><!-- /JUMBOTRON -->
 
   <!-- spacer -->
-  <div class="row">
-    <div class="col-sm-6 col-sm-push-3">
-      <div class="panel panel-default" style="margin-bottom: 0px; text-align: center;">
-        <div class="panel-body">
-          <h2 style="padding: 10px;">Please god in heaven better copy text goes here soon</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-3">
+        <div class="panel panel-default" style="margin-bottom: 0px; text-align: center;">
+          <div class="panel-body">
+            <h2 style="padding: 10px;">Please god in heaven better copy text goes here soon</h2>
+         </div>
        </div>
-     </div>
+      </div>
     </div>
   </div>
 
