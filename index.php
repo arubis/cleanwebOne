@@ -118,76 +118,6 @@
         width: 100%;
       }
 
-      /**** Let's borrow from divshot's justified nav code... ***/
-      /* Customize the nav-justified links to be fill the entire space of the .navbar */
-      
-      .nav-justified {
-        background-color: #eee;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-      }
-      .nav-justified > li > a {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        color: #777;
-        font-weight: bold;
-        text-align: center;
-        border-bottom: 1px solid #d5d5d5;
-        background-color: #e5e5e5; /* Old browsers */
-        background-repeat: repeat-x; /* Repeat the gradient */
-        background-image: -moz-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%); /* FF3.6+ */
-        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
-        background-image: -webkit-linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%); /* Chrome 10+,Safari 5.1+ */
-        background-image: -ms-linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%); /* IE10+ */
-        background-image: -o-linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%); /* Opera 11.10+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-        background-image: linear-gradient(top, #f5f5f5 0%,#e5e5e5 100%); /* W3C */
-      }
-      .nav-justified > .active > a,
-      .nav-justified > .active > a:hover,
-      .nav-justified > .active > a:focus {
-        background-color: #ddd;
-        background-image: none;
-        box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
-      }
-      .nav-justified > li:first-child > a {
-        border-radius: 5px 5px 0 0;
-      }
-      .nav-justified > li:last-child > a {
-        border-bottom: 0;
-        border-radius: 0 0 5px 5px;
-      }
-      
-      @media (min-width: 768px) {
-        .nav-justified {
-          max-height: 52px;
-        }
-        .nav-justified > li > a {
-          border-left: 1px solid #fff;
-          border-right: 1px solid #d5d5d5;
-        }
-        .nav-justified > li:first-child > a {
-          border-left: 0;
-          border-radius: 5px 0 0 5px;
-        }
-        .nav-justified > li:last-child > a {
-          border-radius: 0 5px 5px 0;
-          border-right: 0;
-        }
-      }
-      
-      /* Responsive: Portrait tablets and up */
-      @media screen and (min-width: 768px) {
-        /* Remove the padding we set earlier */
-        .masthead,
-        .marketing,
-        .footer {
-          padding-left: 0;
-          padding-right: 0;
-        }
-      }
-      /**** that's the end of divshot code ***/
-
     </style>
 
     <!-- Facebook Open Graph -->
@@ -284,10 +214,10 @@
 
 <div class="landing" id="what"><!-- LANDING: 'inspiring the next 1000 companies...' -->
 
-  <div class="jumbotron">
+  <div class="jumbotron"><!-- lead content for landing section -->
     <div class="container">
       <div class="row">
-        <div class="col-md-6 checked">
+        <div class="col-md-6 striped">
           <h1>Inspiring the next 1000 companies...</h1>
         </div>
         <div class="col-md-6">
@@ -298,7 +228,7 @@
   </div><!-- /JUMBOTRON -->
 
   <!-- spacer -->
-  <div class="container">
+  <div class="container"><!-- subtext panel for landing section -->
     <div class="row">
       <div class="col-sm-6 col-sm-push-3">
         <div class="panel panel-default" style="margin-bottom: 0px; text-align: center;">
@@ -316,8 +246,18 @@
 <!-- subnav bar (starts under landing, scrolls up then fixes at top) -->
     <!-- what do we do? how do we do it? who's part of it? where are we? who's talking about it? who's supporting it? -->
 
-<div id="subnav-wrapper">
+<div id="subnav-wrapper"><!-- wrapper so that when we magicly JS this from inline to fixed we don't lose layout -->
 <nav class="navbar navbar-default navbar-inverse" role="navigation" id="subnav">
+  <!-- let screenreaders ditch this toy -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>  <!-- 'icon-bar' is one-third of the 'hamburger nav' -->
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+
   <ul class="nav navbar-nav pull-right">
     <li class="active"><a href="#what" title="what">What do we do?</a></li>
     <li><a href="#how" title="how">How do we do it?</a></li>
