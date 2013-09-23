@@ -125,8 +125,11 @@
 
       .margin-base-vertical { margin: 40px 0; }
 
-      #subnav {
+      .boxy {
         border-radius: 0 0 0 0;
+      }
+
+      #subnav {
         min-height: 0;
         background-color: rgba(51, 51, 51, 0.9);
       }
@@ -272,7 +275,7 @@
   <div class="container"><!-- subtext panel for landing section -->
     <div class="row">
       <div class="col-sm-6 col-sm-push-3">
-        <div class="panel panel-default" style="margin-bottom: 0px; text-align: center;">
+        <div class="panel panel-default boxy" style="margin-bottom: 0px; text-align: center;">
           <div class="panel-body">
             <h2 style="padding: 10px;">Please god in heaven better copy text goes here soon</h2>
          </div>
@@ -288,7 +291,7 @@
     <!-- what do we do? how do we do it? who's part of it? where are we? who's talking about it? who's supporting it? -->
 
 <div id="subnav-wrapper"><!-- wrapper so that when we magicly JS this from inline to fixed we don't lose layout -->
-  <nav class="navbar navbar-default navbar-inverse" role="navigation" id="subnav">
+  <nav class="navbar navbar-default navbar-inverse boxy" role="navigation" id="subnav">
     <!-- let screenreaders ditch this toy -->
   
     <div class="collapse navbar-collapse navbar-secondary-collapse">
