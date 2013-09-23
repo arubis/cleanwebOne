@@ -159,10 +159,10 @@
   <div class="jumbotron"><!-- lead content for landing section -->
     <div class="container">
       <div class="row">
-        <div class="col-md-6 striped">
+        <div class="col-sm-6 striped">
           <h1>Inspiring the next 1000 companies...</h1>
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <p>...that will have a massive economic &amp; environmental impact</p>
         </div>
       </div>
