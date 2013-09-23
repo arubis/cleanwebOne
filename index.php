@@ -118,6 +118,10 @@
         font-size: 40px;
       }
 
+      h1, h2, h3, h4, h5, h6  {
+        text-transform: uppercase;
+      }
+
       /* override B3 .panel with translucency */
       .panel {
         background-color: rgba(255,255,255,0.9);
@@ -161,6 +165,8 @@
         top: 50px;
         width: 100%;
       }
+
+
 
     </style>
 
