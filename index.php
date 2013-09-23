@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <!-- 
   /* This would be a great place for some introductory material.
    *
@@ -8,7 +10,6 @@
 
 <!-- BEGIN header.php section -->
 
-<!DOCTYPE html>
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>
 <![endif]-->
