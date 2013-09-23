@@ -59,8 +59,48 @@
 
     <style type="text/css">
 
-      .landing {
+      body {
+        padding-top: 0px;
+        font-size: 16px;
+        font-family: "Open Sans",serif;
+        background: transparent;
+      }
+
+      #what {
         background: url("img/6133364748_89f2365922_o.jpg") no-repeat center center;
+      }
+
+      #sell {
+        background: rgba(220, 182, 37, 1);
+ 
+      }
+
+      #how {
+        background: rgba(238, 249, 233, 1);
+
+      }
+
+      #who {
+        background: rgba(224, 93, 85, 1);
+      }
+
+      #where {
+        background: rgba(178, 209, 255, 1);
+      }
+
+      #events {
+        background: rgba(223, 183, 36, 1);
+      }
+
+      #social {
+        background: rgba(224, 93, 85, 1);
+      }
+
+      #sponsors {
+        background: rgba(248, 248, 248, 1);
+      }
+
+      div.frame {
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -70,27 +110,18 @@
 
         margin-top: 0px;
         margin-bottom: 0px;
-
-
       }
 
-      body {
-       padding-top: 0px;
-       font-size: 16px;
-       font-family: "Open Sans",serif;
-       background: transparent;
-       }
-
-       h1 {
+      h1 {
         font-family: "Abel", Helvetica, Arial, sans-serif;
         font-weight: 400;
         font-size: 40px;
-       }
+      }
 
-       /* override B3 .panel with translucency */
-       .panel {
+      /* override B3 .panel with translucency */
+      .panel {
         background-color: rgba(255,255,255,0.9);
-       }
+      }
 
       .margin-base-vertical { margin: 40px 0; }
 
@@ -216,7 +247,7 @@
 
 <!-- end header.php section ??? -->
 
-<div class="landing" id="what"><!-- LANDING: 'inspiring the next 1000 companies...' -->
+<div class="landing frame" id="what"><!-- LANDING: 'inspiring the next 1000 companies...' -->
 
   <div class="jumbotron"><!-- lead content for landing section -->
     <div class="container">
@@ -251,32 +282,32 @@
     <!-- what do we do? how do we do it? who's part of it? where are we? who's talking about it? who's supporting it? -->
 
 <div id="subnav-wrapper"><!-- wrapper so that when we magicly JS this from inline to fixed we don't lose layout -->
-<nav class="navbar navbar-default navbar-inverse" role="navigation" id="subnav">
-  <!-- let screenreaders ditch this toy -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>  <!-- 'icon-bar' is one-third of the 'hamburger nav' -->
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-
-  <ul class="nav navbar-nav pull-right">
-    <li class="active"><a href="#what" title="what">What do we do?</a></li>
-    <li><a href="#how" title="how">How do we do it?</a></li>
-    <li><a href="#who" title="who">Who's part of it?</a></li>
-    <li><a href="#where" title="where">Where are we?</a></li>
-    <li><a href="#social" title="social">Who's talking about it?</a></li>
-    <li><a href="#sponsors" title="sponsors">Who's supporting it?</a>
-  </ul>
-</nav>
+  <nav class="navbar navbar-default navbar-inverse" role="navigation" id="subnav">
+    <!-- let screenreaders ditch this toy -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>  <!-- 'icon-bar' is one-third of the 'hamburger nav' -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+  
+    <ul class="nav navbar-nav pull-right">
+      <li class="active"><a href="#what" title="what">What do we do?</a></li>
+      <li><a href="#how" title="how">How do we do it?</a></li>
+      <li><a href="#who" title="who">Who's part of it?</a></li>
+      <li><a href="#where" title="where">Where are we?</a></li>
+      <li><a href="#social" title="social">Who's talking about it?</a></li>
+      <li><a href="#sponsors" title="sponsors">Who's supporting it?</a>
+    </ul>
+  </nav>
 </div>
 
-<div class="sell"><!-- Helping Budding Entrepreneurs... -->
+<div class="sell frame" id="sell"><!-- Helping Budding Entrepreneurs... -->
 <!-- Helping budding entrepreneurs, etc. (sell slide/'how do we do it') (this should be how we do it!) -->
-<!-- FILLER CONTENT -->
-<div class="jumbotron">
+  <!-- FILLER CONTENT -->
+  <div class="jumbotron">
   <div class="container">
     <h1>Here is some really big text.</h1>
     <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -286,28 +317,26 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div><!-- /container -->
-</div>
+  </div>
+  
+  <!-- spacer -->
+  <div class="container"><!-- subtext panel for landing section -->
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-3">
+        <div class="panel panel-default" style="margin-bottom: 0px; text-align: center;">
+          <div class="panel-body">
+            <h2 style="padding: 10px;">Please god in heaven better copy text goes here soon</h2>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="how" id="how"><!-- We help entrepreneurs in all kinds of ways... -->
-  <!-- FILLER CONTENT -->
-<div class="jumbotron">
-  <div class="container">
-    <h1>Here is some really big text.</h1>
-    <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div><!-- /container -->
-</div>
+<div class="how frame" id="how"><!-- We help entrepreneurs in all kinds of ways... -->
 <!-- We help entrepreneurs in all kinds of ways (this is the 'how do we do it!!!') w/ complex rollover behaviour -->
-</div>
-
-<div class="who" id="who"><!-- Who's in on this? -->
   <!-- FILLER CONTENT -->
-<div class="jumbotron">
+  <div class="jumbotron">
   <div class="container">
     <h1>Here is some really big text.</h1>
     <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -317,13 +346,26 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div><!-- /container -->
+  </div>
+  
+  <!-- spacer -->
+  <div class="container"><!-- subtext panel for landing section -->
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-3">
+        <div class="panel panel-default" style="margin-bottom: 0px; text-align: center;">
+          <div class="panel-body">
+            <h2 style="padding: 10px;">Please god in heaven better copy text goes here soon</h2>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="who frame" id="who"><!-- Who's in on this? -->
 <!-- red-based grid section with fancy mouseover/click behavior -->
-</div>
-
-<div class="where" id="where"><!-- Where's the action? -->
   <!-- FILLER CONTENT -->
-<div class="jumbotron">
+  <div class="jumbotron">
   <div class="container">
     <h1>Here is some really big text.</h1>
     <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -333,13 +375,26 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div><!-- /container -->
+  </div>
+  
+  <!-- spacer -->
+  <div class="container"><!-- subtext panel for landing section -->
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-3">
+        <div class="panel panel-default" style="margin-bottom: 0px; text-align: center;">
+          <div class="panel-body">
+            <h2 style="padding: 10px;">Please god in heaven better copy text goes here soon</h2>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="where frame" id="where"><!-- Where's the action? -->
 <!-- map section -->
-</div>
-
-<div class="events" id="events"><!-- upcoming/featured events -->
   <!-- FILLER CONTENT -->
-<div class="jumbotron">
+  <div class="jumbotron">
   <div class="container">
     <h1>Here is some really big text.</h1>
     <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -349,13 +404,26 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div><!-- /container -->
+  </div>
+  
+  <!-- spacer -->
+  <div class="container"><!-- subtext panel for landing section -->
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-3">
+        <div class="panel panel-default" style="margin-bottom: 0px; text-align: center;">
+          <div class="panel-body">
+            <h2 style="padding: 10px;">Please god in heaven better copy text goes here soon</h2>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="events frame" id="events"><!-- upcoming/featured events -->
 <!-- featured event section -->
-</div>
-
-<div class="social" id="social"><!-- big twitter splat -->
   <!-- FILLER CONTENT -->
-<div class="jumbotron">
+  <div class="jumbotron">
   <div class="container">
     <h1>Here is some really big text.</h1>
     <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -365,13 +433,26 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div><!-- /container -->
+  </div>
+  
+  <!-- spacer -->
+  <div class="container"><!-- subtext panel for landing section -->
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-3">
+        <div class="panel panel-default" style="margin-bottom: 0px; text-align: center;">
+          <div class="panel-body">
+            <h2 style="padding: 10px;">Please god in heaven better copy text goes here soon</h2>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="social frame" id="social"><!-- big twitter splat -->
 <!-- social media/twitter plugin section -->
-</div>
-
-<div class="sponsors" id="sponsors"><!-- with a great big thanks to... -->
   <!-- FILLER CONTENT -->
-<div class="jumbotron">
+  <div class="jumbotron">
   <div class="container">
     <h1>Here is some really big text.</h1>
     <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -381,8 +462,49 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div><!-- /container -->
+  </div>
+  
+  <!-- spacer -->
+  <div class="container"><!-- subtext panel for landing section -->
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-3">
+        <div class="panel panel-default" style="margin-bottom: 0px; text-align: center;">
+          <div class="panel-body">
+            <h2 style="padding: 10px;">Please god in heaven better copy text goes here soon</h2>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="sponsors frame" id="sponsors"><!-- with a great big thanks to... -->
 <!-- sponsor section -->
+  <!-- FILLER CONTENT -->
+  <div class="jumbotron">
+  <div class="container">
+    <h1>Here is some really big text.</h1>
+    <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div><!-- /container -->
+  </div>
+  
+  <!-- spacer -->
+  <div class="container"><!-- subtext panel for landing section -->
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-3">
+        <div class="panel panel-default" style="margin-bottom: 0px; text-align: center;">
+          <div class="panel-body">
+            <h2 style="padding: 10px;">Please god in heaven better copy text goes here soon</h2>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- footer -->
@@ -403,28 +525,6 @@
   </div><!-- /container -->
 </div>
 
-<div class="container"> <!-- we live here. -->
 
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3 panel panel-default">
-      <h1 class="margin-base-vertical">Have you ever seen the rain?</h1>
-
-      <p>Someone told me long ago there's a calm before the storm. I know, it's been comin' for some time.</p>
-      <p>When it's over, so they say, it'll rain a sunny day. I know, shinin' down like water.</p>
-      <p>I want to know: Have you ever seen the rain?</p>
-
-      <form action="/mailing-list" method="post" accept-charset="utf-8" class="margin-base-vertical">
-        <label for="email" class="sr-only">Email</label>
-        <p class="input-group">
-          <span class="input-group-addon"><span class="icon-envelope"></span></span>
-          <input type="text" name="email" value="" placeholder="jonsnow@knowsnothi.ng" class="form-control input-lg" id="email" />
-        </p>
-        <p class="help-block text-center"><small>We won't bite.</small></p>
-        <p class="text-center">
-          <button type="submit" class="btn btn-success btn-lg">Keep me posted!</button>
-        </p>
-      </form>
-    </div>
-  </div>
-  </div>
 </body>
+</html>
