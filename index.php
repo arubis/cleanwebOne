@@ -128,6 +128,7 @@
       #subnav {
         border-radius: 0 0 0 0;
         min-height: 0;
+        background-color: rgba(51, 51, 51, 0.9);
       }
 
       nav#subnav.navbar div ul li a {
