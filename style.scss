@@ -1,33 +1,43 @@
+
 body {
   padding-top: 0px;
   font-size: 16px;
   font-family: "Open Sans",serif;
-  background: transparent; }
+  background: transparent;
+}
 
 /* set base color scheme per section */
 #what {
-  background: url("img/6133364748_89f2365922_o.jpg") no-repeat center center; }
+  background: url("img/6133364748_89f2365922_o.jpg") no-repeat center center;
+}
 
 #sell {
-  background: #dcb625; }
+  background: rgba(220, 182, 37, 1);
+}
 
 #how {
-  background: #eef9e9; }
+  background: rgba(238, 249, 233, 1);
+}
 
 #who {
-  background: #e05d55; }
+  background: rgba(224, 93, 85, 1);
+}
 
 #where {
-  background: #b2d1ff; }
+  background: rgba(178, 209, 255, 1);
+}
 
 #events {
-  background: #dfb724; }
+  background: rgba(223, 183, 36, 1);
+}
 
 #social {
-  background: #e05d55; }
+  background: rgba(224, 93, 85, 1);
+}
 
 #sponsors {
-  background: #f8f8f8; }
+  background: rgba(248, 248, 248, 1);
+}
 
 div.frame {
   -webkit-background-size: cover;
@@ -36,44 +46,53 @@ div.frame {
   background-size: cover;
   padding-top: 0px;
   padding-bottom: 0px;
+
   margin-top: 0px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+}
 
 div.frame.landing {
-  padding-top: 100px; }
+  padding-top: 100px;
+}
 
 h1 {
   font-family: "Abel", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 40px; }
+  font-size: 40px;
+}
 
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase; }
+h1, h2, h3, h4, h5, h6  {
+  text-transform: uppercase;
+}
 
 .panel * h1, h2, h3, h4, h5, h6 {
-  text-align: center; }
+  text-align: center;
+}
 
 .landing * {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
 /* override B3 .panel with translucency */
 .panel {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255,255,255,0.9);
   border: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .row.section-head {
   width: 100%;
-  background-color: rgba(127, 127, 127, 0.9);
-  /* Really want this to be diagonal lines */
+  background-color: rgba(127, 127, 127, 0.9); /* Really want this to be diagonal lines */
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+}
 
 .section-head > * {
   text-align: center;
   height: 100%;
   margin-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .section-head * h2 {
   font-size: 14pt;
@@ -81,62 +100,85 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
   min-height: 172px;
-  background-color: white; }
+  background-color: rgba(255,255,255,1);
+}
+
+
 
 .sponsors * h2 {
-  color: #e05d55; }
+  color: rgb(224, 93, 85);
+}
 
 .sponsors * h3 {
   color: #000000;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+}
 
 .sponsor-grid {
-  margin-top: 150px; }
+  margin-top: 150px;
+}
 
-.margin-base-vertical {
-  margin: 40px 0; }
+.margin-base-vertical { margin: 40px 0; }
 
 .boxy {
-  border-radius: 0 0 0 0; }
+  border-radius: 0 0 0 0;
+}
 
 #subnav {
   min-height: 0;
-  background-color: rgba(51, 51, 51, 0.9); }
+  background-color: rgba(51, 51, 51, 0.9);
+}
 
 nav#subnav.navbar div ul li a {
-  font-size: 10px; }
+  font-size: 10px;
+}
 
 .navbar-collapse {
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+}
 
 html body#main header#header nav#nav.navbar div.navbar-collapse ul.nav {
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+}
 
 html body#main header#header nav#nav.navbar div.navbar-collapse ul.nav {
   margin-left: 0px;
-  margin-right: 0px; }
+  margin-right: 0px;
+}
 
 #nav div.navbar-collapse {
-  background-color: whitesmoke; }
+  background-color: rgba(245, 245, 245, 1);
+}
 
 .landing .panel {
-  background-color: rgba(50, 200, 150, 0.7); }
+  background-color: rgba(50,200,150,0.7);
+}
 
 .landing .panel * {
   margin-top: 0;
-  font-weight: bold; }
+  font-weight: bold;
+}
+
+.landing .panel .header {
+
+}
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 #subnav.affix {
   position: fixed;
   top: 100px;
-  width: 100%; }
+  width: 100%;
+}
+
+
