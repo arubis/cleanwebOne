@@ -6,37 +6,74 @@ body {
   background: transparent;
 }
 
-/* set base color scheme per section */
+/* set background per section */
+$what-bg: url("img/6133364748_89f2365922_o.jpg") no-repeat center center;
+$sell-bg: rgba(220, 182, 37, 1);
+$how-bg: rgba(238, 249, 233, 1);
+$who-bg: rgba(224, 93, 85, 1);
+$where-bg: rgba(178, 209, 255, 1);
+$events-bg: rgba(223, 183, 36, 1);
+$social-bg: rgba(224, 93, 85, 1);
+$sponsors-bg: rgba(248, 248, 248, 1);
+
+/* keep this for convenient copy and paste ***
+what
+sell
+how
+who
+where
+events
+social
+sponsors
+*** */
+
+/* set color scheme per section */
+// $what-color: rgba();
+// $sell-color: rgba();
+// $how-color: rgba();
+// $who-color: rgba();
+// $where-color: rgba();
+// $events-color: rgba();
+// $social-color: rgba();
+$sponsors-color: rgba(224, 93, 85, 1);
+
 #what {
-  background: url("img/6133364748_89f2365922_o.jpg") no-repeat center center;
+  background: $what-bg;
 }
 
 #sell {
-  background: rgba(220, 182, 37, 1);
+  background: $sell-bg;
 }
 
 #how {
-  background: rgba(238, 249, 233, 1);
+  background: $how-bg;
 }
 
 #who {
-  background: rgba(224, 93, 85, 1);
+  background: $who-bg;
 }
 
 #where {
-  background: rgba(178, 209, 255, 1);
+  background: $where-bg;
 }
 
 #events {
-  background: rgba(223, 183, 36, 1);
+  background: $events-bg;
 }
 
 #social {
-  background: rgba(224, 93, 85, 1);
+  background: $social-bg;
 }
 
 #sponsors {
-  background: rgba(248, 248, 248, 1);
+  background: $sponsors-bg;
+  * h2 { color: $sponsors-color; }
+  * h3 {
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 div.frame {
@@ -46,13 +83,11 @@ div.frame {
   background-size: cover;
   padding-top: 0px;
   padding-bottom: 0px;
-
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-div.frame.landing {
-  padding-top: 100px;
+  &.landing {
+    padding-top: 100px;
+  }
 }
 
 h1 {
@@ -73,11 +108,15 @@ h1, h2, h3, h4, h5, h6  {
   color: #FFFFFF;
 }
 
-/* override B3 .panel with translucency */
 .panel {
-  background-color: rgba(255,255,255,0.9);
   border: 0;
   margin-bottom: 0;
+  box-shadow: 0 0 0;
+
+  .row { 
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .row.section-head {
@@ -101,19 +140,6 @@ h1, h2, h3, h4, h5, h6  {
   margin-bottom: 0;
   min-height: 172px;
   background-color: rgba(255,255,255,1);
-}
-
-
-
-.sponsors * h2 {
-  color: rgb(224, 93, 85);
-}
-
-.sponsors * h3 {
-  color: #000000;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 60px;
 }
 
 .sponsor-grid {
