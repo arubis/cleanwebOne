@@ -86,20 +86,21 @@ h1, h2, h3, h4, h5, h6  {
   margin-bottom: 0;
 }
 
-.row.intersection {
+.row.section-head {
   width: 100%;
-  background-color: rgba(127, 127, 127, 1); // Really want this to be diagonal lines
-  margin: 0;
+  background-color: rgba(127, 127, 127, 0.9); /* Really want this to be diagonal lines */
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.intersection > * {
+.section-head > * {
   text-align: center;
   height: 100%;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.intersection * h2 {
+.section-head * h2 {
   font-size: 14pt;
   padding: 70px 70px;
   margin-top: 0;
@@ -107,6 +108,8 @@ h1, h2, h3, h4, h5, h6  {
   min-height: 172px;
   background-color: rgba(255,255,255,1);
 }
+
+
 
 .sponsors * h2 {
   color: rgb(224, 93, 85);
