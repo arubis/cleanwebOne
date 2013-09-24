@@ -6,18 +6,17 @@ body {
   background: transparent;
 }
 
+/* set base color scheme per section */
 #what {
   background: url("img/6133364748_89f2365922_o.jpg") no-repeat center center;
 }
 
 #sell {
   background: rgba(220, 182, 37, 1);
-
 }
 
 #how {
   background: rgba(238, 249, 233, 1);
-
 }
 
 #who {
@@ -72,11 +71,6 @@ h1, h2, h3, h4, h5, h6  {
 
 .landing * {
   color: #FFFFFF;
-}
-
-.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6, .jumbotron p {
-  color: #FFFFFF;
-  font-weight: bold;
 }
 
 /* override B3 .panel with translucency */
@@ -160,9 +154,17 @@ html body#main header#header nav#nav.navbar div.navbar-collapse ul.nav {
   background-color: rgba(245, 245, 245, 1);
 }
 
-.jumbotron {
-  background-color: rgba(255,255,255,0.8);
-  margin-top: 0px;
+.landing .panel {
+  background-color: rgba(50,200,150,0.7);
+}
+
+.landing .panel * {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.landing .panel .header {
+
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
