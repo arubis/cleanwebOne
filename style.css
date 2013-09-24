@@ -45,11 +45,15 @@ div.frame {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 0px;
 
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+div.frame.landing {
+  padding-top: 100px;
 }
 
 h1 {
@@ -60,6 +64,13 @@ h1 {
 
 h1, h2, h3, h4, h5, h6  {
   text-transform: uppercase;
+}
+
+.panel * h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.landing * {
   color: #FFFFFF;
 }
 
@@ -71,6 +82,41 @@ h1, h2, h3, h4, h5, h6  {
 /* override B3 .panel with translucency */
 .panel {
   background-color: rgba(255,255,255,0.9);
+  border: 0;
+  margin-bottom: 0;
+}
+
+.row.sponsorhead {
+  width: 100%;
+  background-color: rgba(127,127,127,1);
+  margin: 0;
+}
+
+.sponsorhead > * {
+  color: rgba(224, 93, 85, 1);
+  text-align: center;
+  height: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.sponsorhead * h2 {
+  font-size: 14pt;
+  padding: 70px 70px ;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 172px;
+  background-color: rgba(255,255,255,1)
+}
+
+.sponsors * h3 {
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sponsor-grid {
+  margin-top: 150px;
 }
 
 .margin-base-vertical { margin: 40px 0; }
