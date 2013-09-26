@@ -56,12 +56,6 @@ $sponsors-color: rgb(224, 93, 85);
 $sponsors-secondary-color: rgb(80, 80, 80);
 $sponsors-emph-color: rgb(0, 0, 0);
 
-/* clean me ! */
-html body#main div#what.landing div.container div.row div.col-sm-6 div#what-subtext.panel div.panel-body {
-  padding: 0px; 
-  margin-top: 180px;
-}
-
 @mixin section-style($background, $primary-color, $secondary-color, $emphasis: #FFFFFF ) {
   background: $background;
   * h1, h2, h3, p { 
@@ -90,6 +84,10 @@ html body#main div#what.landing div.container div.row div.col-sm-6 div#what-subt
 #what-subtext { 
   text-align: center;
   h2 { padding-bottom: 40px; }
+  .panel-body {
+    padding: 0px; 
+    margin-top: 180px;
+  }
   }
 
 #sponsors {
@@ -202,12 +200,12 @@ h1, h2, h3, h4, h5, h6  {
   padding-right: 0;
 }
 
-html body#main header#header nav#nav.navbar div.navbar-collapse ul.nav {
+#nav .navbar-collapse ul {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-html body#main header#header nav#nav.navbar div.navbar-collapse ul.nav {
+#nav .navbar-collapse ul {
   margin-left: 0px;
   margin-right: 0px;
 }
