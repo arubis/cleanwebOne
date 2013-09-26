@@ -190,24 +190,15 @@ h1, h2, h3, h4, h5, h6  {
   border-radius: 0 0 0 0;
 }
 
-#subnav {
-  min-height: 0;
-  background-color: rgba(51, 51, 51, 0.9);
-  margin: 0;
-}
-
-#subnav * a {
-  font-size: 10px;
-}
-
+/* ALL THINGS NAVBAR ********/
 .navbar-collapse {
   padding-left: 0;
   padding-right: 0;
 }
 
 #nav .navbar-collapse ul {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  // padding-top: 25px;     // uncomment if increasing navbar size
+  // padding-bottom: 25px;  // uncomment if increasing navbar size
 }
 
 #nav .navbar-collapse ul {
@@ -219,24 +210,22 @@ h1, h2, h3, h4, h5, h6  {
   background-color: rgba(245, 245, 245, 1);
 }
 
-.landing .panel {
-  background-color: rgba(50,200,150,0.7);
+.nav img.logo {
+  height: 50px;
+  width: 75px;
+  display: block;
 }
 
-.landing .panel * {
-  margin-top: 0;
-  font-weight: bold;
+/* ALL THINGS SUB-NAVBAR *****/
+
+#subnav {
+  min-height: 0;
+  background-color: rgba(51, 51, 51, 0.9);
+  margin: 0;
 }
 
-.landing .panel .header {
-
-}
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  text-decoration: underline;
-}
-
-.navbar-inverse .navbar-nav > li > a {
+#subnav * a {
+  font-size: 10px;
   color: #ffffff;
 }
 
@@ -246,7 +235,26 @@ h1, h2, h3, h4, h5, h6  {
   width: 100%;
 }
 
-img.logo {
+#subnav * > .active {
+  a, a:hover, a:focus { text-decoration: underline; }
+}
+
+/* END NAVBAR SECTION ****/
+
+.landing .panel {
+  background-color: rgba(50,200,150,0.7);
+}
+
+.landing .panel * {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+
+
+
+
+footer img.logo {
   height: 100px;
   width: 150px;
   display: block;
