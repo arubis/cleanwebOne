@@ -18,13 +18,13 @@ $sponsors-bg: rgba(248, 248, 248, 1);
 
 /* set color scheme per section */
 $what-color: rgb(255, 255, 255);
-$what-secondary-color: rgb(80, 80, 80);
+$what-secondary-color: rgb(86, 196, 149);
 $what-emph-color: rgb(86, 196, 149);
 
 
 $sell-color: rgb(220, 182, 37);
-$sell-secondary-color: rgb(80, 80, 80);
-$sell-emph-color: rgb(25, 25, 25);
+$sell-secondary-color: rgb(255, 255, 255);
+$sell-emph-color: rgb(255, 255, 255);
 
 
 $how-color: rgb(99, 133, 83);
@@ -33,7 +33,7 @@ $how-emph-color: rgb(25, 25, 25);
 
 
 $who-color: rgb(224, 93, 85);
-$who-secondary-color: rgb(80, 80, 80);
+$who-secondary-color: rgb(255, 255, 255);
 $who-emph-color: rgb(25, 25, 25);
 
 
@@ -58,14 +58,13 @@ $sponsors-emph-color: rgb(0, 0, 0);
 
 @mixin section-style($background, $primary-color, $secondary-color, $emphasis: #FFFFFF ) {
   background: $background;
-  * h1, h2, h3, p { 
+  * h1, * h2, * h3, * p { 
     color: $primary-color;
-    padding: 20px 20px;
+    padding: 20px 80px;
   }
   .secondary, * .secondary { color: $secondary-color; }
   * em {
     color: $emphasis;
-    font-style: normal;
   }
 }
 
@@ -174,7 +173,6 @@ h1, h2, h3, h4, h5, h6  {
 
 .section-head * h2 {
   font-size: 14pt;
-  padding: 70px 70px;
   margin-top: 0;
   margin-bottom: 0;
   background-color: rgba(255,255,255,1);
