@@ -74,7 +74,7 @@
         $(function() {
           $('#subnav-wrapper').height($("#subnav").height());  // Holds place of subnav on collapse if needed for layout
           $('#subnav').affix({
-          offset: { top: $('#subnav').offset().top - 100 }
+          offset: { top: $('#subnav').offset().top - 50 }      // offset value here should be height of main nav
           });
         });
       });//]]> 
@@ -85,7 +85,7 @@
 </head>
 
 <!-- <body <?php body_class(); ?>> -->
-<body id="main" data-spy="scroll" data-target="#subnav" data-offset="100">
+<body id="main" data-spy="scroll" data-target="#subnav" data-offset="50"> <!-- data-offset must be height of main nav -->
 
 <!-- BEGIN Facebook Open Graph -->
 <div id="fb-root"></div>
