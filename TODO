@@ -9,6 +9,7 @@
 
 # LAYOUT #
 
+ - set min-height of each section
  - Clean up collapse of main nav to hide _all_ but hamburger menu
 
 # ADMIN #
