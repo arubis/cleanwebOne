@@ -16,54 +16,66 @@ $events-bg: rgba(223, 183, 36, 1);
 $social-bg: rgba(224, 93, 85, 1);
 $sponsors-bg: rgba(248, 248, 248, 1);
 
-/* keep this for convenient copy and paste ***
-what
-sell
-how
-who
-where
-events
-social
-sponsors
-*** */
-
 /* set color scheme per section */
-// $what-color: rgba();
-// $sell-color: rgba();
-// $how-color: rgba();
-// $who-color: rgba();
-// $where-color: rgba();
-// $events-color: rgba();
-// $social-color: rgba();
-$sponsors-color: rgba(224, 93, 85, 1);
+$what-color: rgb(255, 255, 255);
+$what-secondary-color: rgb(80, 80, 80);
+$what-emph-color: rgb(86, 196, 149);
 
-#what {
-  background: $what-bg;
+
+$sell-color: rgb(220, 182, 37);
+$sell-secondary-color: rgb(80, 80, 80);
+$sell-emph-color: rgb(25, 25, 25);
+
+
+$how-color: rgb(99, 133, 83);
+$how-secondary-color: rgb(80, 80, 80);
+$how-emph-color: rgb(25, 25, 25);
+
+
+$who-color: rgb(224, 93, 85);
+$who-secondary-color: rgb(80, 80, 80);
+$who-emph-color: rgb(25, 25, 25);
+
+
+$where-color: rgb(46, 120, 217);
+$where-secondary-color: rgb(80, 80, 80);
+$where-emph-color: rgb(25, 25, 25);
+
+
+$events-color: rgb(223, 183, 36);
+$events-secondary-color: rgb(80, 80, 80);
+$events-emph-color: rgb(25, 25, 25);
+
+
+$social-color: rgb(224, 93, 85);
+$social-secondary-color: rgb(80, 80, 80);
+$social-emph-color: rgb(25, 25, 25);
+
+
+$sponsors-color: rgb(224, 93, 85);
+$sponsors-secondary-color: rgb(80, 80, 80);
+$sponsors-emph-color: rgb(0, 0, 0);
+
+
+
+@mixin section-style($background, $primary-color, $secondary-color, $emphasis: #FFFFFF ) {
+  background: $background;
+  * h1, h2, h3, p { color: $primary-color; }
+  .secondary, * .secondary { color: $secondary-color; }
+  * em {
+    color: $emphasis;
+    font-style: normal;
+  }
 }
 
-#sell {
-  background: $sell-bg;
-}
-
-#how {
-  background: $how-bg;
-}
-
-#who {
-  background: $who-bg;
-}
-
-#where {
-  background: $where-bg;
-}
-
-#events {
-  background: $events-bg;
-}
-
-#social {
-  background: $social-bg;
-}
+#what { @include section-style($what-bg, $what-color, $what-secondary-color, $what-emph-color) }
+#sell { @include section-style($sell-bg, $sell-color, $sell-secondary-color, $sell-emph-color) }
+#how { @include section-style($how-bg, $how-color, $how-secondary-color, $how-emph-color) }
+#who { @include section-style($who-bg, $who-color, $who-secondary-color, $who-emph-color) }
+#where { @include section-style($where-bg, $where-color, $where-secondary-color, $where-emph-color) }
+#events { @include section-style($events-bg, $events-color, $events-secondary-color, $events-emph-color) }
+#social { @include section-style($social-bg, $social-color, $social-secondary-color, $social-emph-color) }
+// #sponsors { @include section-style($sponsors-bg, $sponsors-color, $sponsors-emph-color) }
 
 #sponsors {
   background: $sponsors-bg;
@@ -100,13 +112,8 @@ h1, h2, h3, h4, h5, h6  {
   text-transform: uppercase;
 }
 
-.panel * h1, h2, h3, h4, h5, h6 {
-  text-align: center;
-}
-
-.landing * {
-  color: #FFFFFF;
-}
+.right { text-align: right; }
+.left  { text-align: left;  }
 
 .panel {
   border: 0;
