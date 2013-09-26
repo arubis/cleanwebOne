@@ -83,10 +83,10 @@ $sponsors-emph-color: rgb(0, 0, 0);
 
 #what-subtext { 
   text-align: center;
-  h2 { padding-bottom: 40px; }
+  // h2 { padding-bottom: 40px; }
   .panel-body {
     padding: 0px; 
-    margin-top: 180px;
+    margin-top: 200px;
   }
   }
 
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6  {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 100px;
-  text-align: center;
+  // text-align: center;  ///// do this elsewhere, no?
   h1, h2, h3, h4, p { 
     display: table-cell;
     vertical-align: middle;
