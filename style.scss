@@ -56,11 +56,18 @@ $sponsors-color: rgb(224, 93, 85);
 $sponsors-secondary-color: rgb(80, 80, 80);
 $sponsors-emph-color: rgb(0, 0, 0);
 
-
+/* clean me ! */
+html body#main div#what.landing div.container div.row div.col-sm-6 div#what-subtext.panel div.panel-body {
+  padding: 0px; 
+  margin-top: 180px;
+}
 
 @mixin section-style($background, $primary-color, $secondary-color, $emphasis: #FFFFFF ) {
   background: $background;
-  * h1, h2, h3, p { color: $primary-color; }
+  * h1, h2, h3, p { 
+    color: $primary-color;
+    padding: 20px 20px;
+  }
   .secondary, * .secondary { color: $secondary-color; }
   * em {
     color: $emphasis;
@@ -68,7 +75,10 @@ $sponsors-emph-color: rgb(0, 0, 0);
   }
 }
 
-#what { @include section-style($what-bg, $what-color, $what-secondary-color, $what-emph-color) }
+#what { 
+  @include section-style($what-bg, $what-color, $what-secondary-color, $what-emph-color);
+  min-height: 610px;
+  }
 #sell { @include section-style($sell-bg, $sell-color, $sell-secondary-color, $sell-emph-color) }
 #how { @include section-style($how-bg, $how-color, $how-secondary-color, $how-emph-color) }
 #who { @include section-style($who-bg, $who-color, $who-secondary-color, $who-emph-color) }
@@ -76,6 +86,11 @@ $sponsors-emph-color: rgb(0, 0, 0);
 #events { @include section-style($events-bg, $events-color, $events-secondary-color, $events-emph-color) }
 #social { @include section-style($social-bg, $social-color, $social-secondary-color, $social-emph-color) }
 // #sponsors { @include section-style($sponsors-bg, $sponsors-color, $sponsors-emph-color) }
+
+#what-subtext { 
+  text-align: center;
+  h2 { padding-bottom: 40px; }
+  }
 
 #sponsors {
   background: $sponsors-bg;
@@ -112,8 +127,9 @@ h1, h2, h3, h4, h5, h6  {
   text-transform: uppercase;
 }
 
-.right { text-align: right; }
-.left  { text-align: left;  }
+.right  { text-align: right;  }
+.left   { text-align: left;   }
+.center { text-align: center; }
 
 .panel {
   border: 0;
@@ -126,6 +142,20 @@ h1, h2, h3, h4, h5, h6  {
   }
 }
 
+.v-centered {
+  display: table;
+  height: 172px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 100px;
+  text-align: center;
+  h1, h2, h3, h4, p { 
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
 .row.section-head {
   width: 100%;
   background-color: rgba(127, 127, 127, 0.9); /* Really want this to be diagonal lines */
@@ -135,9 +165,10 @@ h1, h2, h3, h4, h5, h6  {
 
 .section-head > * {
   text-align: center;
-  height: 100%;
+  height: 172px;
   margin-top: 0;
   margin-bottom: 0;
+  line-height: 100px;
 }
 
 .section-head * h2 {
@@ -145,15 +176,12 @@ h1, h2, h3, h4, h5, h6  {
   padding: 70px 70px;
   margin-top: 0;
   margin-bottom: 0;
-  min-height: 172px;
   background-color: rgba(255,255,255,1);
 }
 
 .sponsor-grid {
   margin-top: 150px;
 }
-
-.margin-base-vertical { margin: 40px 0; }
 
 .boxy {
   border-radius: 0 0 0 0;
@@ -162,9 +190,10 @@ h1, h2, h3, h4, h5, h6  {
 #subnav {
   min-height: 0;
   background-color: rgba(51, 51, 51, 0.9);
+  margin: 0;
 }
 
-nav#subnav.navbar div ul li a {
+#subnav * a {
   font-size: 10px;
 }
 

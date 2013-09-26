@@ -71,7 +71,7 @@
       //<![CDATA[
       $(window).load(function(){
         $(function() {
-          $('#subnav-wrapper').height($("#subnav").height());
+          // $('#subnav-wrapper').height($("#subnav").height());  // Holds place of subnav on collapse if needed for layout
           $('#subnav').affix({
           offset: { top: $('#subnav').offset().top - 100 }
           });
@@ -151,10 +151,7 @@
 
   </header>
 
-<!-- end header.php section -->
-
 <div class="landing frame" id="what"><!-- LANDING: 'inspiring the next 1000 companies...' -->
-
   
   <div class="panel boxy header" style="height: 200px;">
     <div class="row">
@@ -171,9 +168,9 @@
   <div class="container"><!-- subtext panel for landing section -->
     <div class="row">
       <div class="col-sm-6 col-sm-push-3">
-        <div class="panel panel-default boxy">
+        <div class="panel panel-default boxy center" id="what-subtext">
           <div class="panel-body">
-            <h2 style="padding: 10px;">Better copy text goes here soon</h2>
+            <h2>Better copy text goes here soon</h2>
          </div>
        </div>
       </div>
@@ -210,7 +207,9 @@
   <div class="row section-head">
     <div class="col-sm-8 col-sm-push-2">
       <div class="panel boxy">
-        <h2>At the <span style="font-weight: bold;">Cleanweb Initiative</span> we are...</h2>
+        <div class="v-centered">
+          <h2>At the <span style="font-weight: bold;">Cleanweb Initiative</span> we are...</h2>
+        </div>
       </div>
     </div>
   </div>
@@ -235,7 +234,9 @@
   <div class="row section-head">
     <div class="col-sm-8 col-sm-push-2">
       <div class="panel boxy">
-        <h2>We help entrepreneurs in all kinds of ways</h2>
+        <div class="v-centered">
+          <h2>We help entrepreneurs in all kinds of ways</h2>
+        </div>
       </div>
     </div>
   </div>
@@ -260,9 +261,11 @@
   <div class="row section-head">
     <div class="col-sm-8 col-sm-push-2">
       <div class="panel boxy">
-        <h2>The <span style="font-weight: bold">Cleanweb Initiative</span> is
-          already hard at work, helping amazing individuals and great companies
-          get to the next level</h2>
+        <div class="v-centered">
+          <h2>The <span style="font-weight: bold">Cleanweb Initiative</span> is
+            already hard at work, helping amazing individuals and great companies
+            get to the next level</h2>
+        </div>
       </div>
     </div>
   </div>
@@ -287,8 +290,10 @@
   <div class="row section-head">
     <div class="col-sm-8 col-sm-push-2">
       <div class="panel boxy">
-        <h2>The <span style="font-weight: bold;">Cleanweb Initiative</span> has events and communities
-          around the world - find one near you</h2>
+        <div class="v-centered">
+          <h2>The <span style="font-weight: bold;">Cleanweb Initiative</span> has events and communities
+            around the world - find one near you</h2>
+        </div>
       </div>
     </div>
   </div>
@@ -314,7 +319,9 @@
   <div class="row section-head">
     <div class="col-sm-8 col-sm-push-2">
       <div class="panel boxy">
-        <h2>Let's get together and make a difference</h2>
+        <div class="v-centered">
+          <h2>Let's get together and make a difference</h2>
+        </div>
       </div>
     </div>
   </div>
@@ -340,7 +347,9 @@
   <div class="row section-head">
     <div class="col-sm-8 col-sm-push-2">
       <div class="panel boxy">
-        <h2>Join the #Cleanweb conversation on Twitter and Facebook</h2>
+        <div class="v-centered">
+          <h2>Join the #Cleanweb conversation on Twitter and Facebook</h2>
+        </div>
       </div>
     </div>
   </div>
@@ -365,8 +374,10 @@
   <div class="row section-head">
     <div class="col-sm-8 col-sm-push-2">
       <div class="panel boxy">
-        <h2>The <span style="font-weight: bold;">Cleanweb Initiative</span> is supported by some
-          of the most innovative companies in the world.</h2>
+        <div class="v-centered">
+          <h2>The <span style="font-weight: bold;">Cleanweb Initiative</span> is supported by some
+            of the most innovative companies in the world.</h2>
+        </div>
       </div>
     </div>
   </div>

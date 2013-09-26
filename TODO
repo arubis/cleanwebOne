@@ -1,6 +1,5 @@
 # STYLES #
 
- - Set up section colors
  - Coordinate transparencies/translucencies
 
 # CONTENT #
@@ -11,5 +10,8 @@
 # LAYOUT #
 
  - Clean up collapse of main nav to hide _all_ but hamburger menu
- - Proper vertical spacing per section
- - look into flexbox for vertical-align
+
+# ADMIN #
+
+ - Get someone to do JS animations
+ - Get someone to do WP integration
