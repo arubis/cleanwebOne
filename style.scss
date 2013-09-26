@@ -6,6 +6,11 @@ body {
   background: transparent;
 }
 
+/*** VARIABLE SETUP ****/
+
+/* Navbar */
+$navheight: 50px;    // If this changes, there's changes in the HTML too! search for 'main nav'
+
 /* set background per section -- can be either color or image */
 $what-bg: url("img/6133364748_89f2365922_o.jpg") no-repeat center center;
 $sell-bg: rgba(220, 182, 37, 1);
@@ -114,7 +119,7 @@ div.frame {
   margin-top: 0px;
   margin-bottom: 0px;
   &.landing {
-    padding-top: 50px;      // must equal height of main nav
+    padding-top: $navheight;      // must equal height of main nav
   }
 }
 
@@ -191,6 +196,10 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 /* ALL THINGS NAVBAR ********/
+#nav {
+  height: $navheight;
+}
+
 .navbar-collapse {
   padding-left: 0;
   padding-right: 0;
@@ -231,7 +240,7 @@ h1, h2, h3, h4, h5, h6  {
 
 #subnav.affix {
   position: fixed;
-  top: 50px;            // must equal height of main nav
+  top: $navheight;            // must equal height of main nav
   width: 100%;
 }
 
