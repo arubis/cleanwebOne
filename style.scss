@@ -69,10 +69,11 @@ $footer-emph-color: rgb(0, 0, 0);
 @mixin section-style($background, $primary-color, $secondary-color, $emphasis: #FFFFFF ) {
   background: $background;
   color: $primary-color;
-  * h2, * h3 { padding: 20px 100px; }
   .secondary, * .secondary { color: $secondary-color; }
   * em { color: $emphasis; }
 }
+  // * h2, * h3 { padding: 20px 100px; }
+
 
 /* Section variables are all set up, so plug into that mixin there! **/
 #what { 
