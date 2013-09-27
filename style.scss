@@ -69,11 +69,12 @@ $footer-emph-color: rgb(0, 0, 0);
 @mixin section-style($background, $primary-color, $secondary-color, $emphasis: #FFFFFF ) {
   background: $background;
   color: $primary-color;
-  * h1, * h2, * h3 { padding: 20px 100px; }
+  * h2, * h3 { padding: 20px 100px; }
   .secondary, * .secondary { color: $secondary-color; }
   * em { color: $emphasis; }
 }
 
+/* Section variables are all set up, so plug into that mixin there! **/
 #what { 
   @include section-style($what-bg, $what-color, $what-secondary-color, $what-emph-color);
   min-height: 610px;
@@ -88,7 +89,6 @@ $footer-emph-color: rgb(0, 0, 0);
   @include section-style($sponsors-bg, $sponsors-color, $sponsors-emph-color);
 
   }
-
 footer {
   @include section-style($footer-bg, $footer-color, $footer-secondary-color, $footer-emph-color);
   min-height: 240px;
@@ -98,18 +98,19 @@ footer {
   }
 }
 
-
+/* And that's the mixin game. */
 
 #what-subtext { 
   text-align: center;
   // h2 { padding-bottom: 40px; }
   .panel-body {
     padding: 0px; 
-    margin-top: 200px;
+    margin-top: 220px;
+    min-height: 150px;
   }
   }
 
-div.frame {
+.frame {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -252,16 +253,11 @@ h1, h2, h3, h4, h5, h6  {
 
 .landing .panel {
   background-color: rgba(50,200,150,0.7);
+  * {
+    margin-top: 0;
+    font-weight: bold;
+  }
 }
-
-.landing .panel * {
-  margin-top: 0;
-  font-weight: bold;
-}
-
-
-
-
 
 footer img.logo {
   height: 100px;
