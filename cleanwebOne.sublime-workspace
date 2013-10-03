@@ -1,0 +1,751 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"who",
+				"who"
+			],
+			[
+				"hei",
+				"min-height"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"link",
+				"link	link - stylesheet"
+			],
+			[
+				"input",
+				"input	input - text"
+			],
+			[
+				"label",
+				"label	<label>"
+			],
+			[
+				"From",
+				"FromCountry"
+			],
+			[
+				"REDIS",
+				"REDIS"
+			],
+			[
+				"account",
+				"account_sid"
+			],
+			[
+				"sm",
+				"small-caps"
+			],
+			[
+				"ma",
+				"mah	max-height"
+			],
+			[
+				"color_",
+				"color_cheap"
+			],
+			[
+				"col",
+				"color_cheap"
+			],
+			[
+				"pos",
+				"pos:r	position:relative"
+			],
+			[
+				"ha",
+				"have_selector"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n\n<!-- \n  /* This would be a great place for some introductory material.\n   *\n   * Which we'll get to.\n   *\n   */\n-->\n\n<!--[if IE 7]>\n<html class=\"ie ie7\" <?php language_attributes(); ?>>\n<![endif]-->\n<!--[if IE 8]>\n<html class=\"ie ie8\" <?php language_attributes(); ?>>\n<![endif]-->\n<!--[if !(IE 7) | !(IE 8)  ]><!-->\n<!-- *********** NEED TO REENABLE THIS ON WP <html <?php language_attributes(); ?>> -->\n<!--<![endif]-->\n\n<html>\n<head>\n    <title><?php wp_title( '|', true, 'right' ); ?></title>\n\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\" />\n    <meta charset=\"<?php bloginfo('charset'); ?>\" />\n\n\n    <!-- some WP-fed stuff -->\n    <link rel=\"pingback\" href=\"<?php bloginfo( 'pingback_url' ); ?>\">\n    <link rel=\"shortcut icon\" href=\"<?php echo get_theme_option('favicon'); ?>\" />\n    <link rel=\"alternate\" type=\"application/rss+xml\" title=\"<?php bloginfo('name'); ?> RSS2 Feed\" href=\"<?php bloginfo('rss2_url'); ?>\" />\n    <!--[if lt IE 9]>\n    <script src=\"<?php echo get_template_directory_uri(); ?>/js/html5.js\"></script>\n    <![endif]-->\n\n    <!-- Oh, IE. n.b. the referenced THEME_CSS; doesn't exist...yet. -->\n    <!--[if lte IE 9]>\n    <script src=\"http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js\"></script>\n    <script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n    <![endif]-->\n\n    <!--[if IE 8]>\n    <link rel=\"stylesheet\" href=\"<?php echo THEME_CSS; ?>/ie8.css\" type=\"text/css\" media=\"screen\" />\n    <![endif]-->\n    \n    <!-- web fonts -->\n    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>\n    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,800,700' rel='stylesheet' type='text/css'>\n    <link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Abel:400,600\">\n\n    <!-- Bootstrap import -->\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css\">\n    <link rel=\"stylesheet\" href=\"//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css\">\n\n    <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\" type=\"text/javascript\" charset=\"utf-8\"></script>\n    <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\" type=\"text/javascript\" charset=\"utf-8\"></script>\n\n    <!-- get our custom CSS -->\n    <link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n\n    <!-- Facebook Open Graph -->\n    <meta property=\"og:title\" content=\"Cleanweb\" />\n    <meta property=\"og:type\" content=\"website\" />\n    <meta property=\"og:url\" content=\"http://www.cleanweb.co\" />\n    <meta property=\"og:image\" content=\"\" />\n    <meta property=\"og:site_name\" content=\"Cleanweb\" />\n    <meta property=\"fb:admins\" content=\"100002188895899\" />\n\n    <!-- Affix.js call for the subnav bar -->\n    <script type=\"text/javascript\" charset=\"utf-8\">\n      //<![CDATA[\n      $(window).load(function(){\n        $(function() {\n          $('#subnav-wrapper').height($(\"#subnav\").height());  // Holds place of subnav on collapse if needed for layout\n          $('#subnav').affix({\n          offset: { top: $('#subnav').offset().top - 50 }      // offset value here should be height of main nav\n          });\n        });\n      });//]]> \n    </script>\n\n    <!-- Let Wordpress get the last word in -->\n    <?php wp_head(); ?>\n</head>\n\n<!-- <body <?php body_class(); ?>> -->\n<body id=\"main\" data-spy=\"scroll\" data-target=\"#subnav\" data-offset=\"50\"> <!-- data-offset must be height of main nav -->\n\n<!-- BEGIN Facebook Open Graph -->\n<div id=\"fb-root\"></div>\n<script>(function(d, s, id) {\n  var js, fjs = d.getElementsByTagName(s)[0];\n  if (d.getElementById(id)) return;\n  js = d.createElement(s); js.id = id;\n  js.src = \"//connect.facebook.net/en_US/all.js#xfbml=1&appId=196524820509397\";\n  fjs.parentNode.insertBefore(js, fjs);\n}(document, 'script', 'facebook-jssdk'));</script>\n<!-- END Facebook Open Graph -->\n\n  <header id=\"header\">\n\n    <nav class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\" id=\"nav\">\n      <!-- Brand and toggle get grouped for better mobile display -->\n      <div class=\"navbar-header\">\n        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-primary-collapse\">\n          <span class=\"sr-only\">Toggle navigation</span>\n          <span class=\"icon-bar\"></span>  <!-- 'icon-bar' is one-third of the 'hamburger nav' -->\n          <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"></span>\n        </button>\n        <a class=\"navbar-brand\" href=\"/\" style=\"padding: 0;\">\n          <img src=\"/img/cleanweb-logo.png\" class=\"logo\" alt=\"Cleanweb Initiative logo\" height=\"50px\" width=\"75px\">\n        </a>\n      </div>\n\n      <!-- Collect the nav links, forms, and other content for toggling -->\n      <div class=\"collapse navbar-collapse navbar-primary-collapse\">\n        <ul class=\"nav navbar-nav\">\n          <li class=\"dropdown\">\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Offerings&nbsp;<b class=\"caret\"></b></a>\n            <ul class=\"dropdown-menu\">\n              <li><a href=\"#\">APIs</a></li>\n              <li><a href=\"#\">Technical Resources</a></li>\n              <li><a href=\"#\">Datasets</a></li>\n            </ul>\n          </li>\n\n          <li class=\"dropdown\">\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Communities&nbsp;<b class=\"caret\"></b></a>\n            <ul class=\"dropdown-menu\">\n              <li><a href=\"#\">New York</a></li>\n              <li><a href=\"#\">Los Angeles</a></li>\n              <li><a href=\"#\">Chicago</a></li>\n              <li><a href=\"#\">More!</a></li>\n            </ul>\n          </li>\n\n          <li class=\"dropdown\">\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Events&nbsp;<b class=\"caret\"></b></a>\n            <ul class=\"dropdown-menu\">\n              <li><a href=\"#\">Some Hackathon Somewhere</a></li>\n              <li><a href=\"#\">A bunch of great stuff!</a></li>\n              <li><a href=\"#\">More hacks in more places</a></li>\n            </ul>\n          </li>\n\n          <li><a href=\"#\">Blog</a></li>\n        </ul>\n      </div><!-- /.navbar-collapse -->\n    </nav>\n\n  </header>\n\n<div class=\"landing frame\" id=\"what\"><!-- LANDING: 'inspiring the next 1000 companies...' -->\n  \n  <div class=\"panel boxy header\" style=\"min-height: 200px;\">\n    <div class=\"row\">\n      <div class=\"col-sm-6 striped left\">\n        <div class=\"v-centered\">\n          <h1>Inspiring the next <span class=\"secondary\">1,000</span> companies...</h1>\n        </div> \n      </div>\n      <div class=\"col-sm-6 right\">\n        <div class=\"v-centered\">\n          <h1>...that will have a massive economic &amp; environmental impact</h1>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- spacer? -->\n\n  <div class=\"container\"><!-- subtext panel for landing section -->\n    <div class=\"row\">\n      <div class=\"col-sm-8 col-sm-push-2\">\n        <div class=\"panel panel-default boxy center\" id=\"what-subtext\">\n          <div class=\"panel-body\">\n            <div class=\"v-centered\">\n              <h2>Better copy text goes here soon</h2>\n            </div>\n         </div>\n       </div>\n      </div>\n    </div>\n  </div>\n</div><!-- /LANDING> -->\n\n\n<!-- subnav bar (starts under landing, scrolls up then fixes at top) -->\n    <!-- what do we do? how do we do it? who's part of it? where are we? who's talking about it? who's supporting it? -->\n<div id=\"subnav-wrapper\"><!-- wrapper so that when we magicly JS this from inline to fixed we don't lose layout -->\n  <nav class=\"navbar navbar-default navbar-inverse boxy\" role=\"navigation\" id=\"subnav\">\n    <!-- let screenreaders ditch this toy -->\n  \n    <div class=\"collapse navbar-collapse navbar-secondary-collapse\">\n      <div class=\"container\" style=\"margin: 0 auto; width: 768px;\">\n      <ul class=\"nav navbar-nav\">\n        <li class=\"active\"><a href=\"#what\" title=\"what\">What do we do?</a></li>\n        <li><a href=\"#how\" title=\"how\">How do we do it?</a></li>\n        <li><a href=\"#who\" title=\"who\">Who's part of it?</a></li>\n        <li><a href=\"#where\" title=\"where\">Where are we?</a></li>\n        <li><a href=\"#social\" title=\"social\">Who's talking about it?</a></li>\n        <li><a href=\"#sponsors\" title=\"sponsors\">Who's supporting it?</a>\n      </ul>\n    </div>\n    </div>\n  </nav>\n</div>\n\n<div class=\"sell frame\" id=\"sell\"><!-- Helping Budding Entrepreneurs... -->\n<!-- Helping budding entrepreneurs, etc. (sell slide/'how do we do it') (this should be how we do it!) -->\n\n  <div class=\"row section-head\">\n    <div class=\"container\">\n    <div class=\"col-sm-8 col-sm-push-2\">\n      <div class=\"panel boxy\">\n        <div class=\"v-centered\">\n          <h2>At the\n            <span style=\"font-weight: bold;\">Cleanweb Initiative</span>\n             we are...</h2>\n        </div>\n      </div>\n    </div>\n    </div>\n  </div>\n\n  <div class=\"container\">\n    <h1 class=\"secondary\">Helping <em>budding entrepreneurs</em> take their idea from a napkin sketch to a funded company</h1>\n  </div><!-- /container --> \n</div>\n\n<div class=\"how frame\" id=\"how\"><!-- We help entrepreneurs in all kinds of ways... -->\n<!-- We help entrepreneurs in all kinds of ways (this is the 'how do we do it!!!') w/ complex rollover behaviour -->\n  <div class=\"row section-head\">\n    <div class=\"container\">\n    <div class=\"col-sm-8 col-sm-push-2\">\n      <div class=\"panel boxy\">\n        <div class=\"v-centered\">\n          <h2>We help entrepreneurs in\n           all kinds of ways</h2>\n        </div>\n      </div>\n    </div>\n  </div>\n  </div>\n\n  <!-- FILLER CONTENT -->\n  <div class=\"container\">\n    <h1>Here is some really big text.</h1>\n    <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n  </div><!-- /container -->\n</div>\n\n<div class=\"who frame\" id=\"who\"><!-- Who's in on this? -->\n<!-- red-based grid section with fancy mouseover/click behavior -->\n  <div class=\"row section-head\">\n    <div class=\"container\">\n    <div class=\"col-sm-8 col-sm-push-2\">\n      <div class=\"panel boxy\">\n        <div class=\"v-centered\">\n          <h2>The <span style=\"font-weight: bold\">Cleanweb Initiative</span> is\n            already hard at work,\n            helping amazing individuals and great companies\n            get to the next level</h2>\n        </div>\n      </div>\n    </div>\n  </div>\n  </div>\n\n  <!-- FILLER CONTENT -->\n  <div class=\"container\">\n    <h1 class=\"quote secondary\">\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n        consequat.\"</h1>\n  </div><!-- /container -->  \n</div>\n\n<div class=\"where frame\" id=\"where\"><!-- Where's the action? -->\n<!-- map section -->\n  <div class=\"row section-head\">\n    <div class=\"container\">\n    <div class=\"col-sm-8 col-sm-push-2\">\n      <div class=\"panel boxy\">\n        <div class=\"v-centered\">\n          <h2>The <span style=\"font-weight: bold;\">Cleanweb Initiative</span> \n            has events and communities\n            around the world - find one near you</h2>\n        </div>\n      </div>\n    </div>\n  </div>\n  </div>\n\n  <!-- FILLER CONTENT -->\n  <div class=\"container\">\n    <h1>Here is some really big text.</h1>\n    <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n  </div><!-- /container -->\n</div>\n\n<div class=\"events frame\" id=\"events\"><!-- upcoming/featured events -->\n<!-- featured event section -->\n\n  <div class=\"row section-head\">\n    <div class=\"container\">\n    <div class=\"col-sm-8 col-sm-push-2\">\n      <div class=\"panel boxy\">\n        <div class=\"v-centered\">\n          <h2>Let's get together\n           and make a difference</h2>\n        </div>\n      </div>\n    </div>\n  </div>\n  </div>\n\n  <!-- FILLER CONTENT -->\n  <div class=\"container\">\n    <h1 class=\"secondary\">Featured Event</h1>\n    <h1 class=\"secondary\">NYC May Hackathon</h1>\n    <p class=\"secondary\">Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n  </div><!-- /container -->  \n</div>\n\n<div class=\"social frame\" id=\"social\"><!-- big twitter splat -->\n<!-- social media/twitter plugin section -->\n\n  <div class=\"row section-head\">\n    <div class=\"container\">\n    <div class=\"col-sm-8 col-sm-push-2\">\n      <div class=\"panel boxy\">\n        <div class=\"v-centered\">\n          <h2>Join the #Cleanweb</br>\n            conversation on\n            Twitter and Facebook</h2>\n        </div>\n      </div>\n    </div>\n  </div>\n  </div>\n\n  <!-- FILLER CONTENT -->\n  <div class=\"container\">\n    <h1 class=\"secondary\">Here is some really big text.</h1>\n    <p class=\"secondary\">Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n  </div><!-- /container -->\n</div>\n\n<div class=\"sponsors frame\" id=\"sponsors\"><!-- with a great big thanks to... -->\n<!-- sponsor section -->\n\n  <div class=\"row section-head\">\n    <div class=\"container\">\n    <div class=\"col-sm-8 col-sm-push-2\">\n      <div class=\"panel boxy\">\n        <div class=\"v-centered\">\n          <h2>The <span style=\"font-weight: bold;\">Cleanweb Initiative</span> is supported by some of the\n            most innovative companies in the world.</h2>\n        </div>\n      </div>\n    </div>\n  </div>\n  </div>\n\n      <div class=\"container secondary\"><!-- Sponsor grid -->\n        <div class=\"row sponsor-grid\">\n          <div class=\"col-sm-5 col-sm-push-1\"><!-- LEADERSHIP level -->\n            <div class=\"row\">\n              <h3>Leadership</h3>\n            </div>\n            <div class=\"row\">\n              <div class=\"col-sm-6\">\n                <p>FACEBOOK!</p>\n              </div>\n              <div class=\"col-sm-6\">\n                <p>RockPort Capital</p>\n              </div>\n            </div>\n            <div class=\"row\">\n              <div class=\"col-sm-6\">\n                <p>TERRA Venture Partners</p>\n              </div>\n              <div class=\"col-sm-6\">\n                <p>Black Coral Capital</p>\n              </div>\n            </div>\n            <div class=\"row\">\n              <div class=\"col-sm-4\">\n                <p>American Clear Skies</p>\n              </div>\n              <div class=\"col-sm-4\">\n                <p>Greenstart</p>\n              </div>\n              <div class=\"col-sm-4\">\n                <p>yerdle<p>\n              </div>\n            </div>\n            <div class=\"row\">\n              <div class=\"col-sm-6\">\n                <p>Morh Davidow</p>\n              </div>\n              <div class=\"col-sm-6\">\n                <p>Sungevity</p>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-sm-3 col-sm-push-2\"><!-- PARTNERSHIP level -->\n            <div class=\"row\">\n              <h3>Partnership</h3>\n            </div>\n\n            <div class=\"row\">\n              <div class=\"col-sm-6\">\n                <p>Department of Energy</p>\n              </div>\n              <div class=\"col-sm-6\">\n                <p>SXSW/Eco</p>\n              </div>\n            </div>\n\n            <div class=\"row\">\n              <div class=\"col-sm-12\">\n                <p>The Climate Group</p>\n              </div>\n            </div>\n\n            <div class=\"row\">\n              <div class=\"col-sm-4 col-sm-push-1\">\n                <p>C40 Cities</p>\n              </div>\n              <div class=\"col-sm-4 col-sm-push-2\">\n                <p>Office of Science and Technology Policy</p>\n              </div>\n            </div>\n\n            <div class=\"row\">\n              <div class=\"col-sm-4 col-sm-push-1\">\n                <p>NYC.gov</p>\n              </div>\n              <div class=\"col-sm-4 col-sm-push-2\">\n                <p>Something that looks like Sealand?</p>\n              </div>\n            </div>\n\n            </div>\n          </div>\n        </div>\n      </div><!--/CONTAINER for Sponsor Grid-->\n</div><!--/SPONSOR section -->\n\n<footer>\n  <div class=\"container\">\n    <div class=\"row\">\n      <img class=\"logo\" src=\"/img/cleanweb-logo.png\" alt=\"Cleanweb Initiative logo\" \n        style=\"margin-left: auto; margin-right: auto; margin-top: 60px; margin-bottom: 60px;\">\n    </div>\n\n    <div class=\"row center\">\n      <p style=\"padding-bottom: 35px;\">\n        <a href=\"#\" alt=\"Contact Us\">Contact Us</a> | \n        <a href=\"#\" alt=\"Privacy Policy\">Privacy Policy</a> | \n        All Rights Reserved by The Cleanweb Initiative | \n        Cleanweb 2013\n      </p>\n  </div>\n</footer>\n\n</body>\n</html>",
+			"file": "index.html",
+			"file_size": 18179,
+			"file_write_time": 1380241160000000,
+			"settings":
+			{
+				"buffer_size": 18178,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "style.scss",
+			"settings":
+			{
+				"buffer_size": 6168,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 5358,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "TODO",
+			"settings":
+			{
+				"buffer_size": 331,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 316.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pack",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"markd",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"markdown",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"mark",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack:",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: List Packages"
+			],
+			[
+				"Package",
+				"Package Control: Upgrade Package"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/arubis/dev/Cleanweb-website/wp-content/themes/cleanwebOne/style.css",
+		"/Users/arubis/dev/Cleanweb-website/wp-content/themes/cleanwebOne/index.php",
+		"/Users/arubis/dev/Cleanweb-website/wp-content/themes/cleanwebOne/index.html",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/arubis/dev/wherethefuckisdylan/Gemfile",
+		"/Users/arubis/dev/wherethefuckisdylan/public/robots.txt",
+		"/Users/arubis/dev/wherethefuckisdylan/wtfdylan.rb",
+		"/Users/arubis/dev/wherethefuckisdylan/views/_styles.haml",
+		"/Users/arubis/dev/wherethefuckisdylan/views/layout.haml",
+		"/Users/arubis/dev/wherethefuckisdylan/views/_typekit.erb",
+		"/Users/arubis/dev/wherethefuckisdylan/views/_analytics.erb",
+		"/Users/arubis/dev/wherethefuckisdylan/views/_typekit.haml",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/SmartMarkdown/SmartMarkdown.sublime-settings",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/User/SmartMarkdown.sublime-settings",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/SmartMarkdown/Default.sublime-keymap",
+		"/Users/arubis/.rvm/environments/ruby-1.9.3-p286@wherethefuck",
+		"/Users/arubis/dev/wherethefuckisdylan/.gitignore",
+		"/Users/arubis/dev/wherethefuckisdylan/sass/screen.sass",
+		"/Users/arubis/dev/liter_of_light/views/gallery/omars.haml",
+		"/Users/arubis/dev/liter_of_light/views/gallery/omars.md",
+		"/Users/arubis/dev/liter_of_light/views/gallery/omars.md.old",
+		"/Users/arubis/Books/Kindle Mega Collection/Kindle Library 12-26-10/Library/Barbara Kingsolver/The Poisonwood Bible (771)/The Poisonwood Bible - Barbara Kingsolver.mobi",
+		"/Users/arubis/dev/liter_of_light/views/about/contributors.md",
+		"/Users/arubis/dev/liter_of_light/views/about/sponsors/mobse.md",
+		"/Users/arubis/dev/liter_of_light/views/about/sponsors/frogs.md",
+		"/Users/arubis/dev/liter_of_light/views/about/contact.md",
+		"/Users/arubis/dev/liter_of_light/public/images/frogs_logo.pxm",
+		"/Volumes/Mixed Messages/The Newsroom 2012/The Newsroom 2012 S01E01 HDTV x264-ASAP[ettv]/The.Newsroom.2012.S01E01.We.Just.Decided.To.HDTV.x264-ASAP.srt",
+		"/Users/arubis/dev/liter_of_light/views/_header.haml",
+		"/Users/arubis/dev/liter_of_light/views/about/mobse.md",
+		"/Users/arubis/dev/liter_of_light/views/about/sponsors.md",
+		"/Users/arubis/dev/liter_of_light/views/why.haml",
+		"/Users/arubis/dev/liter_of_light/views/why.md",
+		"/Users/arubis/dev/liter_of_light/views/main/hero.md",
+		"/Library/Application Support/Tunnelblick/Shared/Mullvad-TCP.tblk/Contents/Resources/config.ovpn",
+		"/Users/arubis/dev/liter_of_light/literoflight.rb",
+		"/Users/arubis/dev/liter_of_light/views/about.md",
+		"/Users/arubis/dev/liter_of_light/views/colophon.md",
+		"/Users/arubis/dev/liter_of_light/views/untitled",
+		"/Users/arubis/dev/liter_of_light/views/colophon.haml",
+		"/Users/arubis/dev/liter_of_light/views/why/grid.md",
+		"/Users/arubis/dev/liter_of_light/views/why/batteries.md",
+		"/Users/arubis/dev/liter_of_light/views/why/kerosene.md",
+		"/Users/arubis/dev/liter_of_light/subl/Liter of Light.sublime-project",
+		"/Users/arubis/dev/liter_of_light/views/_footer.haml",
+		"/Users/arubis/dev/liter_of_light/views/gallery/kembujeh.haml",
+		"/Users/arubis/dev/liter_of_light/views/gallery.haml",
+		"/Users/arubis/dev/liter_of_light/sass/user.sass",
+		"/Users/arubis/dev/liter_of_light/views/gallery/omars-smiling.md",
+		"/Users/arubis/dev/liter_of_light/views/gallery/omars-inside.md",
+		"/Users/arubis/dev/liter_of_light/views/gallery/omars-climbing.md",
+		"/Users/arubis/dev/liter_of_light/views/gallery/kembujeh.md",
+		"/Users/arubis/dev/liter_of_light/views/index.erb",
+		"/Users/arubis/dev/liter_of_light/views/main.haml",
+		"/Users/arubis/dev/liter_of_light/sass/styles.sass",
+		"/Users/arubis/dev/liter_of_light/public/javascripts/ga.js",
+		"/Users/arubis/dev/liter_of_light/views/_styles.haml",
+		"/Users/arubis/dev/liter_of_light/views/layout.haml",
+		"/Users/arubis/dev/liter_of_light/public/css/styles.css",
+		"/Library/Application Support/Tunnelblick/Shared/Mullvad-UDP.tblk/Contents/Resources/config.ovpn",
+		"/Users/arubis/dev/liter_of_light/views/_analytics.haml",
+		"/Users/arubis/dev/liter_of_light/views/kembujeh.md",
+		"/Users/arubis/dev/liter_of_light/views/gallery/kembujeh-classroom-full.md",
+		"/Users/arubis/dev/liter_of_light/views/gallery/kembujeh-after.md",
+		"/Users/arubis/dev/liter_of_light/views/gallery/kembujeh-before.md",
+		"/Users/arubis/dev/liter_of_light/config.rb",
+		"/Users/arubis/dev/liter_of_light/views/main/light.md",
+		"/Users/arubis/dev/liter_of_light/views/kembujeh.haml",
+		"/Users/arubis/dev/liter_of_light/views/_javascripts.haml",
+		"/Users/arubis/dev/liter_of_light/views/_typekit.haml",
+		"/Users/arubis/dev/h31y/frankie.rb",
+		"/Library/Application Support/Tunnelblick/Shared/Mullvad.tblk/Contents/Resources/config.ovpn",
+		"/Users/arubis/dev/liter_of_light/views/main/safe.md",
+		"/Users/arubis/dev/liter_of_light/Gemfile",
+		"/Users/arubis/dev/liter_of_light/views/_style_header.haml",
+		"/Users/arubis/dev/liter_of_light/views/main.md",
+		"/Users/arubis/dev/liter_of_light/views/bootstrap.haml",
+		"/Users/arubis/dev/liter_of_light/public/css/bootstrap.css",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/SublimeCodeIntel/Default (OSX).sublime-keymap",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/Default (OSX).sublime-keymap",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/SublimeCodeIntel/Base File.sublime-settings",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/SublimeCodeIntel/Default (OSX).sublime-mousemap",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/Crypto/Crypto.sublime-settings",
+		"/Users/arubis/Library/Application Support/Sublime Text 2/Packages/User/Crypto.sublime-settings",
+		"/Users/arubis/dev/liter_of_light/procfile",
+		"/Users/arubis/dev/bootstrap/css/bootstrap.css",
+		"/Users/arubis/dev/liter_of_light/views/_navbar.haml",
+		"/Users/arubis/dev/liter_of_light/views/layout_bootstrap.haml",
+		"/Users/arubis/dev/liter_of_light/.gitignore",
+		"/Users/arubis/dev/liter_of_light/views/index.haml",
+		"/Users/arubis/.zshrc",
+		"/Users/arubis/dev/rails_projects/sample_app/example.rb",
+		"/Users/arubis/dev/rails_projects/sample_app/Gemfile",
+		"/Users/arubis/dev/rails_projects/sample_app/Guardfile",
+		"/Users/arubis/dev/rails_projects/sample_app/app/helpers/application_helper.rb",
+		"/Users/arubis/dev/rails_projects/sample_app/app/views/layouts/application.html.erb",
+		"/Users/arubis/dev/rails_projects/sample_app/config/environments/production.rb",
+		"/Users/arubis/dev/rails_projects/sample_app/spec/requests/static_pages_spec.rb",
+		"/Users/arubis/dev/rails_projects/sample_app/app/views/static_pages/contact_us.html.erb",
+		"/Users/arubis/dev/rails_projects/sample_app/app/views/static_pages/about.html.erb",
+		"/Users/arubis/dev/rails_projects/sample_app/app/views/static_pages/help.html.erb",
+		"/Users/arubis/dev/rails_projects/sample_app/app/views/static_pages/home.html.erb",
+		"/Users/arubis/dev/rails_projects/sample_app/config/routes.rb",
+		"/Users/arubis/dev/rails_projects/sample_app/app/controllers/static_pages_controller.rb",
+		"/Users/arubis/Desktop/Cover Letter.txt",
+		"/Users/arubis/dev/rails_projects/sample_app/.gitignore",
+		"/Users/arubis/dev/rails_projects/sample_app/.rspec",
+		"/Users/arubis/dev/rails_projects/sample_app/.rvmrc"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/arubis/dev/liter_of_light/",
+			"/Users/arubis/dev/liter_of_light/views",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"center",
+			"100px",
+			"centered",
+			"padding",
+			"padding-left",
+			"padding-l",
+			"h1",
+			"frame",
+			"at <span",
+			"main nav",
+			"100",
+			"hover",
+			"nav",
+			"<nav",
+			"100px",
+			"text-align",
+			"footer",
+			"img",
+			"sponsors",
+			"sponsor",
+			"#who",
+			"cleanweb ",
+			"where",
+			"20px",
+			"h2",
+			"<br />",
+			"what-sub",
+			"panel",
+			"#what-",
+			"#what ",
+			"accent",
+			"center",
+			"h1",
+			"what",
+			".sell",
+			"#sell",
+			"#what",
+			"what-color",
+			"Capital",
+			".row",
+			"width",
+			"panel",
+			"landing",
+			"intersection",
+			"panel",
+			"Please god in heaven b",
+			"subnav",
+			"height: auto",
+			"navbar-collapse",
+			"11",
+			"subnav",
+			"15",
+			"jumbo",
+			"header",
+			"tktk",
+			"favicon",
+			".ico",
+			"solar bottle bulb",
+			"position",
+			"#logo",
+			"logo",
+			"ruby"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 18178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7268,
+								7268
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1176.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "style.scss",
+					"settings":
+					{
+						"buffer_size": 6168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2434,
+								2434
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 73.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 5358,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4643,
+								4643
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1658.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "TODO",
+					"settings":
+					{
+						"buffer_size": 331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "",
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 98.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true
+}
