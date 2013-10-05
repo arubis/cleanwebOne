@@ -2,7 +2,7 @@
 body {
   padding-top: 0px;
   font-size: 16px;
-  font-family: "Open Sans",serif;
+  font-family: "ff-dagny-web-pro";
   background: transparent;
 }
 
@@ -102,6 +102,24 @@ footer {
 
 /* And that's the mixin game. */
 
+/*** Let's play with fonts! */
+
+h1 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  text-transform: uppercase;
+}
+
+html.wf-ffdagnywebpro-n7-active body#main div#what.landing div.panel div.row div.col-sm-6 div.v-centered h1 {
+  font-size: 30px;
+}
+
+/*** End font and text play. */
+
 #what-subtext { 
   text-align: center;
   // h2 { padding-bottom: 40px; }
@@ -126,15 +144,6 @@ footer {
   }
 }
 
-h1 {
-  font-family: "Abel", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-}
-
-h1, h2, h3, h4, h5, h6  {
-  text-transform: uppercase;
-}
 
 .right  { text-align: right;  }
 .left   { text-align: left;   }
@@ -158,7 +167,6 @@ h1, h2, h3, h4, h5, h6  {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 100px;
-  // text-align: center;  ///// do this elsewhere, no?
   h1, h2, h3, h4, p { 
     display: table-cell;
     vertical-align: middle;
