@@ -266,10 +266,19 @@ html.wf-ffdagnywebpro-i2-active body#main div#what.landing div.container div.row
   background-color: rgba(245, 245, 245, 1);
 }
 
-.nav img.logo {
-  height: 50px;
-  width: 75px;
-  display: block;
+$logo-height: (64px/2);
+$logo-width:  (138px/2);
+
+#logo-container {
+  img.logo {
+    height: $logo-height;
+    width: $logo-width;
+    display: block;
+    margin: 10px 10px;
+  }
+  background: white;
+  height: $navheight;
+
 }
 
 /* ALL THINGS SUB-NAVBAR *****/

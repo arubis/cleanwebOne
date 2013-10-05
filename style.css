@@ -226,10 +226,14 @@ html.wf-ffdagnywebpro-i2-active body#main div#what.landing div.container div.row
 #nav div.navbar-collapse {
   background-color: whitesmoke; }
 
-.nav img.logo {
-  height: 50px;
-  width: 75px;
-  display: block; }
+#logo-container {
+  background: white;
+  height: 50px; }
+  #logo-container img.logo {
+    height: 32px;
+    width: 69px;
+    display: block;
+    margin: 10px 10px; }
 
 /* ALL THINGS SUB-NAVBAR *****/
 #subnav {

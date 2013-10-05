@@ -1,18 +1,32 @@
 # STYLES #
 
  - Coordinate transparencies/translucencies
+ 	- oh good god am i actually going to replicate blend:multiply in js?
 
 # CONTENT #
 
- - Get and add image assets from Wayne
- - Oh my god do everything
+ - add image assets from wayne
+ - get copy from chris
 
 # LAYOUT #
 
  - set min-height of each section
  - Clean up collapse of main nav to hide _all_ but hamburger menu
+ - clean up behavior of landing frame bg image
 
-# ADMIN #
+# OUT #
 
  - Get someone to do JS animations
  - Get someone to do WP integration
+ (Syu?)
+
+# FAST #
+
+ - Update logo
+   - footer
+
+# SECTIONS #
+
+## LANDING ##
+
+## 
