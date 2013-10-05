@@ -33,8 +33,12 @@
 
 ## how / 'we help in all sorts of ways' ## @priority-HEAD
 
-  - set up LAYOUT
+  + set up column layout
+  + add copy
+  - add neato diamond style background
   - add green pointers
+  - add pointer text overlay
+  - add pointer icon overlay
   - clean up collapse behavior
   - standardise class/id naming
   - tie in Syu

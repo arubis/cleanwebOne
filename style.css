@@ -119,6 +119,9 @@ html.wf-ffdagnywebpro-i2-active body#main div#what.landing div.container div.row
   font-weight: 900;
   line-height: 1.35; }
 
+.spinner-copy {
+  text-align: center; }
+
 /*** End font and text play. */
 #what-subtext {
   text-align: center;
