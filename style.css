@@ -7,6 +7,7 @@ body {
 /*** VARIABLE SETUP ****/
 /* Navbar */
 /* set background per section -- can be either color or image */
+/* this is set in two places; there's also an image overlay (bg-triangles.png) below */
 /* set color scheme per section *
  * Key: $-color is used in section header and unmodified text elements
  *      $-secondary-color is used for any text under a .secondary class
@@ -39,6 +40,8 @@ body {
     color: #505050; }
   #how * em {
     color: #191919; }
+  #how .background {
+    background: url("img/bg-triangles.png") repeat; }
 
 #who {
   background: #e05d55;

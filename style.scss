@@ -14,7 +14,7 @@ $navheight: 50px;    // If this changes, there's changes in the HTML too! search
 /* set background per section -- can be either color or image */
 $what-bg: url("img/mobile-phone-bg.jpg") no-repeat center center;
 $sell-bg: rgba(220, 182, 37, 1);
-$how-bg: rgba(238, 249, 233, 1);
+$how-bg: rgba(238, 249, 233, 1); /* this is set in two places; there's also an image overlay (bg-triangles.png) below */
 $who-bg: rgba(224, 93, 85, 1);
 $where-bg: rgba(178, 209, 255, 1);
 $events-bg: rgba(223, 183, 36, 1);
@@ -82,7 +82,12 @@ $footer-emph-color: rgb(0, 0, 0);
   background-size: 100%;
   }
 #sell { @include section-style($sell-bg, $sell-color, $sell-secondary-color, $sell-emph-color) }
-#how { @include section-style($how-bg, $how-color, $how-secondary-color, $how-emph-color) }
+#how { 
+  @include section-style($how-bg, $how-color, $how-secondary-color, $how-emph-color);
+  .background { 
+    background: url("img/bg-triangles.png") repeat;
+  }
+}
 #who { @include section-style($who-bg, $who-color, $who-secondary-color, $who-emph-color) }
 #where { @include section-style($where-bg, $where-color, $where-secondary-color, $where-emph-color) }
 #events { @include section-style($events-bg, $events-color, $events-secondary-color, $events-emph-color) }

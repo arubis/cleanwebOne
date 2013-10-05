@@ -2,6 +2,7 @@
 
  - Coordinate transparencies/translucencies
  	- oh good god am i actually going to replicate blend:multiply in js?
+ - split style.scss into multiple files
 
 # CONTENT #
 
@@ -35,13 +36,14 @@
 
   + set up column layout
   + add copy
-  - add neato diamond style background
+  + add neato diamond style background
   - add green pointers
   - add pointer text overlay
   - add pointer icon overlay
   - clean up collapse behavior
   - standardise class/id naming
   - tie in Syu
+  - section footer
 
 ## who / contributors / checkerboard-red ## @ priority-1
 
