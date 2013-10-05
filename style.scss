@@ -105,17 +105,33 @@ footer {
 /*** Let's play with fonts! */
 
 h1 {
-  font-weight: 900;
   font-size: 40px;
-  line-height: 1.3;
 }
 
 h1, h2, h3, h4, h5, h6  {
   text-transform: uppercase;
 }
 
-html.wf-ffdagnywebpro-n7-active body#main div#what.landing div.panel div.row div.col-sm-6 div.v-centered h1 {
-  font-size: 30px;
+$lineheighthere: 1.35;
+/* top left landing header text */
+html.wf-ffdagnywebpro-i2-active body#main div#what.landing div.panel div.row div.col-sm-6 div.row div.col-sm-10.left div.v-centered h1 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: $lineheighthere;
+}
+
+/* top right landing header text */
+html.wf-ffdagnywebpro-i2-active body#main div#what.landing div.panel div.row div.col-sm-6 div.row div.col-sm-10.right div.v-centered h1 {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: $lineheighthere;
+}
+
+/* landing footer text, before subnav */
+html.wf-ffdagnywebpro-i2-active body#main div#what.landing div.container div.row div.col-sm-10 div#what-subtext.panel div.panel-body div.v-centered h2 {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: $lineheighthere;
 }
 
 /*** End font and text play. */
@@ -128,7 +144,27 @@ html.wf-ffdagnywebpro-n7-active body#main div#what.landing div.panel div.row div
     margin-top: 220px;
     min-height: 150px;
   }
+  background: rgba(0,0,0,0.6);
+}
+
+.landing .panel {
+  background-color: rgba(129,212,175,0.7);  // this is a TOTAL PAIN IN THE ASS because the designer wants blend-multiply
+  * {
+    margin-top: 0;
+    font-weight: bold;
   }
+}
+
+#what-header {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+html.wf-ffdagnywebpro-i2-active body#main div#what.landing div.container div.row div.col-sm-10 div#what-subtext.panel div.panel-body div.v-centered h2 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
 
 .frame {
   -webkit-background-size: cover;
@@ -264,14 +300,6 @@ html.wf-ffdagnywebpro-n7-active body#main div#what.landing div.panel div.row div
 }
 
 /* END NAVBAR SECTION ****/
-
-.landing .panel {
-  background-color: rgba(50,200,150,0.7);
-  * {
-    margin-top: 0;
-    font-weight: bold;
-  }
-}
 
 footer img.logo {
   height: 100px;
