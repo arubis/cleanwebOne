@@ -87,6 +87,10 @@ $footer-emph-color: rgb(0, 0, 0);
   .background { 
     background: url("img/bg-triangles.png") repeat;
   }
+  * .spinner img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 #who { @include section-style($who-bg, $who-color, $who-secondary-color, $who-emph-color) }
 #where { @include section-style($where-bg, $where-color, $where-secondary-color, $where-emph-color) }

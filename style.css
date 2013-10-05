@@ -42,6 +42,9 @@ body {
     color: #191919; }
   #how .background {
     background: url("img/bg-triangles.png") repeat; }
+  #how * .spinner img {
+    margin-top: 50px;
+    margin-bottom: 50px; }
 
 #who {
   background: #e05d55;
