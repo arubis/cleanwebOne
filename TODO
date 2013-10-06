@@ -2,8 +2,6 @@
 
  - Coordinate transparencies/translucencies
  	- oh good god am i actually going to replicate blend:multiply in js?
- - split style.scss into multiple files @priority-HEAD
- + Deal with stripe bars 
 
 # CONTENT #
 
@@ -13,9 +11,7 @@
 # LAYOUT #
 
  - set min-height of each frame
- - Clean up collapse of main nav to hide _all_ but hamburger menu
- - clean up behavior of landing frame bg image
- - since it's possible not everything will be done, set up per-frame toggles
+ - Clean up collapse of main nav to hide _all_ but hamburger menu @maybe
 
 # OUT #
 
@@ -25,10 +21,12 @@
 
 # FAST #
 
- - Update logo
+ - Update logo -- ask for source
    - footer
+ + direct join now buttons to grouptie
+ - confirm proper direction of Join Now buttons
 
-# frameS #
+# FRAMES #
 
 ## LANDING ##
 
@@ -36,9 +34,8 @@
 
 ## how / 'we help in all sorts of ways' ##
 
-  + separate Sass styles for 'how' frame
   - tie in Syu
-  0 clean up collapse behavior -- later
+  0 clean up collapse behavior -- later / after JS
 
 
 ## who / contributors / checkerboard-red ## @priority-HEAD
