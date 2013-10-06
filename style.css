@@ -42,7 +42,7 @@ body {
     color: #191919; }
   #how .background {
     background: url("img/bg-triangles.png") repeat; }
-  #how * .spinner img {
+  #how * img.knob {
     margin-top: 50px;
     margin-bottom: 50px; }
 
@@ -125,10 +125,28 @@ html.wf-ffdagnywebpro-i2-active body#main div#what.landing div.container div.row
   font-weight: 900;
   line-height: 1.35; }
 
-.spinner-copy {
-  text-align: center; }
+.knob-copy {
+  text-align: center;
+  font-size: 11pt; }
 
 /*** End font and text play. */
+.knob-overlay {
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  top: 85px;
+  text-align: center;
+  color: white; }
+
+#knob-overlay-left {
+  margin-top: 15px; }
+
+#knob-overlay-center {
+  margin-top: 15px; }
+
+#knob-overlay-right {
+  margin-top: 15px; }
+
 #what-subtext {
   text-align: center;
   background: rgba(0, 0, 0, 0.6); }

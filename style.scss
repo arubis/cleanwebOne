@@ -87,7 +87,7 @@ $footer-emph-color: rgb(0, 0, 0);
   .background { 
     background: url("img/bg-triangles.png") repeat;
   }
-  * .spinner img {
+  * img.knob {
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -143,11 +143,25 @@ html.wf-ffdagnywebpro-i2-active body#main div#what.landing div.container div.row
   line-height: $lineheighthere;
 }
 
-.spinner-copy {
+.knob-copy {
   text-align: center;
+  font-size: 11pt;
 }
 
 /*** End font and text play. */
+
+.knob-overlay {
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  top: 85px;
+  text-align: center;
+  color: white;
+}
+
+#knob-overlay-left    { margin-top: 15px; }
+#knob-overlay-center  { margin-top: 15px; }
+#knob-overlay-right   { margin-top: 15px; }
 
 #what-subtext { 
   text-align: center;
