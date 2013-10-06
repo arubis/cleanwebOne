@@ -4,10 +4,10 @@ body {
   font-family: "ff-dagny-web-pro";
   background: transparent; }
 
+/*** Support files for frames at bottom ***/
 /*** VARIABLE SETUP ****/
 /* Navbar */
 /* set background per section -- can be either color or image */
-/* this is set in two places; there's also an image overlay (bg-triangles.png) below */
 /* set color scheme per section *
  * Key: $-color is used in section header and unmodified text elements
  *      $-secondary-color is used for any text under a .secondary class
@@ -20,6 +20,8 @@ body {
   color: white;
   min-height: 610px;
   background-size: 100%; }
+  #what .section-footer {
+    background: black; }
   #what .secondary, #what * .secondary {
     color: #56c495; }
   #what * em {
@@ -28,14 +30,84 @@ body {
 #sell {
   background: #dcb625;
   color: #dcb625; }
+  #sell .section-footer {
+    background: black; }
   #sell .secondary, #sell * .secondary {
     color: white; }
   #sell * em {
     color: white; }
 
+#who {
+  background: #e05d55;
+  color: #e05d55; }
+  #who .section-footer {
+    background: black; }
+  #who .secondary, #who * .secondary {
+    color: white; }
+  #who * em {
+    color: #191919; }
+
+#where {
+  background: #b2d1ff;
+  color: #2e78d9; }
+  #where .section-footer {
+    background: black; }
+  #where .secondary, #where * .secondary {
+    color: #505050; }
+  #where * em {
+    color: #191919; }
+
+#events {
+  background: #dfb724;
+  color: #dfb724; }
+  #events .section-footer {
+    background: black; }
+  #events .secondary, #events * .secondary {
+    color: #505050; }
+  #events * em {
+    color: #191919; }
+
+#social {
+  background: #e05d55;
+  color: #e05d55; }
+  #social .section-footer {
+    background: black; }
+  #social .secondary, #social * .secondary {
+    color: #505050; }
+  #social * em {
+    color: #191919; }
+
+#sponsors {
+  background: #f8f8f8;
+  color: #e05d55; }
+  #sponsors .section-footer {
+    background: black; }
+  #sponsors .secondary, #sponsors * .secondary {
+    color: black; }
+  #sponsors * em {
+    color: white; }
+
+footer {
+  background: #43be87;
+  color: white;
+  min-height: 240px; }
+  footer .section-footer {
+    background: black; }
+  footer .secondary, footer * .secondary {
+    color: white; }
+  footer * em {
+    color: black; }
+  footer p {
+    font-size: small; }
+    footer p a, footer p a#hover, footer p a#active {
+      color: white; }
+
+/*** SUPPORT FILES FOR FRAMES ***/
 #how {
   background: #eef9e9;
   color: #638553; }
+  #how .section-footer {
+    background: #638554; }
   #how .secondary, #how * .secondary {
     color: #505050; }
   #how * em {
@@ -46,59 +118,28 @@ body {
     margin-top: 50px;
     margin-bottom: 50px; }
 
-#who {
-  background: #e05d55;
-  color: #e05d55; }
-  #who .secondary, #who * .secondary {
-    color: white; }
-  #who * em {
-    color: #191919; }
+.knob-copy {
+  text-align: center;
+  font-size: 11pt; }
 
-#where {
-  background: #b2d1ff;
-  color: #2e78d9; }
-  #where .secondary, #where * .secondary {
-    color: #505050; }
-  #where * em {
-    color: #191919; }
+.knob-overlay {
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  top: 85px;
+  text-align: center;
+  color: white; }
 
-#events {
-  background: #dfb724;
-  color: #dfb724; }
-  #events .secondary, #events * .secondary {
-    color: #505050; }
-  #events * em {
-    color: #191919; }
+#knob-overlay-left {
+  margin-top: 15px; }
 
-#social {
-  background: #e05d55;
-  color: #e05d55; }
-  #social .secondary, #social * .secondary {
-    color: #505050; }
-  #social * em {
-    color: #191919; }
+#knob-overlay-center {
+  margin-top: 15px; }
 
-#sponsors {
-  background: #f8f8f8;
-  color: #e05d55; }
-  #sponsors .secondary, #sponsors * .secondary {
-    color: black; }
-  #sponsors * em {
-    color: white; }
+#knob-overlay-right {
+  margin-top: 15px; }
 
-footer {
-  background: #43be87;
-  color: white;
-  min-height: 240px; }
-  footer .secondary, footer * .secondary {
-    color: white; }
-  footer * em {
-    color: black; }
-  footer p {
-    font-size: small; }
-    footer p a, footer p a#hover, footer p a#active {
-      color: white; }
-
+/** /frame support files ***/
 /* And that's the mixin game. */
 /*** Let's play with fonts! */
 h1 {
@@ -125,28 +166,7 @@ html.wf-ffdagnywebpro-i2-active body#main div#what.landing div.container div.row
   font-weight: 900;
   line-height: 1.35; }
 
-.knob-copy {
-  text-align: center;
-  font-size: 11pt; }
-
 /*** End font and text play. */
-.knob-overlay {
-  position: absolute;
-  width: 220px;
-  height: 200px;
-  top: 85px;
-  text-align: center;
-  color: white; }
-
-#knob-overlay-left {
-  margin-top: 15px; }
-
-#knob-overlay-center {
-  margin-top: 15px; }
-
-#knob-overlay-right {
-  margin-top: 15px; }
-
 #what-subtext {
   text-align: center;
   background: rgba(0, 0, 0, 0.6); }
@@ -288,3 +308,13 @@ footer img.logo {
   height: 100px;
   width: 150px;
   display: block; }
+
+.section-footer {
+  min-height: 110px;
+  width: 100%; }
+  .section-footer button.join {
+    width: 100%;
+    margin-top: 35px;
+    font-weight: 600;
+    font-size: 14pt;
+    color: #666666; }

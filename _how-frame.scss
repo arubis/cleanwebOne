@@ -1,0 +1,28 @@
+#how {
+  @include section-style($how-bg, $how-color, $how-secondary-color, $how-emph-color, $how-footer-color);
+  .background {
+    background: url("img/bg-triangles.png") repeat;
+  }
+  * img.knob {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.knob-copy {
+  text-align: center;
+  font-size: 11pt;
+}
+
+.knob-overlay {
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  top: 85px;
+  text-align: center;
+  color: white;
+}
+
+#knob-overlay-left    { margin-top: 15px; }
+#knob-overlay-center  { margin-top: 15px; }
+#knob-overlay-right   { margin-top: 15px; }

@@ -2,7 +2,7 @@
 
  - Coordinate transparencies/translucencies
  	- oh good god am i actually going to replicate blend:multiply in js?
- - split style.scss into multiple files
+ - split style.scss into multiple files @priority-HEAD
 
 # CONTENT #
 
@@ -32,27 +32,21 @@
 
 ## sell / 'whiteboard' ##
 
-## how / 'we help in all sorts of ways' ## @priority-HEAD
+## how / 'we help in all sorts of ways' ##
 
-  + set up column layout
-  + add copy
-  + add neato diamond style background
-  + add green knobs
-  - add knob text overlay
-  - add knob icon overlay
-  - clean up collapse behavior
-  - standardise class/id naming
+  + separate Sass styles for 'how' section
   - tie in Syu
-  - section footer
+  0 clean up collapse behavior -- later
 
-## who / contributors / checkerboard-red ## @ priority-1
+
+## who / contributors / checkerboard-red ## @priority-HEAD
 
 ## where / map ##
 
-## event / carousel ## @priority-3
+## event / carousel ## @priority-2
 
 ## social ## 
 
-## sponsors ## @priority-2
+## sponsors ## @priority-1
 
 ## footer ##
