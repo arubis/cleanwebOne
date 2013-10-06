@@ -1,0 +1,48 @@
+/*
+ * _navbar.scss
+ * SCSS partial including rules for the main (top) navbar
+ * on cleanwebOne design. 
+ * 
+ * initial creation: 6 Oct 2013 dylan@dylanfitzgerald.net
+ *
+ */
+
+/* n.b. $navheight must be set in the main style.scss file before inclusion! */
+
+#nav {
+  height: $navheight;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#nav .navbar-collapse ul {
+  // padding-top: 25px;     // uncomment if increasing navbar size
+  // padding-bottom: 25px;  // uncomment if increasing navbar size
+}
+
+#nav .navbar-collapse ul {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#nav div.navbar-collapse {
+  background-color: rgba(245, 245, 245, 1);
+}
+
+$logo-height: (64px/2);
+$logo-width:  (138px/2);
+
+#logo-container {
+  img.logo, * img.logo {
+    height: $logo-height;
+    width: $logo-width;
+    display: block;
+    margin: 10px 10px;
+  }
+  background: white;
+  height: $navheight;
+
+}

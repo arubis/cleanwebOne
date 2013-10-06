@@ -1,0 +1,16 @@
+/*
+ * _who-frame.scss
+ * SCSS partial including rules for the "#who" frame (tiled companies)
+ * on cleanwebOne design. 
+ * 
+ * initial creation: 6 Oct 2013 dylan@dylanfitzgerald.net
+ *
+ */
+
+$who-color: rgb(224, 93, 85);
+$who-secondary-color: rgb(255, 255, 255);
+$who-emph-color: rgb(25, 25, 25);
+$who-footer-color: rgb(0, 0, 0);
+$who-bg: rgba(224, 93, 85, 1);  /* set up background -- can also be an image */
+
+#who { @include frame-style($who-bg, $who-color, $who-secondary-color, $who-emph-color) }

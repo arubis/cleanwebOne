@@ -1,0 +1,17 @@
+/*
+ * _events-frame.scss
+ * SCSS partial including rules for the "#events" frame (carousel)
+ * on cleanwebOne design. 
+ * 
+ * initial creation: 6 Oct 2013 dylan@dylanfitzgerald.net
+ *
+ */
+
+/* set up color scheme */
+$events-color: rgb(223, 183, 36);
+$events-secondary-color: rgb(80, 80, 80);
+$events-emph-color: rgb(25, 25, 25);
+$events-footer-color: rgb(0, 0, 0);
+$events-bg: rgba(223, 183, 36, 1); /* set up background -- can also be an image */
+
+#events { @include frame-style($events-bg, $events-color, $events-secondary-color, $events-emph-color) }

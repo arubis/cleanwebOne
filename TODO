@@ -12,10 +12,10 @@
 
 # LAYOUT #
 
- - set min-height of each section
+ - set min-height of each frame
  - Clean up collapse of main nav to hide _all_ but hamburger menu
  - clean up behavior of landing frame bg image
- - since it's possible not everything will be done, set up per-section toggles
+ - since it's possible not everything will be done, set up per-frame toggles
 
 # OUT #
 
@@ -28,7 +28,7 @@
  - Update logo
    - footer
 
-# SECTIONS #
+# frameS #
 
 ## LANDING ##
 
@@ -36,7 +36,7 @@
 
 ## how / 'we help in all sorts of ways' ##
 
-  + separate Sass styles for 'how' section
+  + separate Sass styles for 'how' frame
   - tie in Syu
   0 clean up collapse behavior -- later
 

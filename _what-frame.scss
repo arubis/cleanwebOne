@@ -1,0 +1,74 @@
+/*
+ * _what-frame.scss
+ * SCSS partial including rules for the "#what" (landing) frame on 
+ * cleanwebOne design. 
+ * 
+ * initial creation: 6 Oct 2013 dylan@dylanfitzgerald.net
+ *
+ */
+
+/* set up background */
+/* n.b. background-size: cover is added later in the mixin invocation */
+$what-bg: url("img/mobile-phone-bg.jpg") no-repeat center center;
+
+/* set up color scheme */
+$what-color: rgb(255, 255, 255);
+$what-secondary-color: rgb(86, 196, 149);
+$what-emph-color: rgb(86, 196, 149);
+$what-footer-color: rgb(0, 0, 0);
+
+#what { 
+  @include frame-style($what-bg, $what-color, $what-secondary-color, $what-emph-color);
+  min-height: 610px;
+  padding-top: $navheight;
+  background-size: cover;
+}
+
+#what-header {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+$lineheighthere: 1.35;
+/* top left landing header text */
+#what * .left * h1 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: $lineheighthere;
+}
+
+/* top right landing header text */
+#what * .right * h1 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: $lineheighthere;
+}
+
+/* landing footer text, before subnav */
+#what-subtext { 
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+
+  .panel-body {
+    padding: 0px; 
+    margin-top: 220px;
+    min-height: 150px;
+  }
+
+  * h2 {
+    font-size: 22px;
+    font-weight: 900;
+    line-height: $lineheighthere;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.landing .panel {
+  background-color: rgba(129,212,175,0.7);  // <-- this is wrong now, but
+  * {                                       // a TOTAL PAIN IN THE ASS to
+    margin-top: 0;                          // fix because the designer
+    font-weight: bold;                      // wants blend-multiply
+  }
+}

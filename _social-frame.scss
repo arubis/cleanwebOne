@@ -1,0 +1,17 @@
+/*
+ * _social-frame.scss
+ * SCSS partial including rules for the "#social" frame (twitter grid)
+ * on cleanwebOne design. 
+ * 
+ * initial creation: 6 Oct 2013 dylan@dylanfitzgerald.net
+ *
+ */
+
+/* set up color scheme */
+$social-color: rgb(224, 93, 85);
+$social-secondary-color: rgb(80, 80, 80);
+$social-emph-color: rgb(25, 25, 25);
+$social-footer-color: rgb(0, 0, 0);
+$social-bg: rgba(224, 93, 85, 1); /* set up background -- can also be an image */
+
+#social { @include frame-style($social-bg, $social-color, $social-secondary-color, $social-emph-color) }

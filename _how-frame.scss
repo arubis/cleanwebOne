@@ -1,5 +1,21 @@
+/*
+ * _how-frame.scss
+ * SCSS partial including rules for the "#how" frame (green knobs) on 
+ * cleanwebOne design. 
+ * 
+ * initial creation: 5 Oct 2013 dylan@dylanfitzgerald.net
+ *
+ */
+
+/* set up color scheme */
+$how-bg: rgba(238, 249, 233, 1);
+$how-color: rgb(99, 133, 83);
+$how-secondary-color: rgb(80, 80, 80);
+$how-emph-color: rgb(25, 25, 25);
+$how-footer-color: rgb(99, 133, 84);
+
 #how {
-  @include section-style($how-bg, $how-color, $how-secondary-color, $how-emph-color, $how-footer-color);
+  @include frame-style($how-bg, $how-color, $how-secondary-color, $how-emph-color, $how-footer-color);
   .background {
     background: url("img/bg-triangles.png") repeat;
   }
