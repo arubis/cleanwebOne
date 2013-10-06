@@ -3,6 +3,7 @@
  - Coordinate transparencies/translucencies
  	- oh good god am i actually going to replicate blend:multiply in js?
  - split style.scss into multiple files @priority-HEAD
+ + Deal with stripe bars 
 
 # CONTENT #
 
