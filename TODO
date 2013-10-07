@@ -39,15 +39,15 @@
 ## who / contributors / checkerboard-red ## @priority-HEAD
 
  + reënable frame
- - build LAYOUT
- - grid out images
+ + build LAYOUT
+ - grid out images -- redo with table? or something?
  - add pullquote panel/row
  - add close button
    - use bootstrap's built-in close logic?
  - add elements with small text overlay
  - hide above
  - add frame footer
- - clean up collapse
+ - clean up collapse @priority-HEAD
  - tie in Syu
 
 ## where / map ##

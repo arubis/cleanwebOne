@@ -318,7 +318,6 @@
         </div>
       </div>
     </div><!-- /frame-footer -->
-
   </div><!-- /HOW FRAME -->
 
   <!-- red-based grid frame with fancy mouseover/click behavior --><!-- CURRENTLY ENABLED -->
@@ -338,15 +337,47 @@
           </div>
         </div>
       </div>
-    </div>
+    </div><!-- /FRAME-HEAD -->
   
-    <!-- FILLER CONTENT -->
-    <div class="container">
-      <h1 class="quote secondary">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat."</h1>
-    </div><!-- /FILLER -->
+    <!-- AMAZING INDIVIDUALS AND GREAT COMPANIES: 
+    <!== the "WHO" GRID
+    <!======================================
+    <!== How does this thing work?
+    <!== In order to get seamless coverage of each rect's image, even
+    <!== if the copy text causes it to scale out of square proportion,
+    <!== we set the image as a background to the div and use 
+    <!== background-size: cover;. Nifty! But that means that all the
+    <!== images are set in CSS. Here they're named by class to correspond
+    <!== with the company/individual, but the filename itself is 
+    <!== invoked in _who-frame.scss (you ARE still using Sass, right?)
+    <!== and so future adjustments must be made there.
+    <!== 
+    <!== Does this break the convention of content in HTML, styling in
+    <!== CSS, and never the twain shall meet? You betcha! But it works. -->
+    <div class="row" style="margin: 0; overflow-x: hidden; overflow-y: hidden;">
+      <div class="" style="padding: 0; overflow-x: hidden; overflow-y: hidden;">
+        <ul class="who-matrix">
+          <li class="who-matrix-item">
+            <span class="who-logo who-logo--smartercities"></span>
+          </li>
+          <li class="who-matrix-item">
+            <span class="who-logo who-logo--nest" style=""></span>
+          </li>
+          <li class="who-matrix-item">
+            <span class="who-logo who-logo--sungevity" style=""></span>
+          </li>
+          <li class="who-matrix-item">
+            <span class="who-logo who-logo--sidecar" style=""></span>
+          </li>
+          <li class="who-matrix-item">
+            <span class="who-logo who-logo--smartercities" style=""></span>
+          </li>
+          <li class="who-matrix-item">
+            <span class="who-logo who-logo--nest" style=""></span>
+          </li>
+        </ul>
+      </div>
+    </div>
 
   </div><!-- /WHO FRAME -->
 
@@ -356,91 +387,91 @@
     <!-- Where's the action? -->
     <!-- map frame -->
     <!-- <div class="row frame-head">
-<!==   <div class="container">
-<!==   <div class="col-sm-10 col-sm-push-1">
-<!==     <div class="panel boxy">
-<!==       <div class="v-centered">
-<!==         <h2>The <span style="font-weight: bold;">Cleanweb Initiative</span> 
-<!==           has events and communities
-<!==           around the world - find one near you</h2>
-<!==       </div>
-<!==     </div>
-<!==   </div>
-<!== </div>
-<!== </div>
-<!== 
-<!== <!== FILLER CONTENT -->
+    <!==   <div class="container">
+    <!==   <div class="col-sm-10 col-sm-push-1">
+    <!==     <div class="panel boxy">
+    <!==       <div class="v-centered">
+    <!==         <h2>The <span style="font-weight: bold;">Cleanweb Initiative</span> 
+    <!==           has events and communities
+    <!==           around the world - find one near you</h2>
+    <!==       </div>
+    <!==     </div>
+    <!==   </div>
+    <!== </div>
+    <!== </div>
+    <!== 
+    <!== <!== FILLER CONTENT -->
     <!-- <div class="container">
-<!==   <h1>Here is some really big text.</h1>
-<!==   <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-<!==   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-<!==   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-<!==   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-<!==   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-<!==   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<!== </div><!== /container -->
+    <!==   <h1>Here is some really big text.</h1>
+    <!==   <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    <!==   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    <!==   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    <!==   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    <!==   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    <!==   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!== </div><!== /container -->
   </div><!-- /WHERE FRAME -->
-
 
   <!-- featured event frame --><!-- CURRENTLY DISABLED -->
   <div class="events frame" id="events">
     <!-- EVENT FRAME -->
     <!-- upcoming/featured events -->
     <!--
-<!==  <div class="row frame-head">
-<!==    <div class="container">
-<!==    <div class="col-sm-10 col-sm-push-1">
-<!==      <div class="panel boxy">
-<!==        <div class="v-centered">
-<!==          <h2>Let's get together
-<!==           and make a difference</h2>
-<!==        </div>
-<!==      </div>
-<!==    </div>
-<!==  </div>
-<!==  </div>
-<!==
-<!==  <!== FILLER CONTENT -->
+    <!==  <div class="row frame-head">
+    <!==    <div class="container">
+    <!==    <div class="col-sm-10 col-sm-push-1">
+    <!==      <div class="panel boxy">
+    <!==        <div class="v-centered">
+    <!==          <h2>Let's get together
+    <!==           and make a difference</h2>
+    <!==        </div>
+    <!==      </div>
+    <!==    </div>
+    <!==  </div>
+    <!==  </div>
+    <!==
+    <!==  <!== FILLER CONTENT -->
     <!--  <div class="container">
-<!==    <h1 class="secondary">Featured Event</h1>
-<!==    <h1 class="secondary">NYC May Hackathon</h1>
-<!==    <p class="secondary">Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-<!==    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-<!==    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-<!==    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-<!==    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-<!==    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<!==  </div><!== /container -->
-  </div><!-- /EVENTS FRAME -->
+    <!==    <h1 class="secondary">Featured Event</h1>
+    <!==    <h1 class="secondary">NYC May Hackathon</h1>
+    <!==    <p class="secondary">Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    <!==    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    <!==    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    <!==    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    <!==    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    <!==    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!==  </div><!== /container -->
+  </div><!-- /EVENT FRAME -->
+
   <!-- social media/twitter plugin frame --><!-- CURRENTLY DISABLED -->
   <div class="social frame" id="social">
     <!-- SOCIAL FRAME -->
     <!-- big twitter splat -->
     <!--
-<!==  <div class="row frame-head">
-<!==    <div class="container">
-<!==    <div class="col-sm-10 col-sm-push-1">
-<!==      <div class="panel boxy">
-<!==        <div class="v-centered">
-<!==          <h2>Join the #Cleanweb</br>
-<!==            conversation on
-<!==            Twitter and Facebook</h2>
-<!==        </div>
-<!==      </div>
-<!==    </div>
-<!==  </div>
-<!==  </div>
-<!==
-<!==  <!== FILLER CONTENT -->
+    <!==  <div class="row frame-head">
+    <!==    <div class="container">
+    <!==    <div class="col-sm-10 col-sm-push-1">
+    <!==      <div class="panel boxy">
+    <!==        <div class="v-centered">
+    <!==          <h2>Join the #Cleanweb</br>
+    <!==            conversation on
+    <!==            Twitter and Facebook</h2>
+    <!==        </div>
+    <!==      </div>
+    <!==    </div>
+    <!==  </div>
+    <!==  </div>
+    <!==
+    <!==  <!== FILLER CONTENT -->
     <!--  <div class="container">
-<!==    <h1 class="secondary">Here is some really big text.</h1>
-<!==    <p class="secondary">Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-<!==    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-<!==    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-<!==    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-<!==    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-<!==    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<!==  </div><!== /container -->
+    <!==    <h1 class="secondary">Here is some really big text.</h1>
+    <!==    <p class="secondary">Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    <!==    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    <!==    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    <!==    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    <!==    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    <!==    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!==  </div><!== /container -->
   </div><!-- /SOCIAL FRAME -->
 
   <!-- sponsor frame --><!--CURRENTLY ENABLED-->

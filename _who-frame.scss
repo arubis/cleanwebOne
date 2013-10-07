@@ -14,3 +14,73 @@ $who-footer-color: rgb(0, 0, 0);
 $who-bg: rgba(224, 93, 85, 1);  /* set up background -- can also be an image */
 
 #who { @include frame-style($who-bg, $who-color, $who-secondary-color, $who-emph-color) }
+
+.who-grid .row { 
+  margin: 0;
+
+  div { 
+    min-height: 170px;
+    padding: 0; 
+
+  }
+
+}
+
+.who-matrix {
+  display: flex; 
+  -moz-box-pack: center; 
+  list-style-image: none; 
+  list-style-type: none; 
+  list-style-position: outside; 
+  padding: 0 0 0 0; 
+  margin: 0 0 0 0;
+  justify-content: center;
+}
+
+.who-matrix-item {
+  display: inline-block;
+  margin: 0 0 0 0;
+  width: 170px;
+  height: 170px;
+}
+
+.who-logo {
+  width: 170px; 
+  height: 170px; 
+  display: inline-block;
+}
+
+.who-logo--nest {
+  background: url("/img/who_nest.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.who-logo--sungevity {
+  background: url("/img/who_sungevity.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.who-logo--smartercities {
+  background: url("/img/who_smartercities.gif") no-repeat center center;
+  background-size: cover;
+}
+
+.who-logo--sidecar {
+  background: url("/img/who_sidecar.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+// Firefox doesn't yet support multiline Flexboxes
+// so we have to fake it with inline-block
+@supports not (flex-wrap: wrap) {
+  .who-matrix {
+    display: block;
+    text-align: center;
+    .who-matrix-item {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: -2px;
+      margin-right: -2px;
+    }
+  }
+}
