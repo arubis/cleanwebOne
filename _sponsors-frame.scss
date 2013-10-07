@@ -8,7 +8,7 @@
  */
 
 /* set up color scheme */
-$sponsors-color: rgb(224, 93, 85);
+$sponsors-color: rgb(64, 147, 216);
 $sponsors-secondary-color: rgb(0, 0, 0);
 $sponsors-emph-color: rgb(0, 0, 0);
 $sponsors-footer-color: rgb(0, 0, 0);
@@ -20,4 +20,7 @@ $sponsors-bg: rgba(248, 248, 248, 1);
 
 #sponsors { 
   @include frame-style($sponsors-bg, $sponsors-color, $sponsors-emph-color);
+  h3 {
+  	font-weight: 600;
+  }
 }

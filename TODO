@@ -23,29 +23,48 @@
 
  - Update logo -- ask for source
    - footer
- + direct join now buttons to grouptie
  - confirm proper direction of Join Now buttons
 
 # FRAMES #
 
-## LANDING ##
+## LANDING ## -- good for now!
 
 ## sell / 'whiteboard' ##
 
-## how / 'we help in all sorts of ways' ##
+## how / 'we help in all sorts of ways' ## -- good for now, awaiting feedback/Syu activity
 
   - tie in Syu
   0 clean up collapse behavior -- later / after JS
 
-
 ## who / contributors / checkerboard-red ## @priority-HEAD
+
+ + reënable frame
+ - build LAYOUT
+ - grid out images
+ - add pullquote panel/row
+ - add close button
+   - use bootstrap's built-in close logic?
+ - add elements with small text overlay
+ - hide above
+ - add frame footer
+ - clean up collapse
+ - tie in Syu
 
 ## where / map ##
 
-## event / carousel ## @priority-2
+## event / carousel ## @priority-2?
 
 ## social ## 
 
 ## sponsors ## @priority-1
+
+ + reënable frame
+ - replace stand-in text with actual logos
+ - add vertical divider -- use bootstrap to hide on collapse
+ - js logic to add color on mouseover -- hand off to syu?
+ - link out each logo to website of holder
+ - clean up collapse
+ - 'leadership' should be left-justify -- double-check this
+ + change color of text
 
 ## footer ##

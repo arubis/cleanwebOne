@@ -233,13 +233,15 @@ body {
 
 #sponsors {
   background: #f8f8f8;
-  color: #e05d55; }
+  color: #4093d8; }
   #sponsors .frame-footer {
     background: black; }
   #sponsors .secondary, #sponsors * .secondary {
     color: black; }
   #sponsors * em {
     color: white; }
+  #sponsors h3 {
+    font-weight: 600; }
 
 /*
  * _footer-frame.scss

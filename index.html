@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!-- 
   /* This would be a great place for some introductory material.
    *
@@ -19,55 +18,42 @@
 <!--<![endif]-->
 
 <html>
-<head>
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
-
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta charset="<?php bloginfo('charset'); ?>" />
-
-
-    <!-- some WP-fed stuff -->
-    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <link rel="shortcut icon" href="<?php echo get_theme_option('favicon'); ?>" />
-    <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS2 Feed" href="<?php bloginfo('rss2_url'); ?>" />
-    <!--[if lt IE 9]>
+  <head>
+    <title>
+      <?php wp_title( '|', true, 'right' ); ?>
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="<?php bloginfo('charset'); ?>"><!-- some WP-fed stuff -->
+    <link rel="pingback" href="%3C?php%20bloginfo(%20'pingback_url'%20);%20?%3E">
+    <link rel="shortcut icon" href="%3C?php%20echo%20get_theme_option('favicon');%20?%3E">
+    <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS2 Feed" href="%3C?php%20bloginfo('rss2_url');%20?%3E"><!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
     <![endif]-->
-
     <!-- Oh, IE. n.b. the referenced THEME_CSS; doesn't exist...yet. -->
     <!--[if lte IE 9]>
     <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <!--[if IE 8]>
     <link rel="stylesheet" href="<?php echo THEME_CSS; ?>/ie8.css" type="text/css" media="screen" />
     <![endif]-->
-    
     <!-- web fonts -->
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,800,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Abel:400,600">
-
-    <!-- Bootstrap import -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Abel:400,600" type="text/css"><!-- Bootstrap import -->
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
-
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" type="text/css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script><!-- get our custom CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css"><!-- Facebook Open Graph -->
+    <meta property="og:title" content="Cleanweb">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.cleanweb.co">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Cleanweb">
+    <meta property="fb:admins" content="100002188895899"><!-- Affix.js call for the subnav bar -->
 
-    <!-- get our custom CSS -->
-    <link rel="stylesheet" href="style.css" type="text/css">
-
-    <!-- Facebook Open Graph -->
-    <meta property="og:title" content="Cleanweb" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.cleanweb.co" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="Cleanweb" />
-    <meta property="fb:admins" content="100002188895899" />
-
-    <!-- Affix.js call for the subnav bar -->
+    <!-- Make subnav bar collapse clean -->
     <script type="text/javascript" charset="utf-8">
       //<![CDATA[
       $(window).load(function(){
@@ -82,58 +68,51 @@
 
     <!-- We <3 Typekit for friendly beautiful webfonts! -->
     <script type="text/javascript" src="//use.typekit.net/cfg6qvz.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript">
+      try{Typekit.load();}catch(e){}
+    </script>
 
     <!-- Let Wordpress get the last word in -->
     <?php wp_head(); ?>
-</head>
+  </head>
 
-<!-- <body <?php body_class(); ?>> -->
-<body id="main" data-spy="scroll" data-target="#subnav" data-offset="50"> <!-- data-offset must be height of main nav -->
+  <!-- <body <?php body_class(); ?>> -->
+<body id="main" data-spy="scroll" data-target="#subnav" data-offset="50"><!-- data-offset must be height of main navbar -->
 
-<!-- BEGIN Facebook Open Graph -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=196524820509397";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!-- END Facebook Open Graph -->
+  <!-- BEGIN Facebook Open Graph -->
+  <div id="fb-root"></div>
+  <script type="text/javascript">
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=196524820509397";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- END Facebook Open Graph -->
 
   <header id="header">
-
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="nav">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>  <!-- 'icon-bar' is one-third of the 'hamburger nav' -->
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse"><span class="sr-only">Toggle navigation</span> <!-- 'icon-bar' is one-third of the 'hamburger nav' --></button>
         <div id="logo-container">
-          <a class="navbar-brand" href="/" style="padding: 0;">
-            <img src="/img/cleanweb-logo.png" class="logo" alt="Cleanweb Initiative logo">
-          </a>
+          <a class="navbar-brand" href="/" style="padding: 0;"><img src="/img/cleanweb-logo.png" class="logo" alt="Cleanweb Initiative logo"></a>
         </div>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
+      </div><!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-primary-collapse">
         <ul class="nav navbar-nav">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Offerings&nbsp;<b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Offerings&nbsp;</a>
             <ul class="dropdown-menu">
               <li><a href="#">APIs</a></li>
               <li><a href="#">Technical Resources</a></li>
               <li><a href="#">Datasets</a></li>
             </ul>
           </li>
-
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Communities&nbsp;<b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Communities&nbsp;</a>
             <ul class="dropdown-menu">
               <li><a href="#">New York</a></li>
               <li><a href="#">Los Angeles</a></li>
@@ -141,440 +120,439 @@
               <li><a href="#">More!</a></li>
             </ul>
           </li>
-
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events&nbsp;<b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events&nbsp;</a>
             <ul class="dropdown-menu">
               <li><a href="#">Some Hackathon Somewhere</a></li>
               <li><a href="#">A bunch of great stuff!</a></li>
               <li><a href="#">More hacks in more places</a></li>
             </ul>
           </li>
-
           <li><a href="#">Blog</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </nav>
-
   </header>
 
-<!-- 'inspiring the next 1000 companies...' --><!-- CURRENTLY ENABLED -->
-<div class="landing frame" id="what"><!-- LANDING -->
-  <div class="panel boxy header" id="what-header" style="min-height: 200px;">
-    <div class="row">
-
-      <div class="col-sm-6 striped">
-        <div class="row">
-          <div class="col-sm-10 col-sm-push-1 left">
-            <div class="v-centered">
-              <h1>Inspiring the next <span class="secondary">1,000</span> companies...</h1>
+  <!-- 'inspiring the next 1000 companies...' --><!-- CURRENTLY ENABLED -->
+  <div class="landing frame" id="what">
+    <!-- LANDING -->
+    <div class="panel boxy header" id="what-header" style="min-height: 200px;">
+      <div class="row">
+        <div class="col-sm-6 striped">
+          <div class="row">
+            <div class="col-sm-10 col-sm-push-1 left">
+              <div class="v-centered">
+                <h1>
+                  Inspiring the next <span class="secondary">1,000</span> companies...
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-10 col-sm-push-1 right">
+              <div class="v-centered">
+                <h1>
+                  ...that will have a massive economic &amp; environmental impact
+                </h1>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="col-sm-6">
-        <div class="row">
-          <div class="col-sm-10 col-sm-push-1 right">
-            <div class="v-centered">
-              <h1>...that will have a massive economic &amp; environmental impact</h1>
+    </div><!-- spacer? -->
+    <div class="container">
+      <!-- subtext panel for landing frame -->
+      <div class="row">
+        <div class="col-sm-10 col-sm-push-1">
+          <div class="panel panel-default boxy center" id="what-subtext">
+            <div class="panel-body">
+              <div class="v-centered">
+                <h2>
+                  There is a tremendous opportunity for companies to create meaning, improve lives, and do well in the process
+                </h2>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
+  </div><!-- /LANDING> -->
 
-  <!-- spacer? -->
+  <!-- subnav bar (starts under landing, scrolls up then fixes at top) -->
+  <!-- what do we do? how do we do it? who's part of it? where are we? who's talking about it? who's supporting it? -->
+  <div id="subnav-wrapper">
+    <!-- SUBNAV --><!-- wrapper so that when we magicly JS this from inline to fixed we don't lose layout -->
+    <nav class="navbar navbar-default navbar-inverse boxy" role="navigation" id="subnav">
+      <!-- let screenreaders ditch this toy -->
+      <div class="collapse navbar-collapse navbar-secondary-collapse">
+        <div class="container" style="margin: 0 auto; width: 768px;">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#what" title="what">What do we do?</a></li>
+            <li><a href="#how" title="how">How do we do it?</a></li>
+            <li><a href="#who" title="who">Who's part of it?</a></li>
+            <li><a href="#where" title="where">Where are we?</a></li>
+            <li><a href="#social" title="social">Who's talking about it?</a></li>
+            <li><a href="#sponsors" title="sponsors">Who's supporting it?</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div><!-- /SUBNAV -->
 
-  <div class="container"><!-- subtext panel for landing frame -->
-    <div class="row">
-      <div class="col-sm-10 col-sm-push-1">
-        <div class="panel panel-default boxy center" id="what-subtext">
-          <div class="panel-body">
+  <!-- Helping budding entrepreneurs, etc. (sell slide/'how do we do it') --><!-- CURRENTLY DISABLED -->
+  <div class="sell frame" id="sell">
+    <!-- SELL FRAME -->
+    <!-- Helping Budding Entrepreneurs... -->
+    <!--
+    <!--  <div class="row frame-head">
+    <!--    <div class="container">
+    <!--    <div class="col-sm-10 col-sm-push-1">
+    <!--      <div class="panel boxy">
+    <!--        <div class="v-centered">
+    <!--          <h2>At the
+    <!--            <span style="font-weight: bold;">Cleanweb Initiative</span>
+    <!--             we are...</h2>
+    <!--        </div>
+    <!--      </div>
+    <!--    </div>
+    <!--    </div>
+    <!--  </div>
+    <!--
+    <!--  <div class="container">
+    <!--    <h1 class="secondary">Helping <em>budding entrepreneurs</em> take their idea from a napkin sketch to a funded company</h1>
+    <!--  </div><!-- /container -->
+  </div><!-- /SELL FRAME -->
+
+  <!-- We help entrepreneurs in all kinds of ways w/ rollover behaviour --><!-- CURRENTLY ENABLED -->
+  <div class="how frame" id="how">
+    <!-- HOW FRAME -->
+    <!-- We help entrepreneurs in all kinds of ways... -->
+    <div class="row frame-head">
+      <div class="container">
+        <div class="col-sm-10 col-sm-push-1">
+          <div class="panel boxy">
             <div class="v-centered">
-              <h2>There is a tremendous opportunity for companies to create meaning, improve lives, and do well in the process</h2>
+              <h2>
+                We help entrepreneurs in<br />
+                all kinds of ways
+              </h2>
             </div>
-         </div>
-       </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-</div><!-- /LANDING> -->
+    <div class="background"><!-- sets up triangle background overlay -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-push-1 knobs-container">
 
+            <!-- leftmost knob column -->
+            <div class="col-sm-4 knob-column">
+              <div class="knob">
+                <img src="/img/knob-down.png" alt="" id="knob-left" class="knob">
+                <div class="knob-overlay">
+                  <h3>Facilitating Connections</h3>
+                  <img src="/img/knob-overlay-left.png" id="knob-overlay-left" alt="Connections icon" />
+                </div><!--/knob-OVERLAY -->
+              </div><!-- /knob itself -->
+              <div class="knob-copy">
+                <p>Hosting challenges &amp; hackathons that get innovators and developers working together on big issues</p>
+                <p>Hosting investor hangouts and meetings to educate and discuss the opportunity landscape</p>
+                <p>Helping companies find the talent they need to grow and succeed</p>
+                <p>Helping companies find customers, partners, acquisition targets / acquirers</p>
+              </div><!-- /knob-copy -->
+            </div><!-- /leftmost knob column -->
 
-<!-- subnav bar (starts under landing, scrolls up then fixes at top) -->
-    <!-- what do we do? how do we do it? who's part of it? where are we? who's talking about it? who's supporting it? -->
-<div id="subnav-wrapper"><!-- SUBNAV --><!-- wrapper so that when we magicly JS this from inline to fixed we don't lose layout -->
-  <nav class="navbar navbar-default navbar-inverse boxy" role="navigation" id="subnav">
-    <!-- let screenreaders ditch this toy -->
+            <!-- middle knob -->
+            <div class="col-sm-4 knob-column">
+              <div class="knob">
+                <img src="/img/knob-down.png" alt="" id="knob-center" class="knob">
+                <div class="knob-overlay">
+                  <h3>Creating Opportunities</h3>
+                  <img src="/img/knob-overlay-center.png" id="knob-overlay-center" alt="Expansion Icon" />
+                </div><!--/knob-OVERLAY -->
+              </div><!-- /knob itself -->
+              <div class="knob-copy">
+                <p>Hosting challenges &amp; hackathons that get innovators and developers working together on big issues</p>
+                <p>Hosting investor hangouts and meetings to educate and discuss the opportunity landscape</p>
+                <p>Helping companies find the talent they need to grow and succeed</p>
+                <p>Helping companies find customers, partners, acquisition targets / acquirers</p>
+              </div><!-- /knob-copy -->
+            </div><!-- /center knob column -->
+
+            <div class="col-sm-4 knob-column">
+              <div class="knob">
+                <img src="/img/knob-down.png" alt="" id="knob-right" class="knob">
+                <div class="knob-overlay">
+                  <h3>Providing Resources</h3>
+                  <img src="/img/knob-overlay-right.png" id="knob-overlay-right" alt="Tools Icon" />
+                </div><!--/knob-OVERLAY -->
+              </div><!-- /knob -->
+              <div class="knob-copy">
+                <p>Hosting challenges &amp; hackathons that get innovators and developers working together on big issues</p>
+                <p>Hosting investor hangouts and meetings to educate and discuss the opportunity landscape</p>
+                <p>Helping companies find the talent they need to grow and succeed</p>
+                <p>Helping companies find customers, partners, acquisition targets / acquirers</p>
+              </div><!-- /knob-copy -->
+            </div><!-- /right knob column -->
+
+          </div><!-- /knob-container -->
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- background -->
+
+    <div class="frame-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-sm-push-4">
+            <!-- JOIN NOW! - currently in a generic GET form with no info; revise this when spec recv'd -->
+            <form class="form-inline" role="form" action="https://cleanweb.grouptie.com">
+              <button type="submit" class="btn btn-default btn-block join">Join Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div><!-- /frame-footer -->
+
+  </div><!-- /HOW FRAME -->
+
+  <!-- red-based grid frame with fancy mouseover/click behavior --><!-- CURRENTLY ENABLED -->
+  <div class="who frame" id="who">
+    <!-- WHO FRAME -->
+    <!-- Who's in on this? -->
+    <div class="row frame-head">
+      <div class="container">
+        <div class="col-sm-10 col-sm-push-1">
+          <div class="panel boxy">
+            <div class="v-centered">
+              <h2>The <span style="font-weight: bold">Cleanweb Initiative</span> is
+                already hard at work,
+                helping amazing individuals and great companies
+                get to the next level</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   
-    <div class="collapse navbar-collapse navbar-secondary-collapse">
-      <div class="container" style="margin: 0 auto; width: 768px;">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#what" title="what">What do we do?</a></li>
-        <li><a href="#how" title="how">How do we do it?</a></li>
-        <li><a href="#who" title="who">Who's part of it?</a></li>
-        <li><a href="#where" title="where">Where are we?</a></li>
-        <li><a href="#social" title="social">Who's talking about it?</a></li>
-        <li><a href="#sponsors" title="sponsors">Who's supporting it?</a>
-      </ul>
-    </div>
-    </div>
-  </nav>
-</div><!-- /SUBNAV -->
-
-<!-- Helping budding entrepreneurs, etc. (sell slide/'how do we do it') --><!-- CURRENTLY DISABLED -->
-<div class="sell frame" id="sell"><!-- SELL FRAME -->
-  <!-- Helping Budding Entrepreneurs... -->
-  <!--
-  <!--  <div class="row frame-head">
-  <!--    <div class="container">
-  <!--    <div class="col-sm-10 col-sm-push-1">
-  <!--      <div class="panel boxy">
-  <!--        <div class="v-centered">
-  <!--          <h2>At the
-  <!--            <span style="font-weight: bold;">Cleanweb Initiative</span>
-  <!--             we are...</h2>
-  <!--        </div>
-  <!--      </div>
-  <!--    </div>
-  <!--    </div>
-  <!--  </div>
-  <!--
-  <!--  <div class="container">
-  <!--    <h1 class="secondary">Helping <em>budding entrepreneurs</em> take their idea from a napkin sketch to a funded company</h1>
-  <!--  </div><!-- /container --> 
-</div><!-- /SELL FRAME -->
-
-<!-- We help entrepreneurs in all kinds of ways w/ rollover behaviour --><!-- CURRENTLY ENABLED -->
-<div class="how frame" id="how"><!-- HOW FRAME -->
-  <!-- We help entrepreneurs in all kinds of ways... -->
-  <div class="row frame-head">
+    <!-- FILLER CONTENT -->
     <div class="container">
-    <div class="col-sm-10 col-sm-push-1">
-      <div class="panel boxy">
-        <div class="v-centered">
-          <h2>We help entrepreneurs in<br /> all kinds of ways</h2>
+      <h1 class="quote secondary">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat."</h1>
+    </div><!-- /FILLER -->
+
+  </div><!-- /WHO FRAME -->
+
+  <!-- where/map frame --><!-- CURRENTLY DISABLED -->
+  <div class="where frame" id="where">
+    <!-- WHERE FRAME -->
+    <!-- Where's the action? -->
+    <!-- map frame -->
+    <!-- <div class="row frame-head">
+<!==   <div class="container">
+<!==   <div class="col-sm-10 col-sm-push-1">
+<!==     <div class="panel boxy">
+<!==       <div class="v-centered">
+<!==         <h2>The <span style="font-weight: bold;">Cleanweb Initiative</span> 
+<!==           has events and communities
+<!==           around the world - find one near you</h2>
+<!==       </div>
+<!==     </div>
+<!==   </div>
+<!== </div>
+<!== </div>
+<!== 
+<!== <!== FILLER CONTENT -->
+    <!-- <div class="container">
+<!==   <h1>Here is some really big text.</h1>
+<!==   <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+<!==   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+<!==   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+<!==   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+<!==   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+<!==   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<!== </div><!== /container -->
+  </div><!-- /WHERE FRAME -->
+
+
+  <!-- featured event frame --><!-- CURRENTLY DISABLED -->
+  <div class="events frame" id="events">
+    <!-- EVENT FRAME -->
+    <!-- upcoming/featured events -->
+    <!--
+<!==  <div class="row frame-head">
+<!==    <div class="container">
+<!==    <div class="col-sm-10 col-sm-push-1">
+<!==      <div class="panel boxy">
+<!==        <div class="v-centered">
+<!==          <h2>Let's get together
+<!==           and make a difference</h2>
+<!==        </div>
+<!==      </div>
+<!==    </div>
+<!==  </div>
+<!==  </div>
+<!==
+<!==  <!== FILLER CONTENT -->
+    <!--  <div class="container">
+<!==    <h1 class="secondary">Featured Event</h1>
+<!==    <h1 class="secondary">NYC May Hackathon</h1>
+<!==    <p class="secondary">Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+<!==    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+<!==    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+<!==    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+<!==    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+<!==    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<!==  </div><!== /container -->
+  </div><!-- /EVENTS FRAME -->
+  <!-- social media/twitter plugin frame --><!-- CURRENTLY DISABLED -->
+  <div class="social frame" id="social">
+    <!-- SOCIAL FRAME -->
+    <!-- big twitter splat -->
+    <!--
+<!==  <div class="row frame-head">
+<!==    <div class="container">
+<!==    <div class="col-sm-10 col-sm-push-1">
+<!==      <div class="panel boxy">
+<!==        <div class="v-centered">
+<!==          <h2>Join the #Cleanweb</br>
+<!==            conversation on
+<!==            Twitter and Facebook</h2>
+<!==        </div>
+<!==      </div>
+<!==    </div>
+<!==  </div>
+<!==  </div>
+<!==
+<!==  <!== FILLER CONTENT -->
+    <!--  <div class="container">
+<!==    <h1 class="secondary">Here is some really big text.</h1>
+<!==    <p class="secondary">Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+<!==    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+<!==    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+<!==    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+<!==    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+<!==    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<!==  </div><!== /container -->
+  </div><!-- /SOCIAL FRAME -->
+
+  <!-- sponsor frame --><!--CURRENTLY ENABLED-->
+  <div class="sponsors frame" id="sponsors">
+    <!-- SPONSOR FRAME -->
+    <!-- with a great big thanks to... -->
+    <div class="row frame-head"><!-- FRAME HEADER -->
+      <div class="container">
+        <div class="col-sm-10 col-sm-push-1">
+          <div class="panel boxy">
+            <div class="v-centered">
+              <h2>The <span style="font-weight: bold;">Cleanweb Initiative</span> is supported by some of the most innovative companies in the world.</h2>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  </div>
+    </div><!-- /FRAME HEADER -->
 
-  <div class="background">
+    <div class="container">
+      <!-- Sponsor grid -->
+      <div class="row sponsor-grid">
+
+        <div class="col-sm-5 col-sm-push-1"><!-- LEADERSHIP level -->
+          <div class="row"><h3>Leadership</h3></div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <p>FACEBOOK!</p>
+            </div>
+            <div class="col-sm-6">
+              <p>RockPort Capital</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>TERRA Venture Partners</p>
+            </div>
+            <div class="col-sm-6">
+              <p>Black Coral Capital</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <p>American Clear Skies</p>
+            </div>
+            <div class="col-sm-4">
+              <p>Greenstart</p>
+            </div>
+            <div class="col-sm-4">
+              <p>yerdle</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Morh Davidow</p>
+            </div>
+            <div class="col-sm-6">
+              <p>Sungevity</p>
+            </div>
+          </div>
+        </div><!-- /LEADERSHIP level -->
+
+        <div class="col-sm-3 col-sm-push-2"><!-- PARTNERSHIP level -->
+          <div class="row"><h3>Partnership</h3></div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Department of Energy</p>
+            </div>
+            <div class="col-sm-6">
+              <p>SXSW/Eco</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <p>The Climate Group</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-sm-push-1">
+              <p>C40 Cities</p>
+            </div>
+            <div class="col-sm-4 col-sm-push-2">
+              <p>Office of Science and Technology Policy</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-sm-push-1">
+              <p>NYC.gov</p>
+            </div>
+            <div class="col-sm-4 col-sm-push-2">
+              <p>Something that looks like Sealand?</p>
+            </div>
+          </div>
+        </div><!-- /PARTNERSHIP level -->
+
+      </div>
+    </div><!--/CONTAINER for Sponsor Grid-->
+  </div><!--/SPONSOR FRAME -->
+
+  <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-10 col-md-push-1 knobs-container">
-
-          <div class="col-sm-4 knob-column">
-            <div class="knob">
-              <img src="/img/knob-down.png" alt="" id="knob-left" class="knob" />
-              <div class="knob-overlay">
-                <h3>Facilitating Connections</h3>
-                <img src="/img/knob-overlay-left.png" id="knob-overlay-left" alt="Connections icon" />
-              </div><!--/knob-OVERLAY -->
-            </div><!-- /knob -->
-            <div class="knob-copy">
-              <p>Hosting challenges &amp; hackathons that get innovators and developers working together on big issues</p>
-              <p>Hosting investor hangouts and meetings to educate and discuss the opportunity landscape</p>
-              <p>Helping companies find the talent they need to grow and succeed</p>
-              <p>Helping companies find customers, partners, acquisition targets / acquirers </p>
-            </div>
-          </div>
-    
-          <div class="col-sm-4 knob-column">
-            <div class="knob">
-              <img src="/img/knob-down.png" alt="" id="knob-center" class="knob" />
-              <div class="knob-overlay">
-                <h3>Creating Opportunities</h3>
-                <img src="/img/knob-overlay-center.png" id="knob-overlay-center" alt="Expansion Icon" />
-              </div><!--/knob-OVERLAY -->
-            </div><!-- /knob -->
-            <div class="knob-copy">
-              <p>Hosting challenges &amp; hackathons that get innovators and developers working together on big issues</p>
-              <p>Hosting investor hangouts and meetings to educate and discuss the opportunity landscape</p>
-              <p>Helping companies find the talent they need to grow and succeed</p>
-              <p>Helping companies find customers, partners, acquisition targets / acquirers </p>
-            </div>
-          </div>
-    
-          <div class="col-sm-4 knob-column">
-            <div class="knob">
-              <img src="/img/knob-down.png" alt="" id="knob-right" class="knob" />
-              <div class="knob-overlay">
-                <h3>Providing Resources</h3>
-                <img src="/img/knob-overlay-right.png" id="knob-overlay-right" alt="Tools Icon" />
-              </div><!--/knob-OVERLAY -->
-            </div><!-- /knob -->
-            <div class="knob-copy">
-              <p>Hosting challenges &amp; hackathons that get innovators and developers working together on big issues</p>
-              <p>Hosting investor hangouts and meetings to educate and discuss the opportunity landscape</p>
-              <p>Helping companies find the talent they need to grow and succeed</p>
-              <p>Helping companies find customers, partners, acquisition targets / acquirers </p>
-            </div>
-          </div>
-
-        </div><!-- /knob-container -->
-      </div><!-- /row -->
-    </div><!-- /container -->
-  </div><!-- background -->
-
-  <div class="frame-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 col-sm-push-4">
-
-          <!-- JOIN NOW! -- currently in a generic GET form with no info; revise this when spec recv'd -->
-          <form class="form-inline" role="form" action="https://cleanweb.grouptie.com">
-            <button type="submit" class="btn btn-default btn-block join">Join Now</button>
-          </form>
-
-        </div>
+        <img class="logo" src="/img/cleanweb-logo.png" alt="Cleanweb Initiative logo" style="margin-left: auto; margin-right: auto; margin-top: 60px; margin-bottom: 60px;">
+      </div>
+      <div class="row center">
+        <p style="padding-bottom: 35px;">
+          <a href="#" alt="Contact Us">Contact Us</a> | <a href="#" alt="Privacy Policy">Privacy Policy</a> | All Rights Reserved by The Cleanweb Initiative | Cleanweb 2013
+        </p>
       </div>
     </div>
-  </div>
-</div><!-- /HOW FRAME -->
-
-<!-- red-based grid frame with fancy mouseover/click behavior --><!-- CURRENTLY DISABLED -->
-<div class="who frame" id="who"><!-- WHO FRAME -->
-  <!-- Who's in on this? -->
-  <!--  <div class="row frame-head">
-  <!--    <div class="container">
-  <!--    <div class="col-sm-10 col-sm-push-1">
-  <!--      <div class="panel boxy">
-  <!--        <div class="v-centered">
-  <!--          <h2>The <span style="font-weight: bold">Cleanweb Initiative</span> is
-  <!--            already hard at work,
-  <!--            helping amazing individuals and great companies
-  <!--            get to the next level</h2>
-  <!--        </div>
-  <!--      </div>
-  <!--    </div>
-  <!--  </div>
-  <!--  </div>
-  <!--
-  <!--  <!-- FILLER CONTENT -->
-  <!--  <div class="container">
-  <!--    <h1 class="quote secondary">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  <!--        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  <!--        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  <!--        consequat."</h1>
-  <!--  </div><!-- /container -->  
-</div><!-- /WHO FRAME -->
-
-<!-- where/map frame --><!-- CURRENTLY DISABLED -->
-<div class="where frame" id="where"><!-- WHERE FRAME -->
-  <!-- Where's the action? -->
-  <!-- map frame -->
-  <!-- <div class="row frame-head">
-  <!--   <div class="container">
-  <!--   <div class="col-sm-10 col-sm-push-1">
-  <!--     <div class="panel boxy">
-  <!--       <div class="v-centered">
-  <!--         <h2>The <span style="font-weight: bold;">Cleanweb Initiative</span> 
-  <!--           has events and communities
-  <!--           around the world - find one near you</h2>
-  <!--       </div>
-  <!--     </div>
-  <!--   </div>
-  <!-- </div>
-  <!-- </div>
-  <!-- 
-  <!-- <!-- FILLER CONTENT -->
-  <!-- <div class="container">
-  <!--   <h1>Here is some really big text.</h1>
-  <!--   <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  <!--   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  <!--   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  <!--   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  <!--   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  <!--   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <!-- </div><!-- /container -->
-</div><!-- /WHERE FRAME -->
-
-<!-- featured event frame --><!-- CURRENTLY DISABLED -->
-<div class="events frame" id="events"><!-- EVENT FRAME -->
-  <!-- upcoming/featured events -->
-  <!--
-  <!--  <div class="row frame-head">
-  <!--    <div class="container">
-  <!--    <div class="col-sm-10 col-sm-push-1">
-  <!--      <div class="panel boxy">
-  <!--        <div class="v-centered">
-  <!--          <h2>Let's get together
-  <!--           and make a difference</h2>
-  <!--        </div>
-  <!--      </div>
-  <!--    </div>
-  <!--  </div>
-  <!--  </div>
-  <!--
-  <!--  <!-- FILLER CONTENT -->
-  <!--  <div class="container">
-  <!--    <h1 class="secondary">Featured Event</h1>
-  <!--    <h1 class="secondary">NYC May Hackathon</h1>
-  <!--    <p class="secondary">Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  <!--    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  <!--    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  <!--    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  <!--    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  <!--    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <!--  </div><!-- /container -->  
-</div><!-- /EVENTS FRAME -->
-
-<!-- social media/twitter plugin frame --><!-- CURRENTLY DISABLED -->
-<div class="social frame" id="social"><!-- SOCIAL FRAME -->
-  <!-- big twitter splat -->
-  <!--
-  <!--  <div class="row frame-head">
-  <!--    <div class="container">
-  <!--    <div class="col-sm-10 col-sm-push-1">
-  <!--      <div class="panel boxy">
-  <!--        <div class="v-centered">
-  <!--          <h2>Join the #Cleanweb</br>
-  <!--            conversation on
-  <!--            Twitter and Facebook</h2>
-  <!--        </div>
-  <!--      </div>
-  <!--    </div>
-  <!--  </div>
-  <!--  </div>
-  <!--
-  <!--  <!-- FILLER CONTENT -->
-  <!--  <div class="container">
-  <!--    <h1 class="secondary">Here is some really big text.</h1>
-  <!--    <p class="secondary">Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  <!--    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  <!--    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  <!--    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  <!--    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  <!--    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <!--  </div><!-- /container -->
-</div><!-- /SOCIAL FRAME -->
-
-<!-- sponsor frame --><!--CURRENTLY DISABLED-->
-<div class="sponsors frame" id="sponsors"><!-- SPONSOR FRAME -->
-  <!-- with a great big thanks to... -->
-  <!--
-  <!--
-  <!--  <div class="row frame-head">
-  <!--    <div class="container">
-  <!--    <div class="col-sm-10 col-sm-push-1">
-  <!--      <div class="panel boxy">
-  <!--        <div class="v-centered">
-  <!--          <h2>The <span style="font-weight: bold;">Cleanweb Initiative</span> is supported by some of the
-  <!--            most innovative companies in the world.</h2>
-  <!--        </div>
-  <!--      </div>
-  <!--    </div>
-  <!--  </div>
-  <!--  </div>
-  <!--
-  <!--      <div class="container secondary"><!-- Sponsor grid -->
-  <!--        <div class="row sponsor-grid">
-  <!--          <div class="col-sm-5 col-sm-push-1"><!-- LEADERSHIP level -->
-  <!--            <div class="row">
-  <!--              <h3>Leadership</h3>
-  <!--            </div>
-  <!--            <div class="row">
-  <!--              <div class="col-sm-6">
-  <!--                <p>FACEBOOK!</p>
-  <!--              </div>
-  <!--              <div class="col-sm-6">
-  <!--                <p>RockPort Capital</p>
-  <!--              </div>
-  <!--            </div>
-  <!--            <div class="row">
-  <!--              <div class="col-sm-6">
-  <!--                <p>TERRA Venture Partners</p>
-  <!--              </div>
-  <!--              <div class="col-sm-6">
-  <!--                <p>Black Coral Capital</p>
-  <!--              </div>
-  <!--            </div>
-  <!--            <div class="row">
-  <!--              <div class="col-sm-4">
-  <!--                <p>American Clear Skies</p>
-  <!--              </div>
-  <!--              <div class="col-sm-4">
-  <!--                <p>Greenstart</p>
-  <!--              </div>
-  <!--              <div class="col-sm-4">
-  <!--                <p>yerdle<p>
-  <!--              </div>
-  <!--            </div>
-  <!--            <div class="row">
-  <!--              <div class="col-sm-6">
-  <!--                <p>Morh Davidow</p>
-  <!--              </div>
-  <!--              <div class="col-sm-6">
-  <!--                <p>Sungevity</p>
-  <!--              </div>
-  <!--            </div>
-  <!--          </div>
-  <!--          <div class="col-sm-3 col-sm-push-2"><!-- PARTNERSHIP level -->
-  <!--            <div class="row">
-  <!--              <h3>Partnership</h3>
-  <!--            </div>
-  <!--
-  <!--            <div class="row">
-  <!--              <div class="col-sm-6">
-  <!--                <p>Department of Energy</p>
-  <!--              </div>
-  <!--              <div class="col-sm-6">
-  <!--                <p>SXSW/Eco</p>
-  <!--              </div>
-  <!--            </div>
-  <!--
-  <!--            <div class="row">
-  <!--              <div class="col-sm-12">
-  <!--                <p>The Climate Group</p>
-  <!--              </div>
-  <!--            </div>
-  <!--
-  <!--            <div class="row">
-  <!--              <div class="col-sm-4 col-sm-push-1">
-  <!--                <p>C40 Cities</p>
-  <!--              </div>
-  <!--              <div class="col-sm-4 col-sm-push-2">
-  <!--                <p>Office of Science and Technology Policy</p>
-  <!--              </div>
-  <!--            </div>
-  <!--
-  <!--            <div class="row">
-  <!--              <div class="col-sm-4 col-sm-push-1">
-  <!--                <p>NYC.gov</p>
-  <!--              </div>
-  <!--              <div class="col-sm-4 col-sm-push-2">
-  <!--                <p>Something that looks like Sealand?</p>
-  <!--              </div>
-  <!--            </div>
-  <!--
-  <!--            </div>
-  <!--          </div>
-  <!--        </div>
-  <!--      </div><!--/CONTAINER for Sponsor Grid-->
-</div><!--/SPONSOR FRAME -->
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <img class="logo" src="/img/cleanweb-logo.png" alt="Cleanweb Initiative logo" 
-        style="margin-left: auto; margin-right: auto; margin-top: 60px; margin-bottom: 60px;" />
-    </div>
-
-    <div class="row center">
-      <p style="padding-bottom: 35px;">
-        <a href="#" alt="Contact Us">Contact Us</a> | 
-        <a href="#" alt="Privacy Policy">Privacy Policy</a> | 
-        All Rights Reserved by The Cleanweb Initiative | 
-        Cleanweb 2013
-      </p>
-  </div>
-</footer>
+  </footer>
 
 </body>
 </html>
