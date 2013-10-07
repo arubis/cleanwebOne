@@ -2,16 +2,16 @@
 
  - Coordinate transparencies/translucencies
  	- oh good god am i actually going to replicate blend:multiply in js?
- - rename all '#what' to #landing and cascade accordingly
+ + rename all '#what' to #landing and cascade accordingly
 
 # CONTENT #
 
- - add image assets from wayne
- - get copy from chris
+ + add image assets from wayne -- checking off, then running perframe
+ - get copy from chris -- requested, may be in asana?
 
 # LAYOUT #
 
- - set min-height of each frame
+ - set min-height of each frame -- nec
  - Clean up collapse of main nav to hide _all_ but hamburger menu @maybe
 
 # OUT #
@@ -32,16 +32,16 @@
 
 ## what / 'whiteboard' ##
 
- - reënable frame
- - build LAYOUT
- - add footer
- - join us btn
- - whiteboard image
-   - add
-   - center
-   - collapse
- - cleanup
- - checkin
+ + reënable frame
+ + build LAYOUT
+ + add footer
+ + join us btn
+ + whiteboard image
+   + add
+   + center
+   + collapse
+ + cleanup
+ + checkin
 
 ## how / 'we help in all sorts of ways' ## -- good for now, awaiting feedback/Syu activity
 
@@ -79,4 +79,4 @@
  - 'leadership' should be left-justify -- double-check this
  + change color of text
 
-## footer ##
+## footer ## @priority-HEAD

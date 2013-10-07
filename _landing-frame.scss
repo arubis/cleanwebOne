@@ -28,6 +28,9 @@ $landing-footer-color: rgb(0, 0, 0);
   border-width: 1px;
   border-color: black;
   border-style: solid;
+  .row {
+    min-height: 200px;
+  }
 }
 
 /* top left landing header text */
@@ -35,6 +38,10 @@ $landing-footer-color: rgb(0, 0, 0);
   font-size: 32px;
   font-weight: 900;
   line-height: $lineheight;
+}
+
+#landing * .striped {
+  background: url("/img/cross-thatch.png") repeat;
 }
 
 /* top right landing header text */

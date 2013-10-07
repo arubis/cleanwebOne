@@ -61,12 +61,20 @@ body {
   border-style: solid;
 }
 
+#landing-header .row {
+  min-height: 200px;
+}
+
 /* top left landing header text */
 
 #landing * .left * h1 {
   font-size: 32px;
   font-weight: 900;
   line-height: 1.35;
+}
+
+#landing * .striped {
+  background: url("/img/cross-thatch.png") repeat;
 }
 
 /* top right landing header text */
