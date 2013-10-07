@@ -25,6 +25,12 @@ $how-footer-color: rgb(99, 133, 84);
   }
 }
 
+div.knob {
+  width: 219px;                   // yes, we have to specify this manually
+  margin-left: auto;              // for centering purposes. This will be 
+  margin-right: auto;             // obsoleted by flexbox SOON. Thank goodness.
+}
+
 .knob-copy {
   text-align: center;
   font-size: 11pt;
