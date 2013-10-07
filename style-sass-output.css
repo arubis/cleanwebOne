@@ -383,8 +383,8 @@ footer {
     margin: 10px 10px; }
 
 /*
- * _navbar.scss
- * SCSS partial including rules for the main (top) navbar
+ * _subnav.scss
+ * SCSS partial including rules for the sub (black) navbar
  * on cleanwebOne design. 
  * 
  * initial creation: 6 Oct 2013 dylan@dylanfitzgerald.net
@@ -397,10 +397,9 @@ footer {
   min-height: 0;
   background-color: rgba(51, 51, 51, 0.9);
   margin: 0; }
-
-#subnav * a {
-  font-size: 10px;
-  color: #ffffff; }
+  #subnav * a {
+    font-size: 11px;
+    color: #ffffff; }
 
 #subnav.affix {
   position: fixed;
@@ -412,6 +411,9 @@ footer {
 
 #subnav-wrapper {
   background: rgba(51, 51, 51, 0.9); }
+
+#subnav * .nav li a {
+  padding: 10px 0px; }
 
 /* And that's the mixin game. */
 /*** Let's play with fonts! */

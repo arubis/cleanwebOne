@@ -74,7 +74,7 @@
       //<![CDATA[
       $(window).load(function(){
         $(function() {
-          $('#subnav-wrapper').height($("#subnav").height());  // Holds place of subnav on collapse if needed for layout
+        //  $('#subnav-wrapper').height($("#subnav").height());  // Holds place of subnav on collapse if needed for layout
           $('#subnav').affix({
           offset: { top: $('#subnav').offset().top - 50 }      // offset value here should be height of main nav
           });
@@ -198,8 +198,8 @@
     <nav class="navbar navbar-default navbar-inverse boxy" role="navigation" id="subnav">
       <!-- let screenreaders ditch this toy -->
       <div class="collapse navbar-collapse navbar-secondary-collapse">
-        <div class="container" style="margin: 0 auto; width: 768px;">
-          <ul class="nav navbar-nav">
+        <div class="container" style="margin: 0 auto;">
+          <ul class="nav nav-justified">
             <li class="active"><a href="#what" title="what">What do we do?</a></li>
             <li><a href="#how" title="how">How do we do it?</a></li>
             <li><a href="#who" title="who">Who's part of it?</a></li>

@@ -1,6 +1,6 @@
 /*
- * _navbar.scss
- * SCSS partial including rules for the main (top) navbar
+ * _subnav.scss
+ * SCSS partial including rules for the sub (black) navbar
  * on cleanwebOne design. 
  * 
  * initial creation: 6 Oct 2013 dylan@dylanfitzgerald.net
@@ -15,11 +15,10 @@
   min-height: 0;
   background-color: rgba(51, 51, 51, 0.9);
   margin: 0;
-}
-
-#subnav * a {
-  font-size: 10px;
-  color: #ffffff;
+  * a {
+    font-size: 11px;
+    color: #ffffff;
+  }
 }
 
 #subnav.affix {
@@ -34,4 +33,8 @@
 
 #subnav-wrapper {
   background: rgba(51, 51, 51, 0.9);
+}
+
+#subnav * .nav li a {
+  padding: 10px 0px;
 }

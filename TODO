@@ -2,17 +2,17 @@
 
  - Coordinate transparencies/translucencies
  	- oh good god am i actually going to replicate blend:multiply in js?
- + rename all '#what' to #landing and cascade accordingly
 
 # CONTENT #
 
- + add image assets from wayne -- checking off, then running perframe
  - get copy from chris -- requested, may be in asana?
 
 # LAYOUT #
 
  - set min-height of each frame -- nec
- - Clean up collapse of main nav to hide _all_ but hamburger menu @maybe
+ - Clean up collapse of main nav to hide _all_ but hamburger menu -- maybe
+ + clean up subnav so content is centered
+ - move internal anchor targets so subnav clicks/triggers line up properly -- later
 
 # OUT #
 
@@ -30,25 +30,14 @@
 
 ## LANDING ## -- good for now!
 
-## what / 'whiteboard' ##
-
- + reënable frame
- + build LAYOUT
- + add footer
- + join us btn
- + whiteboard image
-   + add
-   + center
-   + collapse
- + cleanup
- + checkin
+## what / 'whiteboard' ## -- good for now!
 
 ## how / 'we help in all sorts of ways' ## -- good for now, awaiting feedback/Syu activity
 
   - tie in Syu
   0 clean up collapse behavior -- later / after JS
 
-## who / contributors / checkerboard-red ## @priority-HEAD
+## who / contributors / checkerboard-red ## @priority-2
 
  + reënable frame
  + build LAYOUT
@@ -59,7 +48,7 @@
  - add elements with small text overlay
  - hide above
  - add frame footer
- - clean up collapse @priority-HEAD
+ - clean up collapse @priority
  - tie in Syu
 
 ## where / map ##
@@ -68,7 +57,7 @@
 
 ## social ## 
 
-## sponsors ## @priority-1
+## sponsors ## @priority-HEAD
 
  + reënable frame
  - replace stand-in text with actual logos
@@ -79,4 +68,4 @@
  - 'leadership' should be left-justify -- double-check this
  + change color of text
 
-## footer ## @priority-HEAD
+## footer ## @priority-1
