@@ -138,6 +138,12 @@ body {
   color: white;
 }
 
+#what h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+}
+
 /*
  * _how-frame.scss
  * SCSS partial including rules for the "#how" frame (green knobs) on 
@@ -579,6 +585,7 @@ footer img.logo {
 
 h1 {
   font-size: 40px;
+  line-height: 1.35;
 }
 
 h1,
@@ -671,6 +678,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 0;
   background-color: white;
+  font-weight: 300;
 }
 
 .frame-footer {

@@ -10,6 +10,8 @@ body {
 
 /* Navbar */
 $navheight: 50px;    // If this changes, there's changes in the HTML too! search for 'main nav'
+$lineheight: 1.35;   // affects spacing in headers
+
 
 /* set color scheme per frame -- invoked in frame partials 
  * Key: $-color is used in frame header and unmodified text elements
@@ -48,6 +50,7 @@ $navheight: 50px;    // If this changes, there's changes in the HTML too! search
 
 h1 {
   font-size: 40px;
+  line-height: $lineheight;
 }
 
 h1, h2, h3, h4, h5, h6  {
@@ -122,6 +125,7 @@ h1, h2, h3, h4, h5, h6  {
   margin-top: 0;
   margin-bottom: 0;
   background-color: rgba(255,255,255,1);
+  font-weight: 300;
 }
 
 .frame-footer {

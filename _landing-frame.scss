@@ -30,19 +30,18 @@ $landing-footer-color: rgb(0, 0, 0);
   border-style: solid;
 }
 
-$lineheighthere: 1.35;
 /* top left landing header text */
 #landing * .left * h1 {
   font-size: 32px;
   font-weight: 900;
-  line-height: $lineheighthere;
+  line-height: $lineheight;
 }
 
 /* top right landing header text */
 #landing * .right * h1 {
   font-size: 24px;
   font-weight: 900;
-  line-height: $lineheighthere;
+  line-height: $lineheight;
 }
 
 /* landing footer text, before subnav */
@@ -59,7 +58,7 @@ $lineheighthere: 1.35;
   * h2 {
     font-size: 22px;
     font-weight: 900;
-    line-height: $lineheighthere;
+    line-height: $lineheight;
     padding-left: 100px;
     padding-right: 100px;
   }

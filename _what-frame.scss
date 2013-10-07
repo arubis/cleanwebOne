@@ -16,4 +16,9 @@ $what-bg: rgba(220, 182, 37, 1); /* set background -- can set with image if pref
 
 #what {
  @include frame-style($what-bg, $what-color, $what-secondary-color, $what-emph-color);
+ h1 {
+ 	text-align: center;
+ 	font-size: 26px;
+ 	font-weight: 600;
+ }
 }
