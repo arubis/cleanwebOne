@@ -60,6 +60,10 @@
       try{Typekit.load();}catch(e){}
     </script>
 
+    <!-- include jQuery plugin for b&w fade effect of sponsors -->
+    <script src="js/jQuery.BlackAndWhite.js"></script>
+    <!-- source: http://gianlucaguarini.github.io/jQuery.BlackAndWhite/ -->
+
     <!-- Facebook Open Graph -->
     <meta property="og:title" content="Cleanweb">
     <meta property="og:type" content="website">
@@ -101,6 +105,29 @@
         }(document, 'script', 'facebook-jssdk'));
   </script>
   <!-- END Facebook Open Graph -->
+
+  <script type="text/javascript">
+  $(window).load(function(){
+    $('.bwWrapper').BlackAndWhite({
+        hoverEffect : true, // default true
+        // set the path to BnWWorker.js for a superfast implementation
+        webworkerPath : false,
+        // for the images with a fluid width and height 
+        responsive:true,
+        // to invert the hover effect
+        invertHoverEffect: false,
+        // this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+        intensity:1,
+        speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+            fadeIn: 200, // 200ms for fadeIn animations
+            fadeOut: 800 // 800ms for fadeOut animations
+        },
+        onImageReady:function(img) {
+          // this callback gets executed anytime an image is converted
+        }
+      });
+    });
+  </script>
 
   <header id="header">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="nav">
@@ -517,46 +544,84 @@
 
     <div class="container">
       <!-- Sponsor grid -->
+
+<!-- 
+
+<a href="http://www.sungevity.com/" target="_new"><img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/Supporter-Sungevity.gif" /></a>
+<a href="http://www.wsgr.com" target="_new"><img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/Supporter-WilsonSonsiniGoodrich.jpg" /></a>
+<a href="http://www.mdv.com" target="_new"><img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/Supporter_MohrDavidow.png" /></a>
+<a href="http://www.cleanskies.org/" target="_new"><img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/Supporter-AmericanCleanSkiesFoundation.png" /></a>
+<a href="http://greenstart.com" target="_new"><img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/Supporter-Greenstart.png" /></a>
+<a href="http://www.hodgsonruss.com/" target="_new"><img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/Supporter-HodgsonRuss.jpg" /></a>
+<a href="http://www.mintz.com/" target="_new"><img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/Supporter-MintzLevin.jpg" /></a>
+<a href="http://utilities.simpleenergy.com/" target="_new"><img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/Supporter-SimpleEnergy.jpg" /></a> -->
+
       <div class="row sponsor-grid">
 
-        <div class="col-sm-5 col-sm-push-1"><!-- LEADERSHIP level -->
-          <div class="row"><h3>Leadership</h3></div>
+        <div class="col-xs-6 col-sm-6 col-sm-offset-1"><!-- LEADERSHIP level -->
+          <div class="row">
+            <div class="container">
+              <h3>Leadership</h3>
+            </div>
+          </div>
 
           <div class="row">
             <div class="col-sm-6">
-              <p>FACEBOOK!</p>
+              <p>
+                <a href="http://www.facebook.com" title="Facebook" target="_new" class="bwWrapper">
+                  <img src="/img/sponsors/Supporter-Facebook.png" alt="Facebook"  />
+                </a>
+              </p>
             </div>
             <div class="col-sm-6">
-              <p>RockPort Capital</p>
+              <p>
+                <a href="http://www.rockportcap.com" title="RockPort Capital" target="_new" class="bwWrapper" width="168px" height="46px">
+                  <img src="/img/sponsors/Supporter-RockportCapital.gif" alt="Rockport Capital"  />
+                </a>
+              </p>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6">
-              <p>TERRA Venture Partners</p>
+              <p>
+                <a href="http://www.terravp.com" title="TERRA Venture Partners" target="_new" class="bwWrapper" width="168px" height="62px">
+                  <img src="/img/sponsors/Supporter-TerraVenturePartners.jpg" alt="TERRA Venture Partners"  />
+                </a>
+              </p>
             </div>
             <div class="col-sm-6">
-              <p>Black Coral Capital</p>
+              <p>
+                <a href="http://www.blackcoralcapital.com" title="Black Coral Capital" target="_new" class="bwWrapper" width="121px" height="109px">
+                  <img src="/img/sponsors/Supporter-BlackCoralCapital.png" alt="Black Coral Capital"  />
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- 
+          <div class="row">
+            <div class="col-sm-4">
+              <p>
+                <a href="http://www..com/" title="American Clear Skies">
+                  <img src="/img/sponsors/Supporter-bw-.jpg" alt="">
+                </a>
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <p><a href="http://www..com/" title="Greenstart"><img src="/img/sponsors/Supporter-bw-.jpg" alt=""></a></p>
+            </div>
+            <div class="col-sm-4">
+              <p><a href="http://www..com/" title="yerdle"><img src="/img/sponsors/Supporter-bw-.jpg" alt=""></a></p>
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-4">
-              <p>American Clear Skies</p>
-            </div>
-            <div class="col-sm-4">
-              <p>Greenstart</p>
-            </div>
-            <div class="col-sm-4">
-              <p>yerdle</p>
-            </div>
-          </div>
-          <div class="row">
             <div class="col-sm-6">
-              <p>Morh Davidow</p>
+              <p><a href="http://www..com/" title="Morh Davidow"><img src="/img/sponsors/Supporter-bw-.jpg" alt=""></a></p>
             </div>
             <div class="col-sm-6">
-              <p>Sungevity</p>
+              <p><a href="http://www..com/" title="Sungevity"><img src="/img/sponsors/Supporter-bw-.jpg" alt=""></a></p>
             </div>
-          </div>
+          </div> -->
         </div><!-- /LEADERSHIP level -->
 
         <div class="col-sm-3 col-sm-push-2"><!-- PARTNERSHIP level -->

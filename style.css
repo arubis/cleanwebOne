@@ -723,3 +723,21 @@ h6 {
   font-size: 14pt;
   color: #666666;
 }
+
+/*** for b+w fade effect ***/
+
+.bwWrapper {
+  position: relative;
+  display: block;
+}
+
+canvas.BWfade {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  height: inherit;
+  width: inherit;
+}
+
+/*** end b+w fade effect formatting ***/
