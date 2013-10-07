@@ -2,6 +2,7 @@
 
  - Coordinate transparencies/translucencies
  	- oh good god am i actually going to replicate blend:multiply in js?
+ - rename all '#what' to #landing and cascade accordingly
 
 # CONTENT #
 
@@ -29,7 +30,18 @@
 
 ## LANDING ## -- good for now!
 
-## sell / 'whiteboard' ##
+## what / 'whiteboard' ##
+
+ - reënable frame
+ - build LAYOUT
+ - add footer
+ - join us btn
+ - whiteboard image
+   - add
+   - center
+   - collapse
+ - cleanup
+ - checkin
 
 ## how / 'we help in all sorts of ways' ## -- good for now, awaiting feedback/Syu activity
 

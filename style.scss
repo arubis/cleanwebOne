@@ -27,8 +27,8 @@ $navheight: 50px;    // If this changes, there's changes in the HTML too! search
 }
 
 /*** SUPPORT FILES FOR FRAMES -- includes frame-specific variables internally ***/
+@import "landing-frame";
 @import "what-frame";
-@import "sell-frame";
 @import "how-frame";
 @import "who-frame";
 @import "where-frame";

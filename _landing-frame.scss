@@ -1,0 +1,74 @@
+/*
+ * _landing-frame.scss
+ * SCSS partial including rules for the "#landing" (landing) frame on 
+ * cleanwebOne design. 
+ * 
+ * initial creation: 6 Oct 2013 dylan@dylanfitzgerald.net
+ *
+ */
+
+/* set up background */
+/* n.b. background-size: cover is added later in the mixin invocation */
+$landing-bg: url("img/mobile-phone-bg.jpg") no-repeat center center;
+
+/* set up color scheme */
+$landing-color: rgb(255, 255, 255);
+$landing-secondary-color: rgb(86, 196, 149);
+$landing-emph-color: rgb(86, 196, 149);
+$landing-footer-color: rgb(0, 0, 0);
+
+#landing { 
+  @include frame-style($landing-bg, $landing-color, $landing-secondary-color, $landing-emph-color);
+  min-height: 610px;
+  padding-top: $navheight;
+  background-size: cover;
+}
+
+#landing-header {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+$lineheighthere: 1.35;
+/* top left landing header text */
+#landing * .left * h1 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: $lineheighthere;
+}
+
+/* top right landing header text */
+#landing * .right * h1 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: $lineheighthere;
+}
+
+/* landing footer text, before subnav */
+#landing-subtext { 
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+
+  .panel-body {
+    padding: 0px; 
+    margin-top: 220px;
+    min-height: 150px;
+  }
+
+  * h2 {
+    font-size: 22px;
+    font-weight: 900;
+    line-height: $lineheighthere;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.landing .panel {
+  background-color: rgba(129,212,175,0.7);  // <-- this is wrong now, but
+  * {                                       // a TOTAL PAIN IN THE ASS to
+    margin-top: 0;                          // fix because the designer
+    font-weight: bold;                      // wants blend-multiply
+  }
+}

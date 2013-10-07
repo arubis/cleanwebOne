@@ -19,8 +19,8 @@ body {
 /*** SUPPORT FILES FOR FRAMES -- includes frame-specific variables internally ***/
 
 /*
- * _what-frame.scss
- * SCSS partial including rules for the "#what" (landing) frame on 
+ * _landing-frame.scss
+ * SCSS partial including rules for the "#landing" (landing) frame on 
  * cleanwebOne design. 
  * 
  * initial creation: 6 Oct 2013 dylan@dylanfitzgerald.net
@@ -33,7 +33,7 @@ body {
 
 /* set up color scheme */
 
-#what {
+#landing {
   background: url("img/mobile-phone-bg.jpg") no-repeat center center;
   color: white;
   min-height: 610px;
@@ -42,20 +42,20 @@ body {
   background-size: cover;
 }
 
-#what .frame-footer {
+#landing .frame-footer {
   background: black;
 }
 
-#what .secondary,
-#what * .secondary {
+#landing .secondary,
+#landing * .secondary {
   color: #56c495;
 }
 
-#what * em {
+#landing * em {
   color: #56c495;
 }
 
-#what-header {
+#landing-header {
   border-width: 1px;
   border-color: black;
   border-style: solid;
@@ -63,7 +63,7 @@ body {
 
 /* top left landing header text */
 
-#what * .left * h1 {
+#landing * .left * h1 {
   font-size: 32px;
   font-weight: 900;
   line-height: 1.35;
@@ -71,7 +71,7 @@ body {
 
 /* top right landing header text */
 
-#what * .right * h1 {
+#landing * .right * h1 {
   font-size: 24px;
   font-weight: 900;
   line-height: 1.35;
@@ -79,18 +79,18 @@ body {
 
 /* landing footer text, before subnav */
 
-#what-subtext {
+#landing-subtext {
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
 }
 
-#what-subtext .panel-body {
+#landing-subtext .panel-body {
   padding: 0px;
   margin-top: 220px;
   min-height: 150px;
 }
 
-#what-subtext * h2 {
+#landing-subtext * h2 {
   font-size: 22px;
   font-weight: 900;
   line-height: 1.35;
@@ -108,9 +108,9 @@ body {
 }
 
 /*
- * _sell-frame.scss
- * SCSS partial including rules for the "#sell" frame ('helping budding
- * entrepreneurs') on cleanwebOne design. 
+ * _what-frame.scss
+ * SCSS partial including rules for the "#what" frame ('whiteboard')
+ * on cleanwebOne design. 
  * 
  * initial creation: 6 Oct 2013 dylan@dylanfitzgerald.net
  *
@@ -120,21 +120,21 @@ body {
 
 /* set background -- can set with image if preferred */
 
-#sell {
+#what {
   background: #dcb625;
   color: #dcb625;
 }
 
-#sell .frame-footer {
+#what .frame-footer {
   background: black;
 }
 
-#sell .secondary,
-#sell * .secondary {
+#what .secondary,
+#what * .secondary {
   color: white;
 }
 
-#sell * em {
+#what * em {
   color: white;
 }
 
@@ -238,12 +238,6 @@ body {
 .who-grid .row div {
   min-height: 170px;
   padding: 0;
-  /*** 
-    .smartercities
-    .nest
-    .sungevity
-    .sidecar
-    ***/
 }
 
 .who-matrix {
