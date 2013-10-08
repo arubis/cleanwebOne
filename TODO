@@ -18,6 +18,7 @@
  - set min-height of each frame -- nec?
  - Clean up collapse of main nav to hide _all_ but hamburger menu -- maybe
  - move internal anchor targets so subnav clicks/triggers line up properly -- later
+ - set up #subnav-wrapper to go invisible on collapse (it used to)
 
 # OUT #
 
