@@ -446,9 +446,14 @@ div.knob {
 
 /* set up color scheme */
 
-.sponsor-grid {
+.sponsor-grid h3 {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.sponsor-grid * .row {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #sponsors {
