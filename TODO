@@ -1,11 +1,13 @@
 # BEFORE GOING LIVE #
  - disable main nav links we don't want
  - disable subnav links to unfinished frames
+ - subnav hover styling is too bright
 
 # STYLES #
 
  - Coordinate transparencies/translucencies
  	- oh good god am i actually going to replicate blend:multiply in js?
+ - stripes: make 'black stripes' version of white stripes?
 
 # CONTENT #
 

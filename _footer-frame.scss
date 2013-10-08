@@ -21,7 +21,7 @@ footer {
 
   p {
     font-size: small;
-    a, a#hover, a#active { color: $footer-color; }
+    a, a:hover, a:active { color: $footer-color; }
   }
 
   img.logo {
@@ -29,4 +29,54 @@ footer {
     width: 150px;
     display: block;
   }
+
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#mission-statement {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 160%;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+footer .row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sitemap {
+  font-size: 14px;
+  h3 { font-size: 14px; }
+
+  ul {
+    list-style: none outside none;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.sitemap--main {
+  text-transform: uppercase;
+}
+
+.footer--social {
+  ul {
+    list-style: none outside none;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+.closing-line {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 110%;
 }

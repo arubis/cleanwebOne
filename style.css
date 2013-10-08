@@ -446,6 +446,11 @@ div.knob {
 
 /* set up color scheme */
 
+.sponsor-grid {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .sponsor-grid h3 {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -495,6 +500,8 @@ footer {
   background: #43be87;
   color: white;
   min-height: 240px;
+  font-size: 14px;
+  font-weight: 200;
 }
 
 footer .frame-footer {
@@ -515,8 +522,8 @@ footer p {
 }
 
 footer p a,
-footer p a#hover,
-footer p a#active {
+footer p a:hover,
+footer p a:active {
   color: white;
 }
 
@@ -524,6 +531,55 @@ footer img.logo {
   height: 100px;
   width: 150px;
   display: block;
+}
+
+#mission-statement {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 160%;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+footer .row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sitemap {
+  font-size: 14px;
+}
+
+.sitemap h3 {
+  font-size: 14px;
+}
+
+.sitemap ul {
+  list-style: none outside none;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.sitemap--main {
+  text-transform: uppercase;
+}
+
+.footer--social ul {
+  list-style: none outside none;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+}
+
+.footer--social ul li {
+  display: inline-block;
+}
+
+.closing-line {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 110%;
 }
 
 /** /frame support files ***/
@@ -729,3 +785,21 @@ h6 {
   font-size: 14pt;
   color: #666666;
 }
+
+/*** for b+w fade effect ***/
+
+.bwWrapper {
+  position: relative;
+  display: block;
+}
+
+canvas.BWfade {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  height: inherit;
+  width: inherit;
+}
+
+/*** end b+w fade effect formatting ***/
