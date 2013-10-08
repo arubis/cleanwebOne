@@ -78,13 +78,16 @@
       //<![CDATA[
       $(window).load(function(){
         $(function() {
-        //  $('#subnav-wrapper').height($("#subnav").height());  // Holds place of subnav on collapse if needed for layout
+          $('#subnav-wrapper').height($("#subnav").height());  // Holds place of subnav on collapse if needed for layout
           $('#subnav').affix({
           offset: { top: $('#subnav').offset().top - 50 }      // offset value here should be height of main nav
           });
         });
       });//]]> 
     </script>
+
+    <!-- get the Right(TM) visual effect on #landing's translucent headers -->
+    <script src="/js/context_blender.js" type="text/javascript" async></script>
 
     <!-- Let Wordpress get the last word in -->
     <?php wp_head(); ?>
