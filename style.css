@@ -656,8 +656,16 @@ footer .row {
 }
 
 #subnav * a {
-  font-size: 11px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   color: #ffffff;
+  background-color: #333333;
+}
+
+#subnav * a:hover,
+#subnav * a:focus {
+  background: #444444;
 }
 
 #subnav.affix {
@@ -677,7 +685,7 @@ footer .row {
 }
 
 #subnav * .nav li a {
-  padding: 10px 0px;
+  padding: 20px 0px;
 }
 
 /* And that's the mixin game. */

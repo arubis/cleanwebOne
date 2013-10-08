@@ -1,7 +1,7 @@
 # BEFORE GOING LIVE #
  - disable main nav links we don't want
- - disable subnav links to unfinished frames  @NOW
- - subnav hover styling is too bright		  @NOW
+ + disable subnav links to unfinished frames
+ + subnav hover styling is too bright
 
 # STYLES #
 

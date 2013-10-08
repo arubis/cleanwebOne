@@ -449,8 +449,13 @@ footer .row {
   background-color: rgba(51, 51, 51, 0.9);
   margin: 0; }
   #subnav * a {
-    font-size: 11px;
-    color: #ffffff; }
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    background-color: #333333; }
+    #subnav * a:hover, #subnav * a:focus {
+      background: #444444; }
 
 #subnav.affix {
   position: fixed;
@@ -464,7 +469,7 @@ footer .row {
   background: rgba(51, 51, 51, 0.9); }
 
 #subnav * .nav li a {
-  padding: 10px 0px; }
+  padding: 20px 0px; }
 
 /* And that's the mixin game. */
 /*** Let's play with fonts! */
