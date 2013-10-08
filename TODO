@@ -5,9 +5,9 @@
 
 # STYLES #
 
- - Coordinate transparencies/translucencies
+ - Coordinate transparencies/translucencies  @NOW
  	- oh good god am i actually going to replicate blend:multiply in js?
- - stripes: make 'black stripes' version of white stripes? @NOW
+ + stripes: make 'black stripes' version of white stripes?
 
 # CONTENT #
 
@@ -29,7 +29,7 @@
 
  - Update logo -- ask for source
    - footer
- - confirm proper direction of Join Now buttons
+ - confirm proper direction of Join Now buttons -- requested
 
 # FRAMES #
 
