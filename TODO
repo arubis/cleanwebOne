@@ -62,10 +62,11 @@
  + reënable frame
  - replace stand-in text with actual logos
  - add vertical divider -- use bootstrap to hide on collapse
- - js logic to add color on mouseover -- hand off to syu?
+ + js logic to add color on mouseover -- hand off to syu?
  - link out each logo to website of holder
  - clean up collapse
- - 'leadership' should be left-justify -- double-check this
+ + 'leadership' should be left-justify -- double-check this
  + change color of text
+ - clean up jQuery plugin output so mouseOver doesn't activate outside of target image -- low-priority
 
 ## footer ## @priority-1
