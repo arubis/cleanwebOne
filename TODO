@@ -1,3 +1,7 @@
+# BEFORE GOING LIVE #
+ - disable main nav links we don't want
+ - disable subnav links to unfinished frames
+
 # STYLES #
 
  - Coordinate transparencies/translucencies
@@ -9,9 +13,8 @@
 
 # LAYOUT #
 
- - set min-height of each frame -- nec
+ - set min-height of each frame -- nec?
  - Clean up collapse of main nav to hide _all_ but hamburger menu -- maybe
- + clean up subnav so content is centered
  - move internal anchor targets so subnav clicks/triggers line up properly -- later
 
 # OUT #
@@ -40,7 +43,6 @@
 ## who / contributors / checkerboard-red ## @priority-2
 
  + reënable frame
- + build LAYOUT
  - grid out images -- redo with table? or something?
  - add pullquote panel/row
  - add close button
@@ -51,22 +53,15 @@
  - clean up collapse @priority
  - tie in Syu
 
-## where / map ##
+## where / map ## -- on hold
 
 ## event / carousel ## @priority-2?
 
-## social ## 
+## social ## -- on hold
 
-## sponsors ## @priority-HEAD
+## sponsors ## -- MVP, awaiting feedback
 
- + reënable frame
- - replace stand-in text with actual logos
- - add vertical divider -- use bootstrap to hide on collapse
- + js logic to add color on mouseover -- hand off to syu?
- - link out each logo to website of holder
- - clean up collapse
- + 'leadership' should be left-justify -- double-check this
- + change color of text
+ - add vertical divider -- use bootstrap to hide on collapse -- necessary?
  - clean up jQuery plugin output so mouseOver doesn't activate outside of target image -- low-priority
 
-## footer ## @priority-1
+## footer ## @priority-HEAD
