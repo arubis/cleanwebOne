@@ -1,13 +1,13 @@
 # BEFORE GOING LIVE #
  - disable main nav links we don't want
- - disable subnav links to unfinished frames
- - subnav hover styling is too bright
+ - disable subnav links to unfinished frames  @NOW
+ - subnav hover styling is too bright		  @NOW
 
 # STYLES #
 
  - Coordinate transparencies/translucencies
  	- oh good god am i actually going to replicate blend:multiply in js?
- - stripes: make 'black stripes' version of white stripes?
+ - stripes: make 'black stripes' version of white stripes? @NOW
 
 # CONTENT #
 
@@ -42,7 +42,7 @@
   - tie in Syu
   0 clean up collapse behavior -- later / after JS
 
-## who / contributors / checkerboard-red ## @priority-2
+## who / contributors / checkerboard-red ## @priority-2 -- CURRENTLY DISABLED
 
  + reënable frame
  - grid out images -- redo with table? or something?
@@ -65,5 +65,3 @@
 
  - add vertical divider -- use bootstrap to hide on collapse -- necessary?
  - clean up jQuery plugin output so mouseOver doesn't activate outside of target image -- low-priority
-
-## footer ## @priority-HEAD

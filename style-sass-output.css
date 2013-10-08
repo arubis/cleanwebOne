@@ -305,14 +305,14 @@ div.knob {
  */
 /* set up color scheme */
 .sponsor-grid {
-  margin-top: 60px;
   margin-bottom: 60px; }
   .sponsor-grid h3 {
     margin-top: 40px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-size: 30px; }
   .sponsor-grid * .row {
-    margin-top: 5px;
-    margin-bottom: 5px; }
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
 #sponsors {
   background: #f8f8f8;
@@ -348,10 +348,10 @@ footer {
     color: white; }
   footer * em {
     color: black; }
+  footer a, footer a:hover, footer a:active {
+    color: white; }
   footer p {
     font-size: small; }
-    footer p a, footer p a:hover, footer p a:active {
-      color: white; }
   footer img.logo {
     height: 100px;
     width: 150px;

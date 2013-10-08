@@ -18,10 +18,12 @@ footer {
   @include frame-style($footer-bg, $footer-color, $footer-secondary-color, $footer-emph-color);
 
   min-height: 240px;
+  a, a:hover, a:active { color: $footer-color; }
+  font-size: 14px;
+  font-weight: 200;
 
   p {
     font-size: small;
-    a, a:hover, a:active { color: $footer-color; }
   }
 
   img.logo {
@@ -30,8 +32,6 @@ footer {
     display: block;
   }
 
-  font-size: 14px;
-  font-weight: 200;
 }
 
 #mission-statement {
