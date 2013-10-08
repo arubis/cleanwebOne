@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6  {
 
 .right  { text-align: right;  }
 .left   { text-align: left;   }
-.center { text-align: center; }
+.center { text-align: center; margin-left: auto; margin-right: auto; }
 
 .panel {
   border: 0;
@@ -104,12 +104,23 @@ h1, h2, h3, h4, h5, h6  {
 
 .row.frame-head {
   width: 100%;
-  background: url("/img/cross-thatch.png") repeat;
   margin-left: 0;
   margin-right: 0;
   .container {
     padding: 0;
   }
+
+  // Why this ugly thing with --internal and --background? The PNG is black lines
+  // over transparency, so we add an extra div.row in the background and fill it
+  // with white. Cf. div.frame-head elements.
+  &.frame-head--internal {
+    background: url("/img/the-black-stripes.png") repeat;
+  }
+
+  &.frame-head--background {
+    background: white;
+  }
+
 }
 
 .frame-head > * {

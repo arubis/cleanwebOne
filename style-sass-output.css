@@ -51,7 +51,7 @@ body {
   line-height: 1.35; }
 
 #landing * .striped {
-  background: url("/img/cross-thatch.png") repeat; }
+  background: url("/img/the-white-stripes.png") repeat; }
 
 /* top right landing header text */
 #landing * .right * h1 {
@@ -366,8 +366,10 @@ footer {
   letter-spacing: 0.1em; }
 
 footer .row {
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  footer .row.logo {
+    padding-bottom: 40px; }
 
 .sitemap {
   font-size: 14px; }
@@ -498,7 +500,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left; }
 
 .center {
-  text-align: center; }
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
 
 .panel {
   border: 0;
@@ -524,11 +528,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .row.frame-head {
   width: 100%;
-  background: url("/img/cross-thatch.png") repeat;
   margin-left: 0;
   margin-right: 0; }
   .row.frame-head .container {
     padding: 0; }
+  .row.frame-head.frame-head--internal {
+    background: url("/img/the-black-stripes.png") repeat; }
+  .row.frame-head.frame-head--background {
+    background: white; }
 
 .frame-head > * {
   text-align: center;

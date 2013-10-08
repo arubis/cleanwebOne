@@ -44,8 +44,11 @@ footer {
 }
 
 footer .row {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  &.logo {
+    padding-bottom: 40px;
+  }
 }
 
 .sitemap {
