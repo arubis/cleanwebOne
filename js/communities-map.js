@@ -4,7 +4,7 @@ var map = L.map('map').setView([51.505, -0.09], 2);
 // add an OpenStreetMap tile layer
 //L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     //attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-L.tileLayer('http://{s}.tile.cloudmade.com/6375f24019e14089b0633450f8de4c9b/997/256/{z}/{x}/{y}.png', {
+L.tileLayer('http://{s}.tile.cloudmade.com/6375f24019e14089b0633450f8de4c9b/1930/256/{z}/{x}/{y}.png', {
   attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <ahref="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
   }).addTo(map);
 
