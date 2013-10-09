@@ -20,7 +20,7 @@ $where-bg: rgba(178, 209, 255, 1); /* set up background -- can also be an image 
   min-height: 600px;
 }
 
-.map--more-info {
+.map-more-info {
 	text-align: center;
 	h3 {
 		font-size: 10pt;
@@ -35,19 +35,12 @@ $where-bg: rgba(178, 209, 255, 1); /* set up background -- can also be an image 
   }
 }
 
-#map-overlay {
-  position: absolute;
-  z-index: 100;
-}
-
-.map-overlay--container {
+.map-overlay-container {
    padding-top: 30px;
 }
 
 .btn--more-info {
   text-transform: uppercase;
-  color: $where-secondary-color;
-  background: $where-color;
   font-weight: 600;
   font-size: 11pt;
 }
