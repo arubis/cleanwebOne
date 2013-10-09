@@ -62,11 +62,14 @@
 ## social ##
 
  + reenable frame
- - frame header
- - frame footer
-   - join now button
+ + frame header
+ + frame footer
+   + join now button
  - add tinted iframe or include or what-have-you from current cleanweb.co imp
  - css override tinted apperance to match new theme
+ - Get tintup.com login creds
+   - duplicate current feed
+   - on dev feed match background etc.
  - clean up collapse
  - final check
  - git commit and merge back 

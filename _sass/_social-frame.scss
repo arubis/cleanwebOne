@@ -11,7 +11,12 @@
 $social-color: rgb(224, 93, 85);
 $social-secondary-color: rgb(80, 80, 80);
 $social-emph-color: rgb(25, 25, 25);
-$social-footer-color: rgb(0, 0, 0);
+$social-footer-color: rgb(224, 93, 85);
 $social-bg: rgba(224, 93, 85, 1); /* set up background -- can also be an image */
 
-#social { @include frame-style($social-bg, $social-color, $social-secondary-color, $social-emph-color) }
+#social { @include frame-style($social-bg, $social-color, $social-secondary-color, $social-emph-color, $social-footer-color) }
+
+.tintup {
+	height:700px;
+	width:100%;
+}
