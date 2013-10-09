@@ -60,9 +60,10 @@
  + include map from current cleanweb.co/communities
  + expand map to correct height
  + clean up collapse
- - add panel with button to start community -> resource on gdrive?
+ + add panel with button to start community -> resource on gdrive?
  - change tile style to be nicer
  + frame footer
+ - location search? -- later
  - final check
  - git commit and merge back
 
