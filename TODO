@@ -59,7 +59,17 @@
 
 ## event / carousel ## @priority-2?
 
-## social ## -- on hold
+## social ##
+
+ + reenable frame
+ - frame header
+ - frame footer
+   - join now button
+ - add tinted iframe or include or what-have-you from current cleanweb.co imp
+ - css override tinted apperance to match new theme
+ - clean up collapse
+ - final check
+ - git commit and merge back 
 
 ## sponsors ## -- MVP, awaiting feedback
 
