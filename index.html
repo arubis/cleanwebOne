@@ -476,14 +476,16 @@
     <div class="row">
       <div style="position: relative; height: 600px;">
 
-        <div id="map" style="position: absolute; left: 0; right: 0; width: 100%; height: 600px;"></div>
+        <div id="map"></div>
         <script src="/js/communities-map.js" type="text/javascript" charset="utf-8" async defer></script>
 
         <div class="container map-overlay-container">
           <div class="row">
-            <div class="col-sm-3 col-sm-offset-7">
+            <div class="col-lg-3 col-lg-offset-8 col-sm-4 col-sm-offset-7 col-xs-12">
               <div class="panel map-more-info">
-                <form action="https://drive.google.com/folderview?id=0B3cX2jK4-Emuc0NiQTFuajJBNkU&usp=sharing" method="get" target="_new">
+                <form action="https://drive.google.com/folderview" method="get" target="_new">
+                  <input type="hidden" name="id" value="0B3cX2jK4-Emuc0NiQTFuajJBNkU"><!-- resource locator -->
+                  <input type="hidden" name="usp" value="sharing">
                   <h3>Want to start a Cleanweb community near you?</h3>
                   <button type="submit" class="btn btn-primary btn--more-info">More Info</button>
                 </form>
