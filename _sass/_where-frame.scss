@@ -11,10 +11,10 @@
 $where-color: rgb(46, 120, 217);
 $where-secondary-color: rgb(80, 80, 80);
 $where-emph-color: rgb(25, 25, 25);
-$where-footer-color: rgb(0, 0, 0);
+$where-footer-color: rgb(46, 120, 217);
 $where-bg: rgba(178, 209, 255, 1); /* set up background -- can also be an image */
 
-#where { @include frame-style($where-bg, $where-color, $where-secondary-color, $where-emph-color) }
+#where { @include frame-style($where-bg, $where-color, $where-secondary-color, $where-emph-color, $where-footer-color) }
 
 #map {
   min-height: 600px;
