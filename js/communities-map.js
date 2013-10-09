@@ -1,5 +1,9 @@
 // create a map in the "map" div, set the view to a given place and zoom
-var map = L.map('map').setView([51.505, -0.09], 2);
+var map = L.map('map', {
+    center: [51.505, -0.09],
+    zoom: 2,
+    scrollWheelZoom: false
+});
 
 // add an OpenStreetMap tile layer
 //L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -19,8 +23,8 @@ L.marker([39.913602, 116.397196]).addTo(map)
   
 //Belgium
 L.marker([50.85034, 4.35171]).addTo(map)
-    .bindPopup('Belgium<br><a href="http://belgium.cleanweb.co" target="_new">belgium.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Belgium/176575122511395" target="_new">facebook.com/pages/Cleanweb-Belgium/176575122511395</a><br><a href="http://www.twitter.com/cleanwebbe" target="_new">@CleanwebBE</a>');  
-  
+    .bindPopup('Belgium<br><a href="http://belgium.cleanweb.co" target="_new">belgium.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Belgium/176575122511395" target="_new">facebook.com/pages/Cleanweb-Belgium/176575122511395</a><br><a href="http://www.twitter.com/cleanwebbe" target="_new">@CleanwebBE</a>');
+
 //Berkeley, CA
 L.marker([37.88166, -122.28448]).addTo(map)
     .bindPopup('Berkeley, CA<br><a href="http://berkeley.cleanweb.co" target="_new">berkeley.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Berkeley/296111370492236" target="_new">facebook.com/pages/Cleanweb-Berkeley/296111370492236</a><br><a href="http://www.twitter.com/cleanweb" target="_new">@Cleanweb</a>');
@@ -31,7 +35,7 @@ L.marker([42.360482, -71.059568]).addTo(map)
 
 // Brazil
 L.marker([-1.45502, -48.502368]).addTo(map)
-    .bindPopup('Brazil<br><a href="http://www.cleanweb.co" target="_new">www.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Brasil/270768959716124" target="_new">Cleanweb-Brasil/270768959716124</a><br><a href="http://www.twitter.com/cleanwebBR" target="_new">@CleanwebBR</a>');    
+    .bindPopup('Brazil<br><a href="http://www.cleanweb.co" target="_new">www.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Brasil/270768959716124" target="_new">Cleanweb-Brasil/270768959716124</a><br><a href="http://www.twitter.com/cleanwebBR" target="_new">@CleanwebBR</a>');
   
   
 // Chicago
@@ -83,7 +87,7 @@ L.marker([37.442156, -122.163447]).addTo(map)
 
 // The Netherlands
 L.marker([52.036846, 4.383428]).addTo(map)
-    .bindPopup('The Netherlands<br><a href="http://netherlands.cleanweb.co" target="_new">netherlands.cleanweb.co</a><br><a href="http://www.facebook.com/pages/Cleanweb-Netherlands/343848429068046?ref=ts&fref=ts" target="_new">facebook.com/pages/Cleanweb-Netherlands/343848429068046?ref=ts&fref=ts</a><br><a href="http://www.twitter.com/cleanweb" target="_new">@Cleanweb</a>');   
+    .bindPopup('The Netherlands<br><a href="http://netherlands.cleanweb.co" target="_new">netherlands.cleanweb.co</a><br><a href="http://www.facebook.com/pages/Cleanweb-Netherlands/343848429068046?ref=ts&fref=ts" target="_new">facebook.com/pages/Cleanweb-Netherlands/343848429068046?ref=ts&fref=ts</a><br><a href="http://www.twitter.com/cleanweb" target="_new">@Cleanweb</a>');
 
 // UK 
 L.marker([51.590723, -0.131836]).addTo(map)
