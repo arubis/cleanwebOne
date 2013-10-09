@@ -9,7 +9,7 @@
 
 /* set up color scheme */
 $where-color: rgb(46, 120, 217);
-$where-secondary-color: rgb(80, 80, 80);
+$where-secondary-color: rgb(255, 255, 255);
 $where-emph-color: rgb(25, 25, 25);
 $where-footer-color: rgb(46, 120, 217);
 $where-bg: rgba(178, 209, 255, 1); /* set up background -- can also be an image */
@@ -18,4 +18,36 @@ $where-bg: rgba(178, 209, 255, 1); /* set up background -- can also be an image 
 
 #map {
   min-height: 600px;
+}
+
+.map--more-info {
+	text-align: center;
+	h3 {
+		font-size: 10pt;
+    font-weight: 600;
+    color: $where-secondary-color;
+    margin: 5px 10px;
+    padding: 0 0;
+	}
+  &.panel {
+    background: rgba(0,0,0,0.4);
+    padding: 5px;
+  }
+}
+
+#map-overlay {
+  position: absolute;
+  z-index: 100;
+}
+
+.map-overlay--container {
+   padding-top: 30px;
+}
+
+.btn--more-info {
+  text-transform: uppercase;
+  color: $where-secondary-color;
+  background: $where-color;
+  font-weight: 600;
+  font-size: 11pt;
 }
