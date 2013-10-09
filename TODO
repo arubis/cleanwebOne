@@ -14,7 +14,6 @@
 
 # LAYOUT #
 
- - set min-height of each frame -- nec?
  - Clean up collapse of main nav to hide _all_ but hamburger menu -- maybe
  - move internal anchor targets so subnav clicks/triggers line up properly -- later
  - set up #subnav-wrapper to go invisible on collapse (it used to)
@@ -55,7 +54,17 @@
  - clean up collapse @priority
  - tie in Syu
 
-## where / map ## -- on hold
+## where / map ##
+
+ + reenable frame
+ + include map from current cleanweb.co/communities
+ + expand map to correct height
+ + clean up collapse
+ - add panel with button to start community -> resource on gdrive?
+ - change tile style to be nicer
+ - frame footer
+ - final check
+ - git commit and merge back
 
 ## event / carousel ## @priority-2?
 

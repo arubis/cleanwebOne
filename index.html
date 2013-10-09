@@ -59,6 +59,13 @@
     <script src="js/jQuery.BlackAndWhite.js"></script>
     <!-- source: http://gianlucaguarini.github.io/jQuery.BlackAndWhite/ -->
 
+    <!-- Leaflet.js powers our map here... -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+    <![endif]-->
+    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js" type="text/javascript"></script>
+
     <!-- Facebook Open Graph -->
     <meta property="og:title" content="Cleanweb">
     <meta property="og:type" content="website">
@@ -232,8 +239,8 @@
             <li class="active"><a href="#what" title="what">What do we do?</a></li>
             <li><a href="#how" title="how">How do we do it?</a></li>
             <!-- <li><a href="#who" title="who">Who's part of it?</a></li> -->
-            <!-- <li><a href="#where" title="where">Where are we?</a></li> -->
-            <!-- <li><a href="#social" title="social">Who's talking about it?</a></li> -->
+            <li><a href="#where" title="where">Where are we?</a></li>
+            <li><a href="#social" title="social">Who's talking about it?</a></li>
             <li><a href="#sponsors" title="sponsors">Who's supporting it?</a></li>
           </ul>
         </div>
@@ -444,37 +451,34 @@
 
   </div><!-- /WHO FRAME -->
 
-  <!-- where/map frame --><!-- CURRENTLY DISABLED -->
+  <!-- where/map frame --><!-- CURRENTLY ENABLED -->
   <div class="where frame" id="where">
     <!-- WHERE FRAME -->
     <!-- Where's the action? -->
     <!-- map frame -->
-    <!-- <div class="row frame-head frame-head--background">
-    <!==   <div class="row frame-head frame-head--internal">
-    <!==     <div class="container">
-    <!==       <div class="col-sm-10 col-sm-push-1">
-    <!==         <div class="panel boxy">
-    <!==           <div class="v-centered">
-    <!==             <h2>The <span style="font-weight: bold;">Cleanweb Initiative</span> 
-    <!==               has events and communities
-    <!==               around the world - find one near you</h2>
-    <!==           </div>
-    <!==         </div>
-    <!==       </div>
-    <!==     </div>
-    <!==   </div>
-    <!== </div>
-    <!== 
-    <!== <!== FILLER CONTENT -->
-    <!-- <div class="container">
-    <!==   <h1>Here is some really big text.</h1>
-    <!==   <p>Here is a bunch of smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    <!==   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    <!==   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    <!==   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    <!==   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    <!==   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <!== </div><!== /container -->
+    <div class="row frame-head frame-head--background">
+      <div class="row frame-head frame-head--internal">
+        <div class="container">
+          <div class="col-sm-10 col-sm-push-1">
+            <div class="panel boxy">
+              <div class="v-centered">
+                <h2>The <span style="font-weight: bold;">Cleanweb Initiative</span> 
+                  has events and communities<br />
+                  around the world - find one near you</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- MAP CONTENT -->
+    <div class="row">
+      
+        <div id="map"></div>
+        <script src="/js/communities-map.js" type="text/javascript" charset="utf-8" async defer></script>
+
+    </div><!-- /container -->
   </div><!-- /WHERE FRAME -->
 
   <!-- featured event frame --><!-- CURRENTLY DISABLED -->
