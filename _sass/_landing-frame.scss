@@ -9,7 +9,7 @@
 
 /* set up background */
 /* n.b. background-size: cover is added later in the mixin invocation */
-$landing-bg: url("img/mobile-phone-bg.jpg") no-repeat center center;
+$landing-bg: url("/img/mobile-phone-bg.jpg") no-repeat center center;
 
 /* set up color scheme */
 $landing-color: rgb(255, 255, 255);

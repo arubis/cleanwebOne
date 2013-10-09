@@ -17,7 +17,7 @@ $how-footer-color: rgb(99, 133, 84);
 #how {
   @include frame-style($how-bg, $how-color, $how-secondary-color, $how-emph-color, $how-footer-color);
   .background {
-    background: url("img/bg-triangles.png") repeat;
+    background: url("/img/bg-triangles.png") repeat;
   }
   * img.knob {
     margin-top: 50px;
