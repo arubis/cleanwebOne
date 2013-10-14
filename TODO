@@ -1,6 +1,12 @@
 # BEFORE GOING LIVE #
  - disable main nav links we don't want
  - swap compilation of css to compact
+ - make sure b+w js loads correctly
+ - split server over nginx so new theme v. old theme serves properly IF partial implementation
+
+# unbillable
+ - make sure b+w js loads correctly
+ - set up dev copy of wp install on aws
 
 # STYLES #
 
@@ -26,9 +32,9 @@
 
 # FAST #
 
- - Update logo -- ask for source
+ - Update logo -- got logo, go for it
    - footer
- - confirm proper direction of Join Now buttons -- requested
+ + confirm proper direction of Join Now buttons -- requested
 
 # FRAMES #
 
