@@ -12,7 +12,7 @@
 
  - Coordinate transparencies/translucencies  @TOMORROW
  	- oh good god am i actually going to replicate blend:multiply in js?
- + stripes: make 'black stripes' version of white stripes?
+ - Make navbar dropdowns match color from design
 
 # CONTENT #
 
@@ -33,8 +33,9 @@
 # FAST #
 
  - Update logo -- got logo, go for it
+   + header
    - footer
- + confirm proper direction of Join Now buttons -- requested
+   - resize & reformat topnav to match
 
 # FRAMES #
 
@@ -75,19 +76,19 @@
 
 ## event / carousel ## @priority-2?
 
-## social ## -- awaiting tintup.com login creds
+## social ##
 
  + reenable frame
  + frame header
  + frame footer
    + join now button
  + add tinted iframe or include or what-have-you from current cleanweb.co imp
- - Get tintup.com login creds
-   - duplicate current feed
-   - on dev feed match background etc.
- + clean up collapse -- built in, fortunately@
- - final check
- - git commit and merge back 
+ + Get tintup.com login creds
+   + duplicate current feed
+   + on dev feed match background etc.
+ + clean up collapse
+ + final check
+ + git commit and merge back 
 
 ## sponsors ## -- MVP, awaiting feedback
 
