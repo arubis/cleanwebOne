@@ -32,15 +32,15 @@
   background-color: rgba(245, 245, 245, 1);
 }
 
-$logo-height: (64px/2);
-$logo-width:  (138px/2);
+$logo-height: 100;
+$logo-width:  151;
 
 #logo-container {
   img.logo, * img.logo {
     height: $logo-height;
     width: $logo-width;
     display: block;
-    margin: 10px 10px;
+    margin: 0 10px;
   }
   background: white;
   height: $navheight;
