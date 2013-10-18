@@ -105,6 +105,10 @@ h1, h2, h3, h4, h5, h6  {
   z-index: 1001; 
 }
 
+.dropdown-menu li {
+  z-index: 1002;    // make sure dropdowns supercede navbars
+}
+
 .boxy {
   border-radius: 0 0 0 0;
 }
