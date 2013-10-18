@@ -142,7 +142,7 @@
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse"><span class="sr-only">Toggle navigation</span> <!-- 'icon-bar' is one-third of the 'hamburger nav' --></button>
         <div id="logo-container">
-          <a class="navbar-brand" href="/" style="padding: 0;"><img src="/img/cleanweb-logo.png" class="logo" alt="Cleanweb Initiative logo"></a>
+          <a class="navbar-brand" href="/" style="padding: 0;"><img src="<?php get_stylesheet_directory_uri(); ?>/img/cleanweb-logo.png" class="logo" alt="Cleanweb Initiative logo"></a>
         </div>
       </div><!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-primary-collapse">
