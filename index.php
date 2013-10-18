@@ -269,7 +269,7 @@
     </div>
 
     <div class="container" id="whiteboard">
-      <img src="/img/whiteboard.png" alt="Whiteboard with mindmap on it" />
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/whiteboard.png" alt="Whiteboard with mindmap on it" />
       <div class="col-sm-10 col-sm-offset-1">
         <h1 class="secondary">Helping <em>entrepreneurs</em> take their idea from a whiteboard sketch to a funded company</h1>
       </div>
@@ -318,10 +318,10 @@
             <!-- leftmost knob column -->
             <div class="col-sm-4 knob-column">
               <div class="knob">
-                <img src="/img/knob-down.png" alt="" id="knob-left" class="knob">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knob-down.png" alt="" id="knob-left" class="knob">
                 <div class="knob-overlay">
                   <h3>Facilitating Connections</h3>
-                  <img src="/img/knob-overlay-left.png" id="knob-overlay-left" alt="Connections icon" />
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knob-overlay-left.png" id="knob-overlay-left" alt="Connections icon" />
                 </div><!--/knob-OVERLAY -->
               </div><!-- /knob itself -->
               <div class="knob-copy">
@@ -335,10 +335,10 @@
             <!-- middle knob -->
             <div class="col-sm-4 knob-column">
               <div class="knob">
-                <img src="/img/knob-down.png" alt="" id="knob-center" class="knob">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knob-down.png" alt="" id="knob-center" class="knob">
                 <div class="knob-overlay">
                   <h3>Creating Opportunities</h3>
-                  <img src="/img/knob-overlay-center.png" id="knob-overlay-center" alt="Expansion Icon" />
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knob-overlay-center.png" id="knob-overlay-center" alt="Expansion Icon" />
                 </div><!--/knob-OVERLAY -->
               </div><!-- /knob itself -->
               <div class="knob-copy">
@@ -351,10 +351,10 @@
 
             <div class="col-sm-4 knob-column">
               <div class="knob">
-                <img src="/img/knob-down.png" alt="" id="knob-right" class="knob">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knob-down.png" alt="" id="knob-right" class="knob">
                 <div class="knob-overlay">
                   <h3>Providing Resources</h3>
-                  <img src="/img/knob-overlay-right.png" id="knob-overlay-right" alt="Tools Icon" />
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knob-overlay-right.png" id="knob-overlay-right" alt="Tools Icon" />
                 </div><!--/knob-OVERLAY -->
               </div><!-- /knob -->
               <div class="knob-copy">
@@ -625,24 +625,24 @@
           <div class="row">
             <div class="col-sm-6">
               <a href="http://www.facebook.com" title="Facebook" target="_new" class="bwWrapper">
-                <img src="/img/supporters/Supporter-Facebook.png" alt="Facebook" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-Facebook.png" alt="Facebook" />
               </a>
             </div>
             <div class="col-sm-6">
               <a href="http://www.rockportcap.com" title="RockPort Capital" target="_new" class="bwWrapper" width="168px" height="46px">
-                <img src="/img/supporters/Supporter-RockportCapital.gif" alt="Rockport Capital" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-RockportCapital.gif" alt="Rockport Capital" />
               </a>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6">
               <a href="http://www.terravp.com" title="TERRA Venture Partners" target="_new" class="bwWrapper" width="168px" height="62px">
-                <img src="/img/supporters/Supporter-TerraVenturePartners.jpg" alt="TERRA Venture Partners" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-TerraVenturePartners.jpg" alt="TERRA Venture Partners" />
               </a>
             </div>
             <div class="col-sm-6">
               <a href="http://www.blackcoralcapital.com" title="Black Coral Capital" target="_new" class="bwWrapper" width="121px" height="109px">
-                <img src="/img/supporters/Supporter-BlackCoralCapital.png" alt="Black Coral Capital" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-BlackCoralCapital.png" alt="Black Coral Capital" />
               </a>
             </div>
           </div>
@@ -650,17 +650,17 @@
           <div class="row">
             <div class="col-sm-4">
               <a href="http://www.cleanskies.org" title="American Clean Skies" target="_new" class="bwWrapper" width="104px" height="103px">
-                <img src="/img/supporters/Supporter-AmericanCleanSkiesFoundation.png" alt="American Clean Skies" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-AmericanCleanSkiesFoundation.png" alt="American Clean Skies" />
               </a>
             </div>
             <div class="col-sm-4">
               <a href="http://www.greenstart.com" title="Greenstart" target="_new" class="bwWrapper" width="94px" height="103px">
-                <img src="/img/supporters/Supporter-Greenstart.png" alt="Greenstart" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-Greenstart.png" alt="Greenstart" />
               </a>
             </div>
             <div class="col-sm-4">
               <a href="https://www.yerdle.com/" title="Yerdle" target="_new" class="bwWrapper" width="87" height="65">
-                <img src="/img/supporters/Supporter-yerdle.jpg" alt="yerdle" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-yerdle.jpg" alt="yerdle" />
               </a>
             </div>
           </div>
@@ -668,12 +668,12 @@
           <div class="row">
             <div class="col-sm-6">
               <a href="http://www.mdv.com" title="Mohr Davidow" target="_new" class="bwWrapper" width="129px" height="75px">
-                <img src="/img/supporters/Supporter-MohrDavidow.png" alt="Mohr Davidow" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-MohrDavidow.png" alt="Mohr Davidow" />
               </a>
             </div>
             <div class="col-sm-6">
               <a href="http://www.sungevity.com/" title="Sungevity" target="_new" class="bwWrapper" width="168px" height="42px">
-                <img src="/img/supporters/Supporter-Sungevity.gif" alt="Sungevity" width="168px" height="42px" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-Sungevity.gif" alt="Sungevity" width="168px" height="42px" />
               </a>
             </div>
           </div>
@@ -690,43 +690,43 @@
           <div class="row">
             <div class="col-sm-6">
               <a href="http://energy.gov" title="US Department of Energy" target="_new" class="bwWrapper" width="90" height="90">
-                <img src="/img/supporters/Supporter-DoE.jpg" alt="US Department of Energy" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-DoE.jpg" alt="US Department of Energy" />
               </a>
             </div>
             <div class="col-sm-6">
               <a href="http://sxsweco.com" title="SXSW Eco" target="_new" class="bwWrapper" width="140" height="87">
-                <img src="/img/supporters/Supporter-SXSW-Eco.jpg" alt="SXSW Eco" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-SXSW-Eco.jpg" alt="SXSW Eco" />
               </a>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
               <a href="http://theclimategroup.org" title="The Climate Group" target="_new" class="bwWrapper" width="215" height="24">
-                <img src="/img/supporters/Supporter-ClimateGroup.gif" alt="The Climate Group" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-ClimateGroup.gif" alt="The Climate Group" />
               </a>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-4 col-sm-push-1">
               <a href="http://c40cities.org" title="C40 Cities" target="_new" class="bwWrapper" width="73" height="57">
-                <img src="/img/supporters/Supporter-C40.gif" alt="C40 Cities" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-C40.gif" alt="C40 Cities" />
               </a>
             </div>
             <div class="col-sm-4 col-sm-push-2">
               <a href="http://www.whitehouse.gov/administration/eop/ostp" title="Office of Science and Technology Policy" target="_new" class="bwWrapper" width="85" height="85">
-                <img src="/img/supporters/Supporter-POTUS.gif" alt="Office of Scienc and Technology Policy" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-POTUS.gif" alt="Office of Scienc and Technology Policy" />
               </a>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-4 col-sm-push-1">
               <a href="http://nyc.gov" title="NYC.gov" target="_new" class="bwWrapper" width="76" height="65">
-                <img src="/img/supporters/Supporter-NYCgov.gif" alt="NYC.gov">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-NYCgov.gif" alt="NYC.gov">
               </a>
             </div>
             <div class="col-sm-4 col-sm-push-2">
               <a href="http://subsite.kk.dk/sitecore/content/Subsites/CityOfCopenhagen/SubsiteFrontpage.aspx?element=header" title="City of Copenhagen" target="_new" class="bwWrapper" width="67" height="86">
-                <img src="/img/supporters/Supporter-CityOfCopenhagen.png" alt="City of Copenhagen" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-CityOfCopenhagen.png" alt="City of Copenhagen" />
               </a>
             </div>
           </div>
@@ -790,17 +790,17 @@
         <ul>
           <li>
             <a href="https://www.facebook.com/CleanWeb" title="Cleanweb on Facebook" target="_blank" class="bwWrapper">
-              <img src="/img/social/facebook500.png" alt="Cleanweb on Facebook" />
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/facebook500.png" alt="Cleanweb on Facebook" />
             </a>
           </li>
           <li>
             <a href="https://www.twitter.com/Cleanweb" title="Follow us on Twitter" target="_blank" class="bwWrapper">
-              <img src="/img/social/twitter.png" alt="Follow us on Twitter" />
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/twitter.png" alt="Follow us on Twitter" />
             </a>
           </li>
           <li>
             <a target="_blank" href="https://plus.google.com/u/0/communities/101628485288313132891" title="googleplus" class="bwWrapper">
-              <img src="/img/social/googleplus-revised.png" alt="Google+" />
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/googleplus-revised.png" alt="Google+" />
             </a>
           </li>
         </ul>
