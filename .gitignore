@@ -3,4 +3,5 @@
 img/orig/
 img/all-images/
 css/
-*.sublime-*
+*.sublime-workspace
+*.sublime-project
