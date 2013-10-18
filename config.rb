@@ -1,11 +1,12 @@
 # Require any additional compass plugins here.
 require 'autoprefixer-rails'
-require 'csso'
+# require 'csso'
 
 on_stylesheet_saved do |file|
   css = File.read(file)
   File.open(file, 'w') do |io|
-    io << Csso.optimize( AutoprefixerRails.compile(css) )
+    # io << Csso.optimize( AutoprefixerRails.compile(css) )  # enable this on production 
+    io << AutoprefixerRails.compile(css)
   end
 end
 
