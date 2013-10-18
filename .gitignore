@@ -3,3 +3,4 @@
 img/orig/
 img/all-images/
 css/
+*.sublime-*
