@@ -47,7 +47,7 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- get our custom CSS -->
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css">
 
     <!-- We <3 Typekit for friendly beautiful webfonts! -->
     <script type="text/javascript" src="//use.typekit.net/cfg6qvz.js"></script>
