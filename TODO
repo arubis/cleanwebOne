@@ -7,6 +7,7 @@
  - swap compilation of css to compact
  - make sure b+w js loads correctly
  - split server over nginx so new theme v. old theme serves properly IF partial implementation
+ - revert CDN http:// links to // for SSL support
 
 # unbillable
  - make sure b+w js loads correctly
