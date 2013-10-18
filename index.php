@@ -24,20 +24,17 @@
     </title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="<?php bloginfo('charset'); ?>"><!-- some WP-fed stuff -->
-    <link rel="pingback" href="%3C?php%20bloginfo(%20'pingback_url'%20);%20?%3E">
-    <link rel="shortcut icon" href="%3C?php%20echo%20get_theme_option('favicon');%20?%3E">
-    <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS2 Feed" href="%3C?php%20bloginfo('rss2_url');%20?%3E">
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <link rel="shortcut icon" href="<?php echo get_theme_option('favicon'); ?>">
+    <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS2 Feed" href="<?php bloginfo('rss2_url'); ?>">
 
+    <!-- Motherf&@#ing IE. -->
     <!--[if lt IE 9]>
       <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
     <![endif]-->
-    <!-- Oh, IE. n.b. the referenced THEME_CSS/ie8.css; doesn't exist...and probably won't. -->
     <!--[if lte IE 9]>
       <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if IE 8]>
-      <link rel="stylesheet" href="<?php echo THEME_CSS; ?>/ie8.css" type="text/css" media="screen" />
     <![endif]-->
 
     <!-- Bootstrap import -->
@@ -56,7 +53,7 @@
     </script>
 
     <!-- include jQuery plugin for b&w fade effect of sponsors -->
-    <script src="/js/jQuery.BlackAndWhite.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jQuery.BlackAndWhite.js"></script>
     <!-- source: http://gianlucaguarini.github.io/jQuery.BlackAndWhite/ -->
 
     <!-- Leaflet.js powers our map here... -->
@@ -89,7 +86,7 @@
     </script>
 
     <!-- get the Right(TM) visual effect on #landing's translucent headers -->
-    <script src="/js/context_blender.js" type="text/javascript" async></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/context_blender.js" type="text/javascript" async></script>
 
     <!-- Let Wordpress get the last word in -->
     <?php wp_head(); ?>
