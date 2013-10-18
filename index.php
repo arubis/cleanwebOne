@@ -38,16 +38,16 @@
     <![endif]-->
 
     <!-- Bootstrap import -->
-    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" type="text/css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- get our custom CSS -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css">
 
     <!-- We <3 Typekit for friendly beautiful webfonts! -->
-    <script type="text/javascript" src="http://use.typekit.net/cfg6qvz.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/cfg6qvz.js"></script>
     <script type="text/javascript">
       try{Typekit.load();}catch(e){}
     </script>
@@ -738,7 +738,7 @@
   <footer>
     <div class="container">
       <div class="row logo">
-        <img class="logo center" src="/img/cleanweb-logo-outline.png" alt="Cleanweb Initiative logo">
+        <img class="logo center" src="<?php echo get_stylesheet_directory_uri() ?>img/cleanweb-logo-outline.png" alt="Cleanweb Initiative logo">
       </div>
 
       <div class="row">
