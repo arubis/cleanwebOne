@@ -92,8 +92,8 @@
     <?php wp_head(); ?>
   </head>
 
-  <!-- <body <?php body_class(); ?>> -->
-<body id="main" data-spy="scroll" data-target="#subnav" data-offset="100"><!-- data-offset must be height of main navbar -->
+  <body <?php body_class(); ?> id="main" data-spy="scroll" data-target="#subnav" data-offset="100">
+  <!-- data-offset must be height of main navbar -->
 
   <!-- BEGIN Facebook Open Graph -->
   <div id="fb-root"></div>
