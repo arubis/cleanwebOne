@@ -473,7 +473,7 @@
       <div style="position: relative; height: 600px;">
 
         <div id="map"></div>
-        <script src="/js/communities-map.js" type="text/javascript" charset="utf-8" async defer></script>
+        <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/communities-map.js" type="text/javascript" charset="utf-8" async defer></script>
 
         <div class="container map-overlay-container">
           <div class="row">
@@ -567,7 +567,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
-          <script src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script>
+          <script src="http://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script>
           <div class="tintup" data-id="cleanwebone"></div>
         </div>
       </div>
