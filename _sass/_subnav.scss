@@ -23,6 +23,7 @@
     background-color: #333333;
     &:hover, &:focus { background: #444444; }
   }
+  z-index: 1001;
 }
 
 #subnav.affix {

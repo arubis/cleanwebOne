@@ -101,13 +101,11 @@ h1, h2, h3, h4, h5, h6  {
   margin-right: 0;
 }
 
-.navbar {           // applies to *both* navbars
-  z-index: 1001; 
-}
+// .navbar {           // applies to *both* navbars
+//   z-index: 1001; 
+// }
+////// that didn't work out; see partials for _navbar and _subnav
 
-.dropdown-menu li, .dropdown-menu a {
-  z-index: 1050;    // make sure dropdowns supercede navbars
-}
 
 .boxy {
   border-radius: 0 0 0 0;
