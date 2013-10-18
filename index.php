@@ -738,7 +738,7 @@
   <footer>
     <div class="container">
       <div class="row logo">
-        <img class="logo center" src="<?php echo get_stylesheet_directory_uri() ?>img/cleanweb-logo-outline.png" alt="Cleanweb Initiative logo">
+        <img class="logo center" src="<?php echo get_stylesheet_directory_uri() ?>/img/cleanweb-logo-outline.png" alt="Cleanweb Initiative logo">
       </div>
 
       <div class="row">
