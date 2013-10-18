@@ -64,20 +64,6 @@
     <meta property="og:site_name" content="Cleanweb">
     <meta property="fb:admins" content="100002188895899">
 
-    <!-- Affix.js call for the subnav bar -->
-    <!-- Make subnav bar collapse clean -->
-    <script type="text/javascript" charset="utf-8">
-      //<![CDATA[
-      $(window).load(function(){
-        $(function() {
-          $('#subnav-wrapper').height($("#subnav").height());  // Holds place of subnav on collapse if needed for layout
-          $('#subnav').affix({
-          offset: { top: $('#subnav').offset().top - 100 }     // offset value here should be height of main nav
-          });
-        });
-      });//]]> 
-    </script>
-
     <!-- get the Right(TM) visual effect on #landing's translucent headers -->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/context_blender.js" type="text/javascript" async></script>
 
@@ -219,6 +205,19 @@
   </section><!-- /LANDING> -->
 
   <!-- subnav bar (starts under landing, scrolls up then fixes at top) -->
+  <!-- Affix.js call for the subnav bar -->
+  <!-- Make subnav bar collapse clean -->
+  <script type="text/javascript" charset="utf-8">
+    //<![CDATA[
+    $(window).load(function(){
+      $(function() {
+        $('#subnav-wrapper').height($("#subnav").height());  // Holds place of subnav on collapse if needed for layout
+        $('#subnav').affix({
+        offset: { top: $('#subnav').offset().top - 100 }     // offset value here should be height of main nav
+        });
+      });
+    });//]]> 
+  </script>
   <!-- what do we do? how do we do it? who's part of it? where are we? who's talking about it? who's supporting it? -->
   <section id="subnav-wrapper">
     <!-- SUBNAV --><!-- wrapper so that when we magicly JS this from inline to fixed we don't lose layout -->
