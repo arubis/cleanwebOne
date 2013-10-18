@@ -57,11 +57,11 @@
     <!-- source: http://gianlucaguarini.github.io/jQuery.BlackAndWhite/ -->
 
     <!-- Leaflet.js powers our map here... -->
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
     <!--[if lte IE 8]>
       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
     <![endif]-->
-    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <script src="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
     
     <!-- Facebook Open Graph -->
     <meta property="og:title" content="Cleanweb">
