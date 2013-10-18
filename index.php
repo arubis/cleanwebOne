@@ -25,7 +25,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="<?php bloginfo('charset'); ?>"><!-- some WP-fed stuff -->
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <link rel="shortcut icon" href="<?php echo get_theme_option('favicon'); ?>">
+    <link rel="shortcut icon" href="<?php // echo get_theme_option('favicon'); ?>">
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS2 Feed" href="<?php bloginfo('rss2_url'); ?>">
 
     <!-- Motherf&@#ing IE. -->
