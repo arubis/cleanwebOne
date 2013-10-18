@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6  {
   // over transparency, so we add an extra div.row in the background and fill it
   // with white. Cf. div.frame-head elements.
   &.frame-head--internal {
-    background: url("/img/the-black-stripes.png") repeat;
+    background: url("img/the-black-stripes.png") repeat;
   }
 
   &.frame-head--background {
