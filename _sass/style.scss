@@ -20,7 +20,7 @@ body {
 /*** VARIABLE SETUP ****/
 
 /* Navbar */
-$navheight: 100px;    // If this changes, there's changes in the HTML too! search for 'main nav'
+$navheight: 150px;   // If this changes, there's changes in the HTML too! search for 'main nav'
 $lineheight: 1.35;   // affects spacing in headers
 
 
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6  {
   z-index: 1001; 
 }
 
-.dropdown-menu li {
+.dropdown-menu li, .dropdown-menu a {
   z-index: 1002;    // make sure dropdowns supercede navbars
 }
 
