@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<!-- 
-  /* This would be a great place for some introductory material.
-   *
-   * Which we'll get to.
-   *
-   */
--->
 
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>

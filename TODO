@@ -4,18 +4,11 @@
    - communities
    - events
    - join
- - swap compilation of css to compact
- - make sure b+w js loads correctly
  - split server over nginx so new theme v. old theme serves properly IF partial implementation
- - revert CDN http:// links to // for SSL support
-
-# unbillable
- - make sure b+w js loads correctly
- - set up dev copy of wp install on aws
+ - consider hosting js, css, image assets on CDN
 
 # STYLES #
 
- + Coordinate transparencies/translucencies
  - coordinate blend:multiply in js?
  - Make navbar dropdowns match color from design
 
@@ -23,36 +16,33 @@
 
  - get copy from chris/blake -- requested, pending
 
+# NAVBAR #
+
+ - Transform current included topnav to widget
+ - include the widget!
+
 # LAYOUT #
 
  - Clean up collapse of main nav to hide _all_ but hamburger menu -- maybe
  - move internal anchor targets so subnav clicks/triggers line up properly -- later
- + set up #subnav-wrapper to go invisible on collapse (it used to)
 
-# OUT #
+# OUTSOURCE #
 
  - Get someone to do JS animations
- - Get someone to do WP integration
+ - Get someone to do WP integration (partial; I've started it)
  (Syu?)
 
-# FAST #
-
- - Update logo -- got logo, go for it
-   + header
-   - footer
-   - resize & reformat topnav to match
-
 # FRAMES #
-## LANDING ## -- good for now!
-## what / 'whiteboard' ## -- good for now!
-## how / 'we help in all sorts of ways' ## -- good for now, awaiting feedback/Syu activity
-  - tie in Syu
-  0 clean up collapse behavior -- later / after JS
+## LANDING ## 
+ - Clean up presentation of "1,000" and/or multiply-blend functionality
+
+## how / 'we help in all sorts of ways' ## -- farming out to oDesk
+ - after oDesk contractor, confirm clean functionality
 
 ## who / contributors / checkerboard-red ## @priority-2 -- CURRENTLY DISABLED
 
  + reënable frame
- - grid out images -- redo with table? or something?
+ - grid out images -- redo with table? or something? -- suggest collapse to three-wide rows
  - add pullquote panel/row
  - add close button
    - use bootstrap's built-in close logic?
@@ -62,7 +52,7 @@
  - clean up collapse @priority
  - tie in Syu
 
-## where / map ## -- MVP, could add map search
+## where / map ## -- MVP ready, could add map search
  - location search? -- later
 
 ## event / carousel ## @priority-1
@@ -83,11 +73,10 @@
   follow thread: https://app.asana.com/app/asana/-
                               /log?se=%7B%22name%22%3A%22CommentNotificationEmail-Task-ClickAncestorTask%22%2C%20%22user%22%3A1489851729911%2C%20%22domain_user%22%3A1489851729915%2C%20%22domain%22%3A463235103672%7D&dest=https%3A%2F%2Fapp.asana.com%2F0%2F499281880423%2F7846452832226&hash=2eba6968fde3ba10a12a9731235f88b6
 
-
-## social ## -- good for now!
- 
 ## sponsors ## -- MVP, awaiting feedback
  - add vertical divider -- use bootstrap to hide on collapse -- necessary?
  - clean up jQuery plugin output so mouseOver doesn't activate outside of target image -- low-priority
 
-## footer ## -- good for now!
+## footer ##
+ - needs mission statement
+ - confirm link targets
