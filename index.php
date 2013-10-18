@@ -53,7 +53,7 @@
     </script>
 
     <!-- include jQuery plugin for b&w fade effect of sponsors -->
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jQuery.BlackAndWhite.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.BlackAndWhite.js"></script>
     <!-- source: http://gianlucaguarini.github.io/jQuery.BlackAndWhite/ -->
 
     <!-- Leaflet.js powers our map here... -->
