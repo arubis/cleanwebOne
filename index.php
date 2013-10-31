@@ -123,14 +123,12 @@
         </div>
       </div><!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-primary-collapse">
-        <?php wp_nav_menu( array( 'menu'            => 'primary',
-                                  'container'       => false,
-                                  'theme_location'  =>' main_nav',
-                                  'depth'           => 2,
-                                  'menu_class'      => 'nav navbar-nav',
-                                  'fallback_cb'     => 'wp_page_menu',
-                                  'walker'          => new wp_bootstrap_navwalker()
-                                  )); ?>
+            <?php wp_nav_menu(array(
+              'container_class' => 'menu-header',
+              'theme_location' => 'primary',
+              'items_wrap' => '<ul id="%1$s" class="%2$s nav navbar-nav">%3$s</ul>',
+              'walker' => new BS3_Walker_Nav_Menu,
+            )); ?>
 
         <!-- <ul class="nav navbar-nav">
           <li class="dropdown">
