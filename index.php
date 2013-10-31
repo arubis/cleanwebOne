@@ -123,7 +123,18 @@
         </div>
       </div><!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-primary-collapse">
-        <ul class="nav navbar-nav">
+        <?php wp_nav_menu( array( 'sort_column' => 'menu_order',
+                                  'container'       => false,
+                                  'theme_location'  =>' main_nav',
+                                  'menu_id'     => 'nav'
+                                  'menu'        => 'primary',
+                                  'depth'       => 2,
+                                  'menu_class'  => 'nav navbar-nav',
+                                  'fallback_cb' => 'wp_page_menu',
+                                  'walker' => new wp_bootstrap_navwalker()
+                                  )); ?>
+
+        <!-- <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Offerings&nbsp;</a>
             <ul class="dropdown-menu">
@@ -150,7 +161,7 @@
             </ul>
           </li>
           <li><a href="#">Blog</a></li>
-        </ul>
+        </ul> -->
       </div><!-- /.navbar-collapse -->
     </nav>
   </header>
