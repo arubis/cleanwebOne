@@ -124,10 +124,10 @@
       </div><!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-primary-collapse">
             <?php wp_nav_menu(array(
+              'theme_location' => 'main_nav',
               'container_class' => 'menu-header',
-              'theme_location' => 'primary',
               'items_wrap' => '<ul id="%1$s" class="%2$s nav navbar-nav">%3$s</ul>',
-              'walker' => new BS3_Walker_Nav_Menu,
+              'walker' => new BS3_Walker_Nav_Menu
             )); ?>
 
         <!-- <ul class="nav navbar-nav">
