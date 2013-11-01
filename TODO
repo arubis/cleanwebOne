@@ -1,9 +1,5 @@
 # BEFORE GOING LIVE #
- - select main nav links 
-   - member sign in/up
-   - communities
-   - events
-   - join
+ - Build out menu in WP interface
  - split server over nginx so new theme v. old theme serves properly IF partial implementation
  - consider hosting js, css, image assets on CDN
 
@@ -14,12 +10,7 @@
 
 # CONTENT #
 
- - get copy from chris/blake -- requested, pending
-
-# NAVBAR #
-
- - Transform current included topnav to widget
- - include the widget!
+ - get copy from chris/blake -- requested, pending, partially completed
 
 # LAYOUT #
 
@@ -39,7 +30,7 @@
 ## how / 'we help in all sorts of ways' ## -- farming out to oDesk
  - after oDesk contractor, confirm clean functionality
 
-## who / contributors / checkerboard-red ## @priority-2 -- CURRENTLY DISABLED
+## who / contributors / checkerboard-red ## @priority-2 -- CURRENTLY DISABLED -- handed to SYu
 
  + reënable frame
  - grid out images -- redo with table? or something? -- suggest collapse to three-wide rows
@@ -50,7 +41,7 @@
  - hide above
  - add frame footer
  - clean up collapse @priority
- - tie in Syu
+ - tie in SYu
 
 ## where / map ## -- MVP ready, could add map search
  - location search? -- later
@@ -75,7 +66,7 @@
 
 ## sponsors ## -- MVP, awaiting feedback
  - add vertical divider -- use bootstrap to hide on collapse -- necessary?
- - clean up jQuery plugin output so mouseOver doesn't activate outside of target image -- low-priority
+ - clean up jQuery plugin output so mouseOver doesn't activate outside of target image -- low-priority/do we care?
 
 ## footer ##
  - needs mission statement
