@@ -123,41 +123,13 @@
         </div>
       </div><!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-primary-collapse">
-            <?php wp_nav_menu(array(
-              'theme_location' => 'main_nav',
-              'container_class' => 'menu-header',
-              'items_wrap' => '<ul id="%1$s" class="%2$s nav navbar-nav">%3$s</ul>',
-              'walker' => new BS3_Walker_Nav_Menu
-            )); ?>
-
-        <!-- <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Offerings&nbsp;</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">APIs</a></li>
-              <li><a href="#">Technical Resources</a></li>
-              <li><a href="#">Datasets</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Communities&nbsp;</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">New York</a></li>
-              <li><a href="#">Los Angeles</a></li>
-              <li><a href="#">Chicago</a></li>
-              <li><a href="#">More!</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events&nbsp;</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Some Hackathon Somewhere</a></li>
-              <li><a href="#">A bunch of great stuff!</a></li>
-              <li><a href="#">More hacks in more places</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Blog</a></li>
-        </ul> -->
+        <!-- Adapted from http://www.flynsarmy.com/2013/10/getting-bootstrap-3-navbar-working-with-wordpress-wp_nav_menu/ -->
+        <?php wp_nav_menu(array(
+          'theme_location' => 'main_nav',
+          'container_class' => 'menu-header',
+          'items_wrap' => '<ul id="%1$s" class="%2$s nav navbar-nav">%3$s</ul>',
+          'walker' => new BS3_Walker_Nav_Menu
+        )); ?>
       </div><!-- /.navbar-collapse -->
     </nav>
   </header>
