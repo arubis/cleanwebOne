@@ -1,6 +1,5 @@
 # BEFORE GOING LIVE #
- - Build out menu in WP interface
- - split server over nginx so new theme v. old theme serves properly IF partial implementation
+ + Build out menu in WP interface
  - consider hosting js, css, image assets on CDN
 
 # STYLES #
@@ -14,23 +13,27 @@
 
 # LAYOUT #
 
- - Clean up collapse of main nav to hide _all_ but hamburger menu -- maybe
  - move internal anchor targets so subnav clicks/triggers line up properly -- later
 
-# OUTSOURCE #
+# OUTSOURCE? #
 
  - Get someone to do JS animations
- - Get someone to do WP integration (partial; I've started it)
- (Syu?)
+ - Get someone to do WP integration (partial; I've started it/could finish personally)
+
+# NAVBAR #
+
+ - Confirm full list of outlinks: communities, events, etc.
+   - Can be added by Blake/Chris/other post-launch via WP admin interface
 
 # FRAMES #
 ## LANDING ## 
+
  - Clean up presentation of "1,000" and/or multiply-blend functionality
 
-## how / 'we help in all sorts of ways' ## -- farming out to oDesk
+## how / 'we help in all sorts of ways' ## -- farming out JS animation to oDesk
  - after oDesk contractor, confirm clean functionality
 
-## who / contributors / checkerboard-red ## @priority-2 -- CURRENTLY DISABLED -- handed to SYu
+## who / contributors / checkerboard-red ## @priority-2 -- CURRENTLY DISABLED -- handed off to SYu
 
  + reënable frame
  - grid out images -- redo with table? or something? -- suggest collapse to three-wide rows
@@ -48,6 +51,7 @@
 
 ## event / carousel ## @priority-1
  - reenable frame
+ - get list of events from Blake/Chris/Colleen/other?
  - get images for events
  - get copy for events
  - get dates for events
