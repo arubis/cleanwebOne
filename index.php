@@ -715,7 +715,7 @@
 
       <div class="row">
         <div class="col-sm-3" id="mission-statement">
-          <p>We help entrepreneurs, innovators, and enterprises leverage information technology to drive massive improvements in global sustainability, economic prosperity, and human well-being.</p>
+          <p>We're creating a global movement of entrepreneurs focused on massive environmental impact.</p>
         </div>
 
         <div class="col-sm-3 sitemap sitemap--main">
