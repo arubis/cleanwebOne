@@ -12,7 +12,7 @@
             <div class="col-sm-10 col-sm-push-1 left">
               <div class="v-centered">
                 <h1>
-                  Inspiring the next <span class="secondary">1,000</span> companies...
+                  Recruiting a global movement of entrepreneurs
                 </h1>
               </div>
             </div>
@@ -23,7 +23,7 @@
             <div class="col-sm-10 col-sm-push-1 right">
               <div class="v-centered">
                 <h1>
-                  ...that will have a massive economic &amp; environmental impact
+                  Using IT to create massive environmental impact
                 </h1>
               </div>
             </div>
@@ -31,7 +31,7 @@
         </div>
       </div>
     </div><!-- spacer? -->
-    <div class="container">
+    <!-- <div class="container">
       <!-- subtext panel for landing frame -->
       <div class="row">
         <div class="col-sm-10 col-sm-push-1">
@@ -46,7 +46,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section><!-- /LANDING> -->
 
   <!-- subnav bar (starts under landing, scrolls up then fixes at top) -->
@@ -106,7 +106,7 @@
     <div class="container" id="whiteboard">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/whiteboard.png" alt="Whiteboard with mindmap on it" />
       <div class="col-sm-10 col-sm-offset-1">
-        <h1 class="secondary">Helping <em>entrepreneurs</em> take their idea from a whiteboard sketch to a funded company</h1>
+        <h1 class="secondary">We’re engineering serendipity and unleashing the Cleanweb network on the biggest opportunities of our lifetime</h1>
       </div>
     </div><!-- /container -->
 
