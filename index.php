@@ -12,7 +12,7 @@
             <div class="col-sm-10 col-sm-push-1 left">
               <div class="v-centered">
                 <h1>
-                  Recruiting a global movement of entrepreneurs
+                  Recruiting a global movement of entrepreneurs :)
                 </h1>
               </div>
             </div>
