@@ -1,4 +1,4 @@
-<?php if(get_meta_option('display_footer')!='off'): ?>
+<?php // if(get_meta_option('display_footer')!='off'): ?>
 
   <footer>
     <div class="container">
@@ -76,7 +76,7 @@
     </div>
   </footer>
 
-<?php endif; ?>
+<?php // endif; ?>
 
 </body>
 </html>
