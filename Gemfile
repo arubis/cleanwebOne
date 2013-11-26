@@ -5,7 +5,7 @@ group :development do
   gem 'jekyll'
   gem 'rdiscount'
   gem 'compass'
-  gem 'liquid'
+  gem 'liquid', "~> 2.6.0"
   gem "sass-css-importer", "~> 1.0.0.beta.0"
   gem 'autoprefixer-rails'
   gem 'csso-rails'

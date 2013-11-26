@@ -1,3 +1,6 @@
+<!-- HI THERE! If you want to change the content currently included here (because it hasn't been stripped
+into a proper template yet), you should look at front-page.php instead. Ciao! -->
+
 <?php get_header(); ?>
 
   <main role="main">
