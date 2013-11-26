@@ -31,6 +31,7 @@
             <li><a href="https://docs.google.com/a/cleanweb.co/spreadsheet/viewform?formkey=dFFrZGZDUTFQdEVDeVdxNTY1a2NVWkE6MQ"  title="Become a Facilitator" target="_new">Become a Facilitator</a></li>
             <li><a href="http://cleanweb.grouptie.com" title="Membership Platform" target="_new">Membership Platform</a></li>
             <li><a href="/live" title="Hangouts">Hangouts</a></li>
+            <li><a href="http://collabfinder.com/groups/the-cleanweb-initiative" title="CollabFinder">CollabFinder</a></li>
           </ul>
         </div>
 
