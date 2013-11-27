@@ -9,16 +9,20 @@ Tags: cleanweb, cleanwebOne, bootstrap3
 
 */
 
+/* Webfont Setup */
+
+$primary-font: "proxima-nova";
+// used to use ff-dagny-web-pro
 
 body {
   padding-top: 0px;
   font-size: 16px;
-  font-family: "ff-dagny-web-pro";
+  font-family: $primary-font;
   background: transparent;
 }
 
 * {
-  font-family: "ff-dagny-web-pro";
+  font-family: $primary-font;
 }
 
 /*** VARIABLE SETUP ****/
@@ -70,7 +74,7 @@ h1 {
 
 h1, h2, h3, h4, h5, h6  {
   text-transform: uppercase;
-  font-family: "ff-dagny-web-pro";
+  font-family: $primary-font;
 }
 
 /*** End font and text play. */

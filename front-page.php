@@ -23,7 +23,7 @@
             <div class="col-sm-10 col-sm-push-1 right">
               <div class="v-centered">
                 <h1>
-                  Using IT to create massive environmental impact
+                  Using I.T. to create massive environmental impact
                 </h1>
               </div>
             </div>
