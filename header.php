@@ -7,10 +7,9 @@
 <html class="ie ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
-<!-- *********** NEED TO REENABLE THIS ON WP <html <?php language_attributes(); ?>> -->
+<html <?php language_attributes(); ?>>
 <!--<![endif]-->
 
-<html>
   <head>
     <title>
       <?php wp_title( '|', true, 'right' ); ?>
@@ -21,7 +20,7 @@
     <link rel="shortcut icon" href="<?php // echo get_theme_option('favicon'); ?>">
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS2 Feed" href="<?php bloginfo('rss2_url'); ?>">
 
-    <!-- Motherf&@#ing IE. -->
+    <!-- IE. Need I complain more? Honestly barely even trying anymore. -->
     <!--[if lt IE 9]>
       <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
     <![endif]-->

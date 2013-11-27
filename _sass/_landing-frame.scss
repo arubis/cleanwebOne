@@ -10,6 +10,7 @@
 /* set up background */
 /* n.b. background-size: cover is added later in the mixin invocation */
 $landing-bg: url("img/mobile-phone-bg.jpg") no-repeat center center;
+$heavy-bold: 700;
 
 /* set up color scheme */
 $landing-color: rgb(255, 255, 255);
@@ -36,7 +37,7 @@ $landing-footer-color: rgb(0, 0, 0);
 /* top left landing header text */
 #landing * .left * h1 {
   font-size: 32px;
-  font-weight: 900;
+  font-weight: $heavy-bold;
   line-height: $lineheight;
 }
 
@@ -47,7 +48,7 @@ $landing-footer-color: rgb(0, 0, 0);
 /* top right landing header text */
 #landing * .right * h1 {
   font-size: 24px;
-  font-weight: 900;
+  font-weight: $heavy-bold;
   line-height: $lineheight;
 }
 
@@ -64,7 +65,7 @@ $landing-footer-color: rgb(0, 0, 0);
 
   * h2 {
     font-size: 22px;
-    font-weight: 900;
+    font-weight: $heavy-bold;
     line-height: $lineheight;
     padding-left: 100px;
     padding-right: 100px;

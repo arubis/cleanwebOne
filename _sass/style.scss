@@ -11,8 +11,9 @@ Tags: cleanweb, cleanwebOne, bootstrap3
 
 /* Webfont Setup */
 
-$primary-font: "proxima-nova";
+$primary-font: "proxima-nova",sans-serif;
 // used to use ff-dagny-web-pro
+//$primary-font: "ff-dagny-web-pro";
 
 body {
   padding-top: 0px;
