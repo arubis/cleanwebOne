@@ -224,22 +224,22 @@
   <section class="who frame" id="who">
     <!-- WHO FRAME -->
     <!-- Who's in on this? -->
-    <!--     <div class="row frame-head frame-head--background">
-    <!--       <div class="row frame-head frame-head--internal">
-    <!--         <div class="container">
-    <!--           <div class="col-sm-10 col-sm-push-1">
-    <!--             <div class="panel boxy">
-    <!--               <div class="v-centered">
-    <!--                 <h2>The <span style="font-weight: bold">Cleanweb Initiative</span> is
-    <!--                   already hard at work,
-    <!--                   helping amazing individuals and great companies
-    <!--                   get to the next level</h2>
-    <!--               </div>
-    <!--             </div>
-    <!--           </div>
-    <!--         </div>
-    <!--       </div>
-    <!--     </div><!-- /FRAME-HEAD -->
+    <div class="row frame-head frame-head--background">
+      <div class="row frame-head frame-head--internal">
+        <div class="container">
+          <div class="col-sm-10 col-sm-push-1">
+            <div class="panel boxy">
+              <div class="v-centered">
+                <h2>The <span style="font-weight: bold">Cleanweb Initiative</span> is
+                  already hard at work,
+                  helping amazing individuals and great companies
+                  get to the next level</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /FRAME-HEAD -->
   
     <!-- AMAZING INDIVIDUALS AND GREAT COMPANIES: 
     <!== the "WHO" GRID
@@ -259,30 +259,30 @@
     <!==
     <!== Kinda. -->
 
-    <!-- <div class="row" style="margin: 0; overflow-x: hidden; overflow-y: hidden;">
-    <!--   <div class="" style="padding: 0; overflow-x: hidden; overflow-y: hidden;">
-    <!--     <ul class="who-matrix">
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--smartercities"></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--nest" style=""></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--sungevity" style=""></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--sidecar" style=""></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--smartercities" style=""></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--nest" style=""></span>
-    <!--       </li>
-    <!--     </ul>
-    <!--   </div>
-    <!-- </div> -->
+    <div class="row" style="margin: 0; overflow-x: hidden; overflow-y: hidden;">
+      <div class="" style="padding: 0; overflow-x: hidden; overflow-y: hidden;">
+        <ul class="who-matrix">
+          <li class="who-matrix-item">
+            <span class="who-logo who-logo--smartercities"></span>
+          </li>
+          <li class="who-matrix-item">
+            <span class="who-logo who-logo--nest" style=""></span>
+          </li>
+          <li class="who-matrix-item">
+            <span class="who-logo who-logo--sungevity" style=""></span>
+          </li>
+          <li class="who-matrix-item">
+            <span class="who-logo who-logo--sidecar" style=""></span>
+          </li>
+          <li class="who-matrix-item">
+            <span class="who-logo who-logo--smartercities" style=""></span>
+          </li>
+          <li class="who-matrix-item">
+            <span class="who-logo who-logo--nest" style=""></span>
+          </li>
+        </ul>
+      </div>
+    </div> -->
   </section><!-- /WHO FRAME -->
 
   <!-- where/map frame --><!-- CURRENTLY ENABLED -->
