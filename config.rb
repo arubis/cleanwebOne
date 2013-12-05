@@ -17,6 +17,8 @@ require 'sass-css-importer'
 http_path = "/"
 css_dir = "/"
 sass_dir = "_sass"
+sass_options = {:cache => false}
+
 images_dir = "img"
 javascripts_dir = "js"
 
