@@ -30,23 +30,7 @@
           </div>
         </div>
       </div>
-    </div><!-- spacer? -->
-    <!-- <div class="container">
-    <!--   <!-- subtext panel for landing frame -->
-    <!--   <div class="row">
-    <!--     <div class="col-sm-10 col-sm-push-1">
-    <!--       <div class="panel panel-default boxy center" id="landing-subtext">
-    <!--         <div class="panel-body">
-    <!--           <div class="v-centered">
-    <!--             <h2>
-    <!--               There is a tremendous opportunity for companies to create meaning, improve lives, and do well in the process
-    <!--             </h2>
-    <!--           </div>
-    <!--         </div>
-    <!--       </div>
-    <!--     </div>
-    <!--   </div>
-    <!-- </div> -->
+    </div>
   </section><!-- /LANDING> -->
 
   <!-- subnav bar (starts under landing, scrolls up then fixes at top) -->
