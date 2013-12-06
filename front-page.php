@@ -160,10 +160,7 @@
                 </div><!--/knob-OVERLAY -->
               </div><!-- /knob itself -->
               <div class="knob-copy">
-                <p>Hosting challenges &amp; hackathons that get innovators and developers working together on big issues</p>
-                <p>Hosting investor hangouts and meetings to educate and discuss the opportunity landscape</p>
-                <p>Helping companies find the talent they need to grow and succeed</p>
-                <p>Helping companies find customers, partners, acquisition targets / acquirers</p>
+                <p>We’ve spun up a global network of Cleanweb entrepreneurs, innovators and experts. Whether you’re looking for capital, talent or need a hand getting your Cleanweb company off the ground, we’re here for you. Our main focus is getting you connected with the right people to help grow your Cleanweb community or business.</p>
               </div><!-- /knob-copy -->
             </div><!-- /leftmost knob column -->
 
@@ -177,10 +174,7 @@
                 </div><!--/knob-OVERLAY -->
               </div><!-- /knob itself -->
               <div class="knob-copy">
-                <p>Hosting challenges &amp; hackathons that get innovators and developers working together on big issues</p>
-                <p>Hosting investor hangouts and meetings to educate and discuss the opportunity landscape</p>
-                <p>Helping companies find the talent they need to grow and succeed</p>
-                <p>Helping companies find customers, partners, acquisition targets / acquirers</p>
+                <p>We’re working with the best in the business. Members of the Cleanweb from all over have rallied together to put together events, prizes and opportunities. With job postings, event updates and access to our curated network of professionals, we aim to give our members the best environment to create massive impact.</p>
               </div><!-- /knob-copy -->
             </div><!-- /center knob column -->
 
@@ -193,10 +187,7 @@
                 </div><!--/knob-OVERLAY -->
               </div><!-- /knob -->
               <div class="knob-copy">
-                <p>Hosting challenges &amp; hackathons that get innovators and developers working together on big issues</p>
-                <p>Hosting investor hangouts and meetings to educate and discuss the opportunity landscape</p>
-                <p>Helping companies find the talent they need to grow and succeed</p>
-                <p>Helping companies find customers, partners, acquisition targets / acquirers</p>
+                <p>Want to start a community? We can help you with that. Want to run NYC Big Apps in your community? We have you covered. Using our member platform, <a href="https://cleanweb.grouptie.com">GroupTie</a>, we have uploaded community-created resources, templates and best practices. Sharing is a pillar of the Cleanweb movement and our members seem to be pretty darn good at it.</p>
               </div><!-- /knob-copy -->
             </div><!-- /right knob column -->
 
