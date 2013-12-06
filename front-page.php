@@ -218,7 +218,34 @@
   
     <!-- AMAZING INDIVIDUALS AND GREAT COMPANIES: 
     <!== the "WHO" GRID
-    <!======================================
+    <!====================================== -->
+
+    <!-- newer version, based on MosaicFlow jQuery plugin -->
+    <!-- cf. https://github.com/sapegin/jquery.mosaicflow -->
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.mosaicflow.min.js"></script>
+
+    <div class="clearfix mosaicflow" id="who-mosaic" data-min-item-width="180" data-item-height-calculation="attribute">
+      <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who_nest.jpg" alt="">
+      </div> 
+      <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who_sidecar.jpg" alt="">
+      </div>
+      <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who_smartercities.gif" alt="">
+      </div>
+      <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who_sungevity.jpg" alt="">
+      </div>
+    </div>
+
+    <script type="text/javascript"><!--
+      var mosaic = $('who-mosaic').mosaicflow();
+      -->
+    </script>
+
+
+    <!-- dated version: 
     <!== How does this thing work?
     <!== In order to get seamless coverage of each rect's image, even
     <!== if the copy text causes it to scale out of square proportion,
