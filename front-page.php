@@ -222,69 +222,83 @@
 
     <!-- newer version, based on MosaicFlow jQuery plugin -->
     <!-- cf. https://github.com/sapegin/jquery.mosaicflow -->
+
+    <?php // in final template, automate this through a loop...? or leave hardcode? ?>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.mosaicflow.min.js"></script>
 
-    <div class="clearfix mosaicflow" id="who-mosaic" data-min-item-width="180" data-item-height-calculation="attribute">
+    <div class="clearfix" id="who-mosaic">
+      <!-- <div class="mosaicflow__item" id="who-mosaic">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <h3>Weave</h3>
+        <p>Generating leads and increasing solar adoption with Social</p>
+      </div> -->
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who_nest.jpg" alt="">
-      </div> 
-      <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who_sidecar.jpg" alt="">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/wegowise.png" alt="WegoWise logo">
+        <h3>WegoWise</h3>
+        <p>improving the efficiency of the built environment</p>
       </div>
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who_smartercities.gif" alt="">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/wattwire.png" alt="WattWire logo">
+        <h3>WattWire</h3>
+        <p>View real-time energy consumption and history through meters, properties and portfolios</p>
+      </div> -->
+      <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/nest.jpg" alt="Nest Thermostat">
+        <h3>Nest</h3>
+        <p>The next generation of Thermostat (and now Fire Alarm)</p>
+      </div>
+     <!--  <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <h3>Bractlet</h3>
+        <p>lowering the barrier to energy efficiency through better data</p>
       </div>
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who_sungevity.jpg" alt="">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <h3>Ridescout</h3>
+        <p>Transportation made simple</p>
+      </div>
+      <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <h3>WatrHub</h3>
+        <p>An Online Intelligence Center for Marketers of Water &amp; Wastewater Treatment Technologies</p>
+      </div>
+      <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <h3>Noesis</h3>
+        <p>world's fastest growing energy measurement and savings platform</p>
+      </div>
+      <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <h3>Yerdle</h3>
+        <p>helping you give and get things for free</p>
+      </div>
+      <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <h3>SolarList</h3>
+        <p>We help people go solar</p>
+      </div>
+      <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <h3>MastadonC</h3>
+        <p>Open source technology platform and the skills to help you realise that potential, and we do it all on zero carbon infrastructure</p>
+      </div> -->
+      <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/sidecar.jpg" alt="Sidecar">
+        <h3>Sidecar</h3>
+        <p>Share a ride with someone awesome</p>
       </div>
     </div>
 
+
+    <!-- force initialization (because Firefox is sometimes lazy) -->
     <script type="text/javascript"><!--
-      var mosaic = $('who-mosaic').mosaicflow();
+      var mosaic = $('#who-mosaic').mosaicflow({
+        minItemWidth: 180,
+        itemHeightCalculation: 'attribute'
+      });
       -->
     </script>
 
-
-    <!-- dated version: 
-    <!== How does this thing work?
-    <!== In order to get seamless coverage of each rect's image, even
-    <!== if the copy text causes it to scale out of square proportion,
-    <!== we set the image as a background to the div and use 
-    <!== background-size: cover;. Nifty! But that means that all the
-    <!== images are set in CSS. Here they're named by class to correspond
-    <!== with the company/individual, but the filename itself is 
-    <!== invoked in _who-frame.scss (you ARE still using Sass, right?)
-    <!== and so future adjustments must be made there.
-    <!== 
-    <!== Does this break the convention of content in HTML, styling in
-    <!== CSS, and never the twain shall meet? You betcha! But it works.
-    <!==
-    <!== Kinda. -->
-
-    <!-- <div class="row" style="margin: 0; overflow-x: hidden; overflow-y: hidden;">
-    <!--   <div class="" style="padding: 0; overflow-x: hidden; overflow-y: hidden;">
-    <!--     <ul class="who-matrix">
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--smartercities"></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--nest" style=""></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--sungevity" style=""></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--sidecar" style=""></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--smartercities" style=""></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--nest" style=""></span>
-    <!--       </li>
-    <!--     </ul>
-    <!--   </div>
-    <!-- </div> -->
 
   </section><!-- /WHO FRAME -->
 
