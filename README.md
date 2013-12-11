@@ -22,5 +22,5 @@ With those in place, just: 'bundle install'
 
 ## USAGE ##
 
-'compass compile' -- one-off compilation of scss -> css
+'compass compile' -- one-off compilation of scss -> css  
 'compass watch' -- watch all scss files for change, recompile as needed
