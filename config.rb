@@ -6,7 +6,7 @@ on_stylesheet_saved do |file|
   css = File.read(file)
   File.open(file, 'w') do |io|
     # io << Csso.optimize( AutoprefixerRails.compile(css) )  # enable this on production 
-    io << AutoprefixerRails.compile(css)
+    io << AutoprefixerRails.process(css)
   end
 end
 

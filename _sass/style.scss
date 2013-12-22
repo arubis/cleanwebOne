@@ -60,6 +60,9 @@ $lineheight: 1.35;   // affects spacing in headers
 @import "footer-frame";
 /** /frame support files ***/
 
+/** SUPPORT FILE(S) FOR IMAGE GRID -- this could use cleanup/integration into who-frame **/
+@import "who-frame_img-grid";
+
 /*** SUPPORT FILES FOR NAVBARS ***/
 @import "navbar";
 @import "subnav";

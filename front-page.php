@@ -199,65 +199,128 @@
   <section class="who frame" id="who">
     <!-- WHO FRAME -->
     <!-- Who's in on this? -->
-    <!--     <div class="row frame-head frame-head--background">
-    <!--       <div class="row frame-head frame-head--internal">
-    <!--         <div class="container">
-    <!--           <div class="col-sm-10 col-sm-push-1">
-    <!--             <div class="panel boxy">
-    <!--               <div class="v-centered">
-    <!--                 <h2>The <span style="font-weight: bold">Cleanweb Initiative</span> is
-    <!--                   already hard at work,
-    <!--                   helping amazing individuals and great companies
-    <!--                   get to the next level</h2>
-    <!--               </div>
-    <!--             </div>
-    <!--           </div>
-    <!--         </div>
-    <!--       </div>
-    <!--     </div><!-- /FRAME-HEAD -->
+    <div class="row frame-head frame-head--background">
+      <div class="row frame-head frame-head--internal">
+        <div class="container">
+          <div class="col-sm-10 col-sm-push-1">
+            <div class="panel boxy">
+              <div class="v-centered">
+                <h2>The <span style="font-weight: bold">Cleanweb Initiative</span> is
+                  already hard at work,
+                  helping amazing individuals and great companies
+                  get to the next level</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /FRAME-HEAD -->
   
     <!-- AMAZING INDIVIDUALS AND GREAT COMPANIES: 
     <!== the "WHO" GRID
-    <!======================================
-    <!== How does this thing work?
-    <!== In order to get seamless coverage of each rect's image, even
-    <!== if the copy text causes it to scale out of square proportion,
-    <!== we set the image as a background to the div and use 
-    <!== background-size: cover;. Nifty! But that means that all the
-    <!== images are set in CSS. Here they're named by class to correspond
-    <!== with the company/individual, but the filename itself is 
-    <!== invoked in _who-frame.scss (you ARE still using Sass, right?)
-    <!== and so future adjustments must be made there.
-    <!== 
-    <!== Does this break the convention of content in HTML, styling in
-    <!== CSS, and never the twain shall meet? You betcha! But it works.
-    <!==
-    <!== Kinda. -->
+    <!====================================== -->
 
-    <!-- <div class="row" style="margin: 0; overflow-x: hidden; overflow-y: hidden;">
-    <!--   <div class="" style="padding: 0; overflow-x: hidden; overflow-y: hidden;">
-    <!--     <ul class="who-matrix">
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--smartercities"></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--nest" style=""></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--sungevity" style=""></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--sidecar" style=""></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--smartercities" style=""></span>
-    <!--       </li>
-    <!--       <li class="who-matrix-item">
-    <!--         <span class="who-logo who-logo--nest" style=""></span>
-    <!--       </li>
-    <!--     </ul>
-    <!--   </div>
-    <!-- </div> -->
+    <!-- newer version, based on MosaicFlow jQuery plugin -->
+    <!-- cf. https://github.com/sapegin/jquery.mosaicflow -->
+
+    <?php // in final template, automate this through a loop...? or leave hardcode? ?>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.mosaicflow.min.js"></script>
+
+    <div class="clearfix" id="who-mosaic">
+      <div class="mosaicflow__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/weave-logo.png" alt="">
+        <div class="copy">
+          <h3>Weave Energy</h3>
+          <p>Generating leads and increasing solar adoption with Social</p>
+        </div>
+      </div>
+      <?php /* <div class="mosaicflow__item">    // n.b. commented out in PHP b/c JS rewrites otherwise
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/wegowise-logo.jpg" alt="WegoWise logo">
+        <h3>WegoWise</h3>
+        <p>improving the efficiency of the built environment</p>
+      </div> */ ?>
+      <div class="mosaicflow__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/wirewatt-logo.png" alt="WattWire logo">
+        <div class="copy">
+          <h3>WattWire</h3>
+          <p>View real-time energy consumption and history through meters, properties and portfolios</p>
+        </div>
+      </div>
+      <div class="mosaicflow__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/nest.jpg" alt="Nest Thermostat">
+        <div class="copy">
+          <h3>Nest</h3>
+          <p>The next generation of Thermostat (and now Fire Alarm)</p>
+        </div>
+      </div>
+     <div class="mosaicflow__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/bractlet-logo.png" alt="Bractlet">
+        <div class="copy">
+          <h3>Bractlet</h3>
+          <p>lowering the barrier to energy efficiency through better data</p>
+        </div>
+      </div>
+      <div class="mosaicflow__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/ridescout-logo.jpg" alt="Ridescout">
+        <div class="copy">
+          <h3>Ridescout</h3>
+          <p>Transportation made simple</p>
+        </div>
+      </div>
+      <div class="mosaicflow__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/watrhub-logo.jpg" alt="WatrHub">
+        <div class="copy">
+          <h3>WatrHub</h3>
+          <p>An Online Intelligence Center for Marketers of Water &amp; Wastewater Treatment Technologies</p>
+        </div>  
+      </div>
+      <div class="mosaicflow__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/noesis-logo.jpg" alt="Noesis Energy">
+        <div class="copy">
+          <h3>Noesis</h3>
+          <p>world's fastest growing energy measurement and savings platform</p>
+        </div>
+      </div>
+      <div class="mosaicflow__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/yerdle-logo.jpg" alt="Yerdle">
+        <div class="copy">
+          <h3>Yerdle</h3>
+          <p>helping you give and get things for free</p>
+        </div>
+      </div>
+      <?php /* comment out in PHP; otherwise JS rewrites improperly ////
+      <div class="mosaicflow__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <h3>SolarList</h3>
+        <p>We help people go solar</p>
+      </div>
+      */ ?>
+      <div class="mosaicflow__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/mastadonc-logo.jpg" alt="MastadonC">
+        <div class="copy">
+          <h3>MastadonC</h3>
+          <p>Open source technology platform and the skills to help you realise that potential, and we do it all on zero carbon infrastructure</p>
+        </div>
+      </div>
+      <div class="mosaicflow__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/sidecar.jpg" alt="Sidecar">
+        <div class="copy">
+          <h3>Sidecar</h3>
+          <p>Share a ride with someone awesome</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- force initialization (because Firefox is sometimes lazy) -->
+    <script type="text/javascript"><!--
+      var mosaic = $('#who-mosaic').mosaicflow({
+        minItemWidth: 180,
+        itemHeightCalculation: 'attribute'
+      });
+      -->
+    </script>
+
 
   </section><!-- /WHO FRAME -->
 
