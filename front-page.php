@@ -234,18 +234,18 @@
           <p>Generating leads and increasing solar adoption with Social</p>
         </div>
       </div>
-      <!-- <div class="mosaicflow__item">
+      <?php /* <div class="mosaicflow__item">    // n.b. commented out in PHP b/c JS rewrites otherwise
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/wegowise-logo.jpg" alt="WegoWise logo">
         <h3>WegoWise</h3>
         <p>improving the efficiency of the built environment</p>
-      </div> -->
+      </div> */ ?>
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/wirewatt-logo.png" alt="WattWire logo">
         <div class="copy">
           <h3>WattWire</h3>
           <p>View real-time energy consumption and history through meters, properties and portfolios</p>
         </div>
-      </div> -->
+      </div>
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/nest.jpg" alt="Nest Thermostat">
         <div class="copy">
@@ -288,18 +288,20 @@
           <p>helping you give and get things for free</p>
         </div>
       </div>
-<!--       <div class="mosaicflow__item">
+      <?php /* comment out in PHP; otherwise JS rewrites improperly ////
+      <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
         <h3>SolarList</h3>
         <p>We help people go solar</p>
       </div>
- -->  <div class="mosaicflow__item">
+      */ ?>
+      <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/mastadonc-logo.jpg" alt="MastadonC">
         <div class="copy">
           <h3>MastadonC</h3>
           <p>Open source technology platform and the skills to help you realise that potential, and we do it all on zero carbon infrastructure</p>
         </div>
-      </div> -->
+      </div>
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/sidecar.jpg" alt="Sidecar">
         <div class="copy">
