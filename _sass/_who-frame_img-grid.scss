@@ -11,7 +11,7 @@
 
 .mosaicflow__item {
     position:relative;
-    margin: -1px -1px -1px -1px;
+    margin: -1px -1px -1px
 }
 
 .mosaicflow__item img {
@@ -29,7 +29,7 @@
     height:100%;
     margin:0;
     padding:5px;
-    background:hsla(0,0%,0%,.5);
+    background:rgba(224, 93, 85, 0.9);
     color:#fff;
     font-size:14px;
     text-shadow:1px 1px 1px hsla(0,0%,0%,.75);
