@@ -2,6 +2,8 @@
 style.css
 img/orig/
 img/all-images/
+img/who/orig/
 css/
 *.sublime-*
 *.DS_Store
+.ruby-*

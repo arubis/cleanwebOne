@@ -227,18 +227,18 @@
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.mosaicflow.min.js"></script>
 
     <div class="clearfix" id="who-mosaic">
-      <!-- <div class="mosaicflow__item" id="who-mosaic">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
-        <h3>Weave</h3>
-        <p>Generating leads and increasing solar adoption with Social</p>
-      </div> -->
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/wegowise.png" alt="WegoWise logo">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/weave-logo.png" alt="">
+        <h3>Weave Energy</h3>
+        <p>Generating leads and increasing solar adoption with Social</p>
+      </div>
+      <!-- <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/wegowise-logo.jpg" alt="WegoWise logo">
         <h3>WegoWise</h3>
         <p>improving the efficiency of the built environment</p>
-      </div>
+      </div> -->
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/wattwire.png" alt="WattWire logo">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/wirewatt-logo.png" alt="WattWire logo">
         <h3>WattWire</h3>
         <p>View real-time energy consumption and history through meters, properties and portfolios</p>
       </div> -->
@@ -247,38 +247,38 @@
         <h3>Nest</h3>
         <p>The next generation of Thermostat (and now Fire Alarm)</p>
       </div>
-     <!--  <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+     <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/bractlet-logo.png" alt="Bractlet">
         <h3>Bractlet</h3>
         <p>lowering the barrier to energy efficiency through better data</p>
       </div>
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/ridescout-logo.jpg" alt="Ridescout">
         <h3>Ridescout</h3>
         <p>Transportation made simple</p>
       </div>
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/watrhub-logo.jpg" alt="WatrHub">
         <h3>WatrHub</h3>
         <p>An Online Intelligence Center for Marketers of Water &amp; Wastewater Treatment Technologies</p>
       </div>
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/noesis-logo.jpg" alt="Noesis Energy">
         <h3>Noesis</h3>
         <p>world's fastest growing energy measurement and savings platform</p>
       </div>
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/yerdle-logo.jpg" alt="Yerdle">
         <h3>Yerdle</h3>
         <p>helping you give and get things for free</p>
       </div>
-      <div class="mosaicflow__item">
+<!--       <div class="mosaicflow__item">
         <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
         <h3>SolarList</h3>
         <p>We help people go solar</p>
       </div>
-      <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+ -->  <div class="mosaicflow__item">
+        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/mastadonc-logo.jpg" alt="MastadonC">
         <h3>MastadonC</h3>
         <p>Open source technology platform and the skills to help you realise that potential, and we do it all on zero carbon infrastructure</p>
       </div> -->
