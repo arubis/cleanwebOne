@@ -228,64 +228,84 @@
 
     <div class="clearfix" id="who-mosaic">
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/weave-logo.png" alt="">
-        <h3>Weave Energy</h3>
-        <p>Generating leads and increasing solar adoption with Social</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/weave-logo.png" alt="">
+        <div class="copy">
+          <h3>Weave Energy</h3>
+          <p>Generating leads and increasing solar adoption with Social</p>
+        </div>
       </div>
       <!-- <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/wegowise-logo.jpg" alt="WegoWise logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/wegowise-logo.jpg" alt="WegoWise logo">
         <h3>WegoWise</h3>
         <p>improving the efficiency of the built environment</p>
       </div> -->
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/wirewatt-logo.png" alt="WattWire logo">
-        <h3>WattWire</h3>
-        <p>View real-time energy consumption and history through meters, properties and portfolios</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/wirewatt-logo.png" alt="WattWire logo">
+        <div class="copy">
+          <h3>WattWire</h3>
+          <p>View real-time energy consumption and history through meters, properties and portfolios</p>
+        </div>
       </div> -->
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/nest.jpg" alt="Nest Thermostat">
-        <h3>Nest</h3>
-        <p>The next generation of Thermostat (and now Fire Alarm)</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/nest.jpg" alt="Nest Thermostat">
+        <div class="copy">
+          <h3>Nest</h3>
+          <p>The next generation of Thermostat (and now Fire Alarm)</p>
+        </div>
       </div>
      <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/bractlet-logo.png" alt="Bractlet">
-        <h3>Bractlet</h3>
-        <p>lowering the barrier to energy efficiency through better data</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/bractlet-logo.png" alt="Bractlet">
+        <div class="copy">
+          <h3>Bractlet</h3>
+          <p>lowering the barrier to energy efficiency through better data</p>
+        </div>
       </div>
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/ridescout-logo.jpg" alt="Ridescout">
-        <h3>Ridescout</h3>
-        <p>Transportation made simple</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/ridescout-logo.jpg" alt="Ridescout">
+        <div class="copy">
+          <h3>Ridescout</h3>
+          <p>Transportation made simple</p>
+        </div>
       </div>
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/watrhub-logo.jpg" alt="WatrHub">
-        <h3>WatrHub</h3>
-        <p>An Online Intelligence Center for Marketers of Water &amp; Wastewater Treatment Technologies</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/watrhub-logo.jpg" alt="WatrHub">
+        <div class="copy">
+          <h3>WatrHub</h3>
+          <p>An Online Intelligence Center for Marketers of Water &amp; Wastewater Treatment Technologies</p>
+        </div>  
       </div>
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/noesis-logo.jpg" alt="Noesis Energy">
-        <h3>Noesis</h3>
-        <p>world's fastest growing energy measurement and savings platform</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/noesis-logo.jpg" alt="Noesis Energy">
+        <div class="copy">
+          <h3>Noesis</h3>
+          <p>world's fastest growing energy measurement and savings platform</p>
+        </div>
       </div>
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/yerdle-logo.jpg" alt="Yerdle">
-        <h3>Yerdle</h3>
-        <p>helping you give and get things for free</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/yerdle-logo.jpg" alt="Yerdle">
+        <div class="copy">
+          <h3>Yerdle</h3>
+          <p>helping you give and get things for free</p>
+        </div>
       </div>
 <!--       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/" alt="">
         <h3>SolarList</h3>
         <p>We help people go solar</p>
       </div>
  -->  <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/mastadonc-logo.jpg" alt="MastadonC">
-        <h3>MastadonC</h3>
-        <p>Open source technology platform and the skills to help you realise that potential, and we do it all on zero carbon infrastructure</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/mastadonc-logo.jpg" alt="MastadonC">
+        <div class="copy">
+          <h3>MastadonC</h3>
+          <p>Open source technology platform and the skills to help you realise that potential, and we do it all on zero carbon infrastructure</p>
+        </div>
       </div> -->
       <div class="mosaicflow__item">
-        <img width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/img/who/sidecar.jpg" alt="Sidecar">
-        <h3>Sidecar</h3>
-        <p>Share a ride with someone awesome</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/sidecar.jpg" alt="Sidecar">
+        <div class="copy">
+          <h3>Sidecar</h3>
+          <p>Share a ride with someone awesome</p>
+        </div>
       </div>
     </div>
 

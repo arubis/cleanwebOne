@@ -11,6 +11,7 @@
 
 .mosaicflow__item {
     position:relative;
+    margin: -1px -1px -1px -1px;
 }
 
 .mosaicflow__item img {
@@ -20,11 +21,12 @@
     height:auto;
 }
 
-.mosaicflow__item p {
+.mosaicflow__item .copy {
     position:absolute;
     bottom:0;
     left:0;
     width:100%;
+    height:100%;
     margin:0;
     padding:5px;
     background:hsla(0,0%,0%,.5);
@@ -38,6 +40,6 @@
             transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
 }
 
-.mosaicflow__item:hover p {
+.mosaicflow__item:hover .copy {
     opacity:1;
 }
