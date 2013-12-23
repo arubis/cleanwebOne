@@ -293,7 +293,7 @@
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/solarlist-logo.jpg" alt="">
         <div class="copy">
-          <h3>SolarList</h3>
+          <h3><a href="https://solarlist.com/">SolarList</a></h3>
           <p>We help people go solar</p>
         </div>
       </div>
