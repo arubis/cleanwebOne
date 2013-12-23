@@ -171,7 +171,7 @@
                 </div><!--/knob-OVERLAY -->
               </div><!-- /knob -->
               <div class="knob-copy">
-                <p>Want to start a community? We can help you with that. Want to run NYC Big Apps in your community? We have you covered. Using our member platform, <a href="https://cleanweb.grouptie.com">GroupTie</a>, we have uploaded community-created resources, templates and best practices. Sharing is a pillar of the Cleanweb movement and our members seem to be pretty darn good at it.</p>
+                <p>Want to start a community? We can help you with that. Want to run NYC Big Apps in your community? We have you covered. Using our member platform, <a href="https://cleanweb.grouptie.com" target="_blank">GroupTie</a>, we have uploaded community-created resources, templates and best practices. Sharing is a pillar of the Cleanweb movement and our members seem to be pretty darn good at it.</p>
               </div><!-- /knob-copy -->
             </div><!-- /right knob column -->
 
