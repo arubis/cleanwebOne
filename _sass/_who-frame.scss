@@ -15,6 +15,12 @@ $who-bg: rgba(224, 93, 85, 1);  /* set up background -- can also be an image */
 
 #who { @include frame-style($who-bg, $who-color, $who-secondary-color, $who-emph-color) }
 
+.who {
+  a, a:hover, a:active {
+    color: white;
+  }
+}
+
 .who-grid .row { 
   margin: 0;
 
