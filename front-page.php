@@ -234,11 +234,13 @@
           <p>Generating leads and increasing solar adoption with Social</p>
         </div>
       </div>
-      <?php /* <div class="mosaicflow__item">    // n.b. commented out in PHP b/c JS rewrites otherwise
+      <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/wegowise-logo.jpg" alt="WegoWise logo">
-        <h3>WegoWise</h3>
-        <p>improving the efficiency of the built environment</p>
-      </div> */ ?>
+        <div class="copy">
+          <h3><a href="https://www.wegowise.com">WegoWise</a></h3>
+          <p>improving the efficiency of the built environment</p>
+        </div>
+      </div>
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/wirewatt-logo.png" alt="WattWire logo">
         <div class="copy">
