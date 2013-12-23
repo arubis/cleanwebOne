@@ -230,7 +230,7 @@
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/weave-logo.png" alt="">
         <div class="copy">
-          <h3>Weave Energy</h3>
+          <h3><a href="http://weaveenergy.com/" target="_blank">Weave Energy</a></h3>
           <p>Generating leads and increasing solar adoption with Social</p>
         </div>
       </div>
@@ -242,49 +242,49 @@
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/wirewatt-logo.png" alt="WattWire logo">
         <div class="copy">
-          <h3>WattWire</h3>
+          <h3><a href="http://www.wirewatt.com" target="_blank">WireWatt</a></h3>
           <p>View real-time energy consumption and history through meters, properties and portfolios</p>
         </div>
       </div>
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/nest.jpg" alt="Nest Thermostat">
         <div class="copy">
-          <h3>Nest</h3>
+          <h3><a href="https://nest.com" target="_blank">Nest</a></h3>
           <p>The next generation of Thermostat (and now Fire Alarm)</p>
         </div>
       </div>
      <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/bractlet-logo.png" alt="Bractlet">
         <div class="copy">
-          <h3>Bractlet</h3>
+          <h3><a href="http://www.bractlet.com" target="_blank">Bractlet</a></h3>
           <p>lowering the barrier to energy efficiency through better data</p>
         </div>
       </div>
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/ridescout-logo.jpg" alt="Ridescout">
         <div class="copy">
-          <h3>Ridescout</h3>
+          <h3><a href="http://www.ridescoutapp.com" target="_blank">Ridescout</a></h3>
           <p>Transportation made simple</p>
         </div>
       </div>
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/watrhub-logo.jpg" alt="WatrHub">
         <div class="copy">
-          <h3>WatrHub</h3>
+          <h3><a href="http://www.watrhub.com" target="_blank">WatrHub</a></h3>
           <p>An Online Intelligence Center for Marketers of Water &amp; Wastewater Treatment Technologies</p>
         </div>  
       </div>
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/noesis-logo.jpg" alt="Noesis Energy">
         <div class="copy">
-          <h3>Noesis</h3>
+          <h3><a href="https://www.noesisenergy.com/" target="_blank">Noesis</a></h3>
           <p>world's fastest growing energy measurement and savings platform</p>
         </div>
       </div>
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/yerdle-logo.jpg" alt="Yerdle">
         <div class="copy">
-          <h3>Yerdle</h3>
+          <h3><a href="https://yerdle.com" target="_blank">Yerdle</a></h3>
           <p>helping you give and get things for free</p>
         </div>
       </div>
@@ -296,16 +296,16 @@
       </div>
       */ ?>
       <div class="mosaicflow__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/who/mastadonc-logo.jpg" alt="MastadonC">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/who/mastodonc-logo.jpg" alt="MastodonC">
         <div class="copy">
-          <h3>MastadonC</h3>
+          <h3><a href="http://www.mastodonc.com" target="_blank">Mastodon C</a></h3>
           <p>Open source technology platform and the skills to help you realise that potential, and we do it all on zero carbon infrastructure</p>
         </div>
       </div>
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/sidecar.jpg" alt="Sidecar">
         <div class="copy">
-          <h3>Sidecar</h3>
+          <h3><a href="https://www.side.cr" target="_blank">Sidecar</a></h3>
           <p>Share a ride with someone awesome</p>
         </div>
       </div>
