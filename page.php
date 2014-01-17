@@ -6,19 +6,23 @@
 <main role="main">
   <section id="main-wrap">
     <?php while ( have_posts() ) : the_post(); ?>
-      <div class="container">
-       
-        <div class="page title">
-          <h1 id="post-title"><?php the_title(); ?></h1>
-        </div>
+      <div class="page container">
+
+        <div class="row">
+          <div class="page title content">
+            <h1 id="post-title"><?php the_title(); ?></h1>
+          </div>
+        </div><!-- /row -->
+          
+          <?php  $layoutType=get_post_meta(get_the_id(), 'layout-type', true); ?>
+
+        <div class="row">                
+          <div class="page content">
+            <?php the_content(''); ?>
+          </div>
+        </div><!-- /row -->
         
-        <?php  $layoutType=get_post_meta(get_the_id(), 'layout-type', true); ?>
-              
-        <div class="page content">
-          <?php the_content(''); ?>
-        </div>
-        
-      </div>  
+      </div><!-- /page container -->
     <?php endwhile; ?>    
   </section>
 </main>

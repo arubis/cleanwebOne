@@ -9,6 +9,9 @@ Tags: cleanweb, cleanwebOne, bootstrap3
 
 */
 
+/* We're using Bootstrap to get all prettied up quickly... */
+@import "bootstrap";
+
 /* Webfont Setup */
 
 $primary-font: "proxima-nova",sans-serif;
@@ -66,6 +69,10 @@ $lineheight: 1.35;   // affects spacing in headers
 /*** SUPPORT FILES FOR NAVBARS ***/
 @import "navbar";
 @import "subnav";
+
+/*** SUPPORT FILES FOR OTHER TEMPLATE FILES ***/
+@import "page";
+
 
 /* And that's the mixin game. */
 

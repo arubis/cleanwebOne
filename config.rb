@@ -1,6 +1,7 @@
 # Require any additional compass plugins here.
 require 'autoprefixer-rails'
 # require 'csso'
+require 'bootstrap-sass'
 
 on_stylesheet_saved do |file|
   css = File.read(file)
