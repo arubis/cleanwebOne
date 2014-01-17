@@ -1,7 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    autoprefixer-rails (1.0.20140110)
+    autoprefixer-rails (1.0.20140117)
       execjs
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -46,7 +46,7 @@ GEM
     kramdown (1.0.2)
     libv8 (3.16.14.3)
     liquid (2.6.1)
-    maruku (0.7.0)
+    maruku (0.7.1)
     method_source (0.8.2)
     posix-spawn (0.3.8)
     pry (0.9.12.4)
