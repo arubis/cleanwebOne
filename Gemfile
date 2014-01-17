@@ -12,6 +12,8 @@ group :development do
   gem 'therubyracer'
   gem 'uglifier'
 
+  gem 'bootstrap-sass'
+
   gem 'pry'
   gem 'pry-remote'
   gem 'pry-stack_explorer'

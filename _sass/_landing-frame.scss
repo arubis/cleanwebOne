@@ -18,10 +18,13 @@ $landing-secondary-color: rgb(86, 196, 149);
 $landing-emph-color: rgb(86, 196, 149);
 $landing-footer-color: rgb(0, 0, 0);
 
+main { padding-top: $navheight; }
+
 #landing { 
   @include frame-style($landing-bg, $landing-color, $landing-secondary-color, $landing-emph-color);
   min-height: 610px;
-  padding-top: $navheight;
+  // padding-top: $navheight; // This makes sense if the navbar is only on the landing page;
+                              // instead it's been moved to style <main>
   background-size: cover;
 }
 
