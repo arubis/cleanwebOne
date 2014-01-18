@@ -1,0 +1,259 @@
+<div id="intro_wrap">
+  <div class="container">
+    <div class="slogan black">
+      <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/Cleanweb-C.png" width="34" height="41" class="CleanwebC" />
+      <p>The Cleanweb isn't in one place. It's a global movement solving the world's critical resource challenges.</p>
+      <a class="btn orange" href="/join">
+        <button>Contribute your talent</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="map"></div>
+  <script>
+  // create a map in the "map" div, set the view to a given place and zoom
+  var map = L.map('map').setView([51.505, -0.09], 2);
+  // add an OpenStreetMap tile layer
+  //L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  //attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  L.tileLayer('http://{s}.tile.cloudmade.com/6375f24019e14089b0633450f8de4c9b/997/256/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <ahref="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery � <a href="http://cloudmade.com">CloudMade</a>'
+  }).addTo(map);
+  // add a marker in the given location, attach some popup content to it and open the popup. Most lat / lons from http://open.mapquestapi.com/geocoding/
+  //Beijing, China
+  L.marker([39.913602, 116.397196]).addTo(map).bindPopup('Beijing, China<br><a href="http://www.cleanweb.co" target="_new">www.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Beijing/429597177119257" target="_new">facebook.com/pages/Cleanweb-Beijing/429597177119257</a><br><a href="http://www.twitter.com/cleanweb" target="_new">@Cleanweb</a>');
+  //Belgium
+  L.marker([50.85034, 4.35171]).addTo(map).bindPopup('Belgium<br><a href="http://belgium.cleanweb.co" target="_new">belgium.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Belgium/176575122511395" target="_new">facebook.com/pages/Cleanweb-Belgium/176575122511395</a><br><a href="http://www.twitter.com/cleanwebbe" target="_new">@CleanwebBE</a>');
+  //Berkeley, CA
+  L.marker([37.88166, -122.28448]).addTo(map).bindPopup('Berkeley, CA<br><a href="http://berkeley.cleanweb.co" target="_new">berkeley.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Berkeley/296111370492236" target="_new">facebook.com/pages/Cleanweb-Berkeley/296111370492236</a><br><a href="http://www.twitter.com/cleanweb" target="_new">@Cleanweb</a>');
+  // Boston
+  L.marker([42.360482, -71.059568]).addTo(map).bindPopup('Boston, MA<br><a href="http://boston.cleanweb.co/" target="_new">boston.cleanweb.co</a><br><a href="http://www.facebook.com/cleanwebbos" target="_new">facebook.com/cleanwebbos</a><br><a href="http://www.twitter.com/CleanWebBos" target="_new">@CleanwebBos</a>');
+  // Brazil
+  L.marker([-1.45502, -48.502368]).addTo(map).bindPopup('Brazil<br><a href="http://www.cleanweb.co" target="_new">www.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Brasil/270768959716124" target="_new">Cleanweb-Brasil/270768959716124</a><br><a href="http://www.twitter.com/cleanwebBR" target="_new">@CleanwebBR</a>');
+  // Chicago
+  L.marker([41.875621, -87.624371]).addTo(map).bindPopup('Chicago, IL<br><a href="http://chicago.cleanweb.co/" target="_new">chicago.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Chicago/340213486091614" target="_new">facebook.com/pages/Cleanweb-Chicago/340213486091614</a><br><a href="http://www.twitter.com/CleanWeb" target="_new">@Cleanweb</a>');
+  // France
+  L.marker([48.856506, 2.352133]).addTo(map).bindPopup('France<br><a href="http://france.cleanweb.co" target="_new">france.cleanweb.co</a><br><a href="http://www.facebook.com/cleanwebfrance" target="_new">facebook.com/cleanwebfrance</a><br><a href="http://www.twitter.com/cleanwebfr" target="_new">@CleanwebFR</a>');
+  // Houston
+  L.marker([29.984167, -95.332889]).addTo(map).bindPopup('Houston, TX<br><a href="http://houston.cleanweb.co" target="_new">houston.cleanweb.co</a><br><a href="http://www.facebook.com/cleanwebtexas" target="_new">facebook.com/cleanwebtexas</a><br><a href="http://www.twitter.com/CleanwebTX" target="_new">@CleanwebTX</a>');
+  // Israel
+  L.marker([32.066157, 34.777821]).addTo(map).bindPopup('Israel<br><a href="http://israel.cleanweb.co" target="_new">israel.cleanweb.co</a><br><a href="http://www.facebook.com/pages/Cleanweb-Israel/335078466593728" target="_new">facebook.com/pages/Cleanweb-Israel/335078466593728</a><br><a href="http://www.twitter.com/Cleanweb" target="_new">@Cleanweb</a>');
+  // Italy
+  L.marker([41.893258, 12.483062]).addTo(map).bindPopup('Italy<br><a href="http://italy.cleanweb.co" target="_new">italy.cleanweb.co</a><br><a href="http://www.facebook.com/cleanwebit" target="_new">facebook.com/cleanwebit</a><br><a href="http://www.twitter.com/CleanwebIT" target="_new">@CleanwebIT</a>');
+  // LA
+  L.marker([34.050171, -118.241971]).addTo(map).bindPopup('Los Angeles, CA<br><a href="http://losangeles.cleanweb.co" target="_new">losangeles.cleanweb.co</a><br><a href="http://www.facebook.com/cleanweb" target="_new">facebook.com/cleanweb</a><br><a href="http://www.twitter.com/Cleanweb" target="_new">@Cleanweb</a>');
+  // NYC
+  L.marker([40.730599, -73.986581]).addTo(map).bindPopup('New York City, NY<br><a href="http://nyc.cleanweb.co" target="_new">nyc.cleanweb.co</a><br><a href="http://www.facebook.com/CleanwebNYC" target="_new">facebook.com/CleanwebNYC</a><br><a href="http://www.twitter.com/CleanwebNYC" target="_new">@CleanwebNYC</a>');
+  // San Francisco
+  L.marker([37.764799, -122.46299]).addTo(map).bindPopup('San Francisco, CA<br><a href="http://sanfrancisco.cleanweb.co" target="_new">sanfrancisco.cleanweb.co</a><br><a href="http://www.facebook.com/Cleanweb" target="_new">facebook.com/Cleanweb</a><br><a href="http://www.twitter.com/Cleanweb" target="_new">@Cleanweb</a>');
+  // Scotland
+  L.marker([55.899956, -4.262695]).addTo(map).bindPopup('Scotland <br><a href="http://scotland.cleanweb.co" target="_new">scotland.cleanweb.co</a><br><a href="http://www.facebook.com/pages/Cleanweb-Scotland/474242292613069" target="_new">facebook.com/pages/Cleanweb-Scotland/474242292613069</a><br><a href="http://www.twitter.com/CleanwebSCO" target="_new">@CleanwebSCO</a>');
+  // Stanford 
+  L.marker([37.442156, -122.163447]).addTo(map).bindPopup('Stanford / Palo Alto, CA <br><a href="http://www.cleanweb.co" target="_new">www.cleanweb.co</a><br><a href="http://www.facebook.com/pages/Cleanweb" target="_new">facebook.com/pages/Cleanweb</a><br><a href="http://www.twitter.com/Cleanweb" target="_new">@Cleanweb</a>');
+  // The Netherlands
+  L.marker([52.036846, 4.383428]).addTo(map).bindPopup('The Netherlands<br><a href="http://netherlands.cleanweb.co" target="_new">netherlands.cleanweb.co</a><br><a href="http://www.facebook.com/pages/Cleanweb-Netherlands/343848429068046?ref=ts&fref=ts" target="_new">facebook.com/pages/Cleanweb-Netherlands/343848429068046?ref=ts&fref=ts</a><br><a href="http://www.twitter.com/cleanweb" target="_new">@Cleanweb</a>');
+  // UK 
+  L.marker([51.590723, -0.131836]).addTo(map).bindPopup('United Kingdom<br><a href="http://www.cleanweb.co" target="_new">www.cleanweb.co</a><br><a href="http://www.facebook.com/pages/Cleanweb-UK/447637075290632" target="_new">facebook.com/pages/Cleanweb-UK/447637075290632</a><br><a href="http://www.twitter.com/CleanwebUK" target="_new">@CleanwebUK</a>');
+  </script>
+
+  <br class="clear" />
+
+  <h5>Global Community Leaders</h5>
+
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/LoicBar.jpg" alt="Loic Barr" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Belgium</div>
+  <div class="Name2">Loic Bar</div>
+  <div class="Twitter">
+    <a href="http://www.twitter.com/" target="_blank">@loicbar</a>
+  </div>
+
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/TimQuijano.jpg" alt="Tim Quijano" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Beijing</div>
+  <div class="Name2">Tim Quijano</div>
+  <div class="Twitter">
+    <a href="http://www.twitter.com/timquijano" target="_blank">@timquijano</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JolieChan.jpg" alt="Jolie Chan" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Berkeley</div>
+  <div class="Name2">Jolie Chan</div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JohnRomankiewicz.jpg" alt="John Romankiewicz" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Berkeley</div>
+  <div class="Name2">John Romankiewicz</div>
+  <div class="Twitter"><a href="http://www.twitter.com/sustainablejohn" target="_blank">@sustainablejohn</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/MarkVasu.jpg" alt="Mark Vasu" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Boston</div>
+  <div class="Name2">Mark Vasu</div>
+  <div class="Twitter"><a href="http://www.twitter.com/markvasu" target="_blank">@markvasu</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/LeonardoRicardoArvateAlvares.jpg" alt="Leonardo Ricardo Arvate Alvares" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Brazil</div>
+  <div class="Name2">Leonardo Ricardo Arvate Alvares</div>
+  <div class="Twitter"><a href="http://www.twitter.com/lalvares14" target="_blank">@lalvares14</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/RafaelFigueiredo.jpg" alt="Rafael Figueiredo" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Brazil</div>
+  <div class="Name2">Rafael Figueiredo</div>
+  <div class="Twitter"><a href="http://www.twitter.com/rdbfig" target="_blank">@rdbfig</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BlankHeadshot.jpg" alt="Robert Fuentre" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Brazil</div>
+  <div class="Name2">Robert Fuentre</div>
+
+  <br class="clear" />
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/DerekGallo.jpg" alt="Derek Gallo" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Brazil</div>
+  <div class="Name2">Derek Gallo</div>
+  <div class="Twitter"><a href="http://www.twitter.com/prithvibhakti" target="_blank">@prithvibhakti</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JamieJohnson.jpg" alt="Jamie Johnson" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Chicago</div>
+  <div class="Name2">Jamie Johnson</div>
+  <div class="Twitter"><a href="http://www.twitter.com/verdeL3C" target="_blank">@verdeL3C</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/FrancoisGirodolle.jpg" alt="Fran�ois Girodolle" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">France</div>
+  <div class="Name2">Francois Girodolle</div>
+  <div class="Twitter"><a href="http://www.twitter.com/fgirodolle" target="_blank">@fgirodolle</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BryanHassin.jpg" alt="Bryan Hassin" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Houston</div>
+  <div class="Name2">Bryan Hassin</div>
+  <div class="Twitter"><a href="http://www.twitter.com/guido23" target="_blank">@guido23</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JeffReichman.jpg" alt="Jeff Reichman" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Houston</div>
+  <div class="Name2">Jeff Reichman</div>
+  <div class="Twitter"><a href="http://www.twitter.com/fileunderjeff" target="_blank">@fileunderjeff</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BarakGoldstein.jpg" alt="Barak Goldstein" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Israel</div>
+  <div class="Name2">Barak Goldstein</div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/RaphaelNejman.jpg" alt="Raphael Nejman" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Israel</div>
+  <div class="Name2">Raphael Nejman</div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/ChrisAdams.jpg" alt="Chris Adams" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">London</div>
+  <div class="Name2">Chris Adams</div>
+  <div class="Twitter"><a href="http://www.twitter.com/mrchrisadams" target="_blank">@mrchrisadams</a>
+  </div>
+
+  <br class="clear" />
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/PatrickMorris.jpg" alt="Patrick Morris" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">New York City</div>
+  <div class="Name2">Patrick Morris</div>
+  <div class="Twitter"><a href="http://www.twitter.com/patrickjmorris" target="_blank">@patrickjmorris</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/AdamSiemiginowski.jpg" alt="Adam Siemiginowski" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">New York City</div>
+  <div class="Name2">Adam Siemiginowski</div>
+  <div class="Twitter"><a href="http://www.twitter.com/atsiem" target="_blank">@atsiem</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/ErikSimonsen.jpg" alt="Erik Simonsen" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Northern Europe</div>
+  <div class="Name2">Erik Simonsen</div>
+  <div class="Twitter"><a href="http://www.twitter.com/eriksimonsenIT" target="_blank">@eriksimonsenIT</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JonathanKoomey.jpg" alt="Jonathan Koomey" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Palo Alto</div>
+  <div class="Name2">Jonathan Koomey</div>
+  <div class="Twitter"><a href="http://www.twitter.com/jgkoomey" target="_blank">@jgkoomey</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/Jay-EEmmingham.jpg" alt="Jay-E Emmingham" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Portland</div>
+  <div class="Name2">Jay-E Emmingham</div>
+  <div class="Twitter"><a href="http://www.twitter.com/pdxje" target="_blank">@pdxje</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/FrancescoPetracchini.jpg" alt="Francesco Petracchini" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Rome</div>
+  <div class="Name2">Francesco Petracchini</div>
+  <div class="Twitter"><a href="http://www.twitter.com/ecopetra" target="_blank">@ecopetra</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BlankHeadshot.jpg" alt="Maurizio de Gregorio" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Rome</div>
+  <div class="Name2">Maurizio de Gregorio</div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JustinJohnson.jpg" alt="Justin Johnson" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">San Francisco Bay Area</div>
+  <div class="Name2">Justin Johnson</div>
+  <div class="Twitter"><a href="http://www.twitter.com/elof" target="_blank">@elof</a>
+  </div>
+
+  <br class="clear">
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BrianCary.jpg" alt="Brian Cary" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">San Francisco Bay Area</div>
+  <div class="Name2">Brian Cary</div>
+  <div class="Twitter"><a href="http://www.twitter.com/briancary" target="_blank">@briancary</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/ColinWillox.jpg" alt="Colin Willox" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">San Francisco Bay Area</div>
+  <div class="Name2">Colin Willox</div>
+  <div class="Twitter"><a href="http://www.twitter.com/comfydanger" target="_blank">@comfydanger</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/RoryGiani.jpg" alt="Rory Giani" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Scotland</div>
+  <div class="Name2">Rory Giani</div>
+  <div class="Twitter"><a href="http://www.twitter.com/digitalWestie" target="_blank">@digitalWestie</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/OriolPascual.jpg" alt="Oriol Pascual" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">Spain</div>
+  <div class="Name2">Oriol Pascual</div>
+  <div class="Twitter"><a href="http://www.twitter.com/onsustain" target="_blank">@onsustain</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JeanRichardWitteveen.jpg" alt="Jean Richard Witteveen" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">The Netherlands</div>
+  <div class="Name2">Jean Richard Witteveen</div>
+  <div class="Twitter"><a href="http://www.twitter.com/jeanrichard" target="_blank">@jeanrichard</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JasonNeylon.jpg" alt="Jason Neylon" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">United Kingdom</div>
+  <div class="Name2">Jason Neylon</div>
+  <div class="Twitter"><a href="http://www.twitter.com/jasonneylon" target="_blank">@jasonneylon</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JamesSmith.jpg" alt="James Smith" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">United Kingdom</div>
+  <div class="Name2">James Smith</div>
+  <div class="Twitter"><a href="http://www.twitter.com/floppy" target="_blank">@floppy</a>
+  </div>
+
+  <img src="http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JackTownsend.jpg" alt="Jack Townsend" width="99" height="99" class="alignleft size-full border" />
+  <div class="City">United Kingdom</div>
+  <div class="Name2">Jack Townsend</div>
+  <div class="Twitter"><a href="http://www.twitter.com/jacktownsend_" target="_blank">@jacktownsend_</a>
+  </div>
+
+  <br class="clear">
+
+</div>
