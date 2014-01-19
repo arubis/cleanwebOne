@@ -12,6 +12,7 @@
 #nav {
   height: $navheight;
   z-index: 1050;
+  * li * { text-transform: uppercase; }
 }
 
 .navbar-collapse {

@@ -7,3 +7,5 @@ css/
 *.sublime-*
 *.DS_Store
 .ruby-*
+
+static-html-for-pages/*.html
