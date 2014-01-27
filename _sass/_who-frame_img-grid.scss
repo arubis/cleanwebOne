@@ -11,14 +11,16 @@
 
 .mosaicflow__item {
     position:relative;
-    margin: -1px -1px -1px
+//    margin: -1px -1px -1px -1px
 }
 
 .mosaicflow__item img {
     display:block;
-    width:100%;
+    width: 100%;
     max-width:400px;
     height:auto;
+    margin: -1px -1px -1px -1px
+
 }
 
 .mosaicflow__item .copy {
