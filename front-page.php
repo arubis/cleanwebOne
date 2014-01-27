@@ -195,7 +195,7 @@
     </div><!-- /frame-footer -->
   </section><!-- /HOW FRAME -->
 
-  <!-- red-based grid frame with fancy mouseover/click behavior --><!-- CURRENTLY DISABLED -->
+  <!-- red-based grid frame with fancy mouseover/click behavior --><!-- CURRENTLY ENABLED -->
   <section class="who frame" id="who">
     <!-- WHO FRAME -->
     <!-- Who's in on this? -->
@@ -225,6 +225,7 @@
 
     <?php // in final template, automate this through a loop...? or leave hardcode? ?>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.mosaicflow.min.js"></script>
+
 
     <div class="clearfix" id="who-mosaic">
       <div class="mosaicflow__item">
@@ -313,6 +314,12 @@
       </div>
     </div>
 
+<!--     <div id="mosaic-pull-quote">
+      
+    </div> -->
+
+    <!-- let's develop some jQuery -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.pullquotes.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- force initialization (because Firefox is sometimes lazy) -->
     <script type="text/javascript"><!--
@@ -468,6 +475,7 @@
   </section><!-- /SOCIAL FRAME -->
 
   <!-- sponsor frame --><!--CURRENTLY ENABLED-->
+
   <section class="sponsors frame" id="sponsors">
     <!-- SPONSOR FRAME -->
     <!-- with a great big thanks to... -->
@@ -485,7 +493,6 @@
         </div>
       </div>
     </div><!-- /FRAME HEADER -->
-
     <div class="container">
       <!-- Sponsor grid -->
       <div class="row sponsor-grid">
@@ -493,7 +500,7 @@
         <div class="col-supporters col-supporters--leadership col-xs-6 col-sm-6 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
         <!-- LEADERSHIP level -->
           <div class="row">
-            <div class="container">
+            <div class="col-md-12">
               <h3>Leadership</h3>
             </div>
           </div>
@@ -558,7 +565,7 @@
         <div class="col-supporters col-supporters--partnership col-xs-4 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-1">
         <!-- PARTNERSHIP level -->
           <div class="row">
-            <div class="container">
+            <div class="col-md-12">
               <h3>Partnership</h3>
             </div>
           </div>
