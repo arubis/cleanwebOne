@@ -314,12 +314,10 @@
       </div>
     </div>
 
-<!--     <div id="mosaic-pull-quote">
-      
-    </div> -->
-
-    <!-- let's develop some jQuery -->
+    <!-- animate pullquotes (DISABLED) -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.pullquotes.js" type="text/javascript" charset="utf-8"></script>
+    <div id="mosaic-pull-quote-target"></div>
+
 
     <!-- force initialization (because Firefox is sometimes lazy) -->
     <script type="text/javascript"><!--
