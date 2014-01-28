@@ -498,7 +498,7 @@
       <!-- Sponsor grid -->
       <div class="row sponsor-grid">
 
-        <div class="col-supporters col-supporters--leadership col-xs-6 col-sm-6 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
+        <div class="col-supporters col-supporters--leadership col-sm-6 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
         <!-- LEADERSHIP level -->
           <div class="row">
             <div class="col-md-12">
@@ -563,7 +563,7 @@
           </div>
         </div><!-- /LEADERSHIP level -->
 
-        <div class="col-supporters col-supporters--partnership col-xs-4 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-1">
+        <div class="col-supporters col-supporters--partnership col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-1">
         <!-- PARTNERSHIP level -->
           <div class="row">
             <div class="col-md-12">
