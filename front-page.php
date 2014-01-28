@@ -135,7 +135,7 @@
           <div class="col-md-10 col-md-push-1 knobs-container">
 
             <!-- leftmost knob column -->
-            <div class="col-sm-4 knob-column">
+            <div class="col-sm-4 knob-column knob-left">
               <div class="knob">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knob-down.png" alt="" id="knob-left" class="knob">
                 <div class="knob-overlay">
@@ -149,7 +149,7 @@
             </div><!-- /leftmost knob column -->
 
             <!-- middle knob -->
-            <div class="col-sm-4 knob-column">
+            <div class="col-sm-4 knob-column knob-center">
               <div class="knob">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knob-down.png" alt="" id="knob-center" class="knob">
                 <div class="knob-overlay">
@@ -162,7 +162,7 @@
               </div><!-- /knob-copy -->
             </div><!-- /center knob column -->
 
-            <div class="col-sm-4 knob-column">
+            <div class="col-sm-4 knob-column knob-right">
               <div class="knob">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/knob-down.png" alt="" id="knob-right" class="knob">
                 <div class="knob-overlay">
@@ -194,6 +194,9 @@
       </div>
     </div><!-- /frame-footer -->
   </section><!-- /HOW FRAME -->
+
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.transform2d.js" type="text/javascript" charset="utf-8"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.rotate-knobs.js" type="text/javascript" charset="utf-8" async></script>
 
   <!-- red-based grid frame with fancy mouseover/click behavior --><!-- CURRENTLY ENABLED -->
   <section class="who frame" id="who">
@@ -495,7 +498,7 @@
       <!-- Sponsor grid -->
       <div class="row sponsor-grid">
 
-        <div class="col-supporters col-supporters--leadership col-xs-6 col-sm-6 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
+        <div class="col-supporters col-supporters--leadership col-sm-6 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
         <!-- LEADERSHIP level -->
           <div class="row">
             <div class="col-md-12">
@@ -560,7 +563,7 @@
           </div>
         </div><!-- /LEADERSHIP level -->
 
-        <div class="col-supporters col-supporters--partnership col-xs-4 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-1">
+        <div class="col-supporters col-supporters--partnership col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-1">
         <!-- PARTNERSHIP level -->
           <div class="row">
             <div class="col-md-12">

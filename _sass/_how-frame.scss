@@ -22,6 +22,8 @@ $how-footer-color: rgb(99, 133, 84);
   * img.knob {
     margin-top: 50px;
     margin-bottom: 50px;
+    transform-origin: center 110px; // need this for jQ rotate
+
   }
 }
 
