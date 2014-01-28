@@ -5,20 +5,10 @@
 # STYLES #
 
  - coordinate blend:multiply in js?
- - Make navbar dropdowns match color from design
 
 # CONTENT #
 
  - get copy from chris/blake -- requested, pending, partially completed
-
-# LAYOUT #
-
- - move internal anchor targets so subnav clicks/triggers line up properly -- later
-
-# OUTSOURCE? #
-
- - Get someone to do JS animations
- - Get someone to do WP integration (partial; I've started it/could finish personally)
 
 # NAVBAR #
 
@@ -30,8 +20,9 @@
 
  - Clean up presentation of "1,000" and/or multiply-blend functionality
 
-## how / 'we help in all sorts of ways' ## -- farming out JS animation to oDesk
- - after oDesk contractor, confirm clean functionality
+## how / 'we help in all sorts of ways' ## ## -- MVP, some todos below
+ - be smart about responsiveness
+ - onMouseOver highlight
 
 ## who / contributors / checkerboard-red ## @priority-2 -- CURRENTLY DISABLED -- handed off to SYu
 
