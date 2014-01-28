@@ -15,31 +15,39 @@
 // https://github.com/louisremi/jquery.transform.js
 
 $(document).ready(function() {
-  var $open = '0deg';
-  var $closed = '180deg';
+  var open = '0deg';
+  var closed = '180deg';
+
+  var degs = {};
+  degs['open'] = '0deg';
+  degs['closed'] = '180deg';
+
+  var state = {};
+  state['left'] = 'closed';
+  state['center'] = 'closed';
+  state['right'] = 'closed';
 
   // Set up initial state: rotate up knobs:
   $('#knob-left, #knob-center, #knob-right').css({
-    'transform': 'rotate('+$closed+')'
+    'transform': 'rotate('+ degs['closed'] +')'
   })
 
   // collapse text divs
   $('.knob-copy').slideUp(0);
 
-  // Finish init; the rest of this is active
+  // finished setting up initial (closed) state.
 
-  // $('.knob img').click(function() {
-  //   $(this).animate({
-  //     'transform' : 'rotate('+$open+')',  
-  //     }, 600);
-  // });
-
-  var toggleColumn = function($column) {
+  // minimal toggle logic for full columns
+  var toggleColumn = function($column) { 
+    if (state[$column] == 'open') {
+      state[$column] = 'closed';
+    } else{
+      state[$column] = 'open';
+    };
     $('img#knob-'+$column).animate({
-      'transform': 'rotate('+$open+')'},
-      600);
-    $('.knob-'+$column+' .knob-copy').slideToggle(1000);
-  };
+      'transform': 'rotate('+degs[state[$column]]+')'}, 600);
+    $('.knob-'+$column+' .knob-copy').slideToggle(600);
+  }
 
   $('.knob-left').click(function() {
     toggleColumn('left');
