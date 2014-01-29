@@ -12,6 +12,10 @@
 .mosaicflow__item {
     position:relative;
 //    margin: -1px -1px -1px -1px
+
+    h3 {                    // bump down a hair from 24
+        font-size: 20px;
+    }
 }
 
 .mosaicflow__item img {

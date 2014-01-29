@@ -304,8 +304,8 @@
       <div class="mosaicflow__item">
         <img src="<?php echo get_template_directory_uri(); ?>/img/who/mastodonc-logo.jpg" alt="MastodonC">
         <div class="copy">
-          <h3><a href="http://www.mastodonc.com" target="_blank">Mastodon C</a></h3>
-          <p>Open source technology platform and the skills to help you realise that potential, and we do it all on zero carbon infrastructure</p>
+          <h3><a href="http://www.mastodonc.com" target="_blank">Mastodon&nbsp;C</a></h3>
+          <p>Open source technology platform &amp; the skills to help you realise that potential</p>
         </div>
       </div>
       <div class="mosaicflow__item">
@@ -321,8 +321,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.pullquotes.js" type="text/javascript" charset="utf-8"></script>
     <div id="mosaic-pull-quote-target"></div>
 
-
-    <!-- force initialization (because Firefox is sometimes lazy) -->
+    <!-- set up the grid above -->
     <script type="text/javascript"><!--
       // use jq here...
 
@@ -336,7 +335,7 @@
         
         var setupGrid = function() {
           if ( viewportWidth < 768 ) {
-            whoGridItemWidth = 100;
+            whoGridItemWidth = 125;
           } else {
             whoGridItemWidth = 180;
           }
