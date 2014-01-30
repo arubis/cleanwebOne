@@ -322,44 +322,7 @@
     <div id="mosaic-pull-quote-target"></div>
 
     <!-- set up the grid above -->
-    <script type="text/javascript"><!--
-      // use jq here...
-
-      $(document).ready(function() {
-        // we set minItemWidth to be responsive;
-        // when the viewport is 'xs' (<768px), 
-        // drop the minItemWidth so we always have
-        // at least two columns
-        var whoGridItemWidth;
-        var viewportWidth = $(window).width();
-        
-        var setupGrid = function() {
-          viewportWidth = $(window).width();
-          if ( viewportWidth < 768 ) {
-            whoGridItemWidth = 125;
-          } else {
-            whoGridItemWidth = 180;
-          }
-
-          var mosaic = $('#who-mosaic').mosaicflow({
-            minItemWidth: whoGridItemWidth,
-            itemHeightCalculation: 'attribute'
-          });
-
-        };
-
-        setupGrid();
-
-        // reset on window size change
-        $(window).resize(function() {
-          setupGrid();
-        });
-
-
-      });
-
-      -->
-    </script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.whos-who-mosaic-tweak.js" type="text/javascript" charset="utf-8" async defer></script>
 
 
   </section><!-- /WHO FRAME -->
