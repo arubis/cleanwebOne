@@ -334,6 +334,7 @@
         var viewportWidth = $(window).width();
         
         var setupGrid = function() {
+          viewportWidth = $(window).width();
           if ( viewportWidth < 768 ) {
             whoGridItemWidth = 125;
           } else {

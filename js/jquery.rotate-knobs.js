@@ -27,13 +27,23 @@ $(document).ready(function() {
   state['center'] = 'closed';
   state['right'] = 'closed';
 
-  // Set up initial state: rotate up knobs:
-  $('#knob-left, #knob-center, #knob-right').css({
-    'transform': 'rotate('+ degs['closed'] +')'
-  })
+  // Set up initial state based on viewport size
+  var viewportWidthForKnobs = $(window).width();
+  var setupKnobs = function(width) {
+    if ( width < 768 ) {
+      $('#knob-left, #knob-center, #knob-right').css({
+        'transform': 'rotate('+ degs['open'] +')'
+      });
+    } else {
+      $('#knob-left, #knob-center, #knob-right').css({
+        'transform': 'rotate('+ degs['closed'] +')'
+      });
+      // collapse text divs
+      $('.knob-copy').slideUp(0);
+    }
+  };
 
-  // collapse text divs
-  $('.knob-copy').slideUp(0);
+  setupKnobs(viewportWidthForKnobs);
 
   // finished setting up initial (closed) state.
 
@@ -43,11 +53,12 @@ $(document).ready(function() {
       state[$column] = 'closed';
     } else{
       state[$column] = 'open';
-    };
+    }
+
     $('img#knob-'+$column).animate({
       'transform': 'rotate('+degs[state[$column]]+')'}, 600);
     $('.knob-'+$column+' .knob-copy').slideToggle(600);
-  }
+  };
 
   $('.knob-left').click(function() {
     toggleColumn('left');
