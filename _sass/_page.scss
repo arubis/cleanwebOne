@@ -4,6 +4,10 @@
  * (basically not blog posts)
  */
 
+section.pages {
+  @extend .container;
+}
+
 div.page.content {
   @extend .col-md-10;
   @extend .col-md-offset-1;
