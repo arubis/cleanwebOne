@@ -1,0 +1,7 @@
+// Set up appearance of dynamically-pulled posts, eg. on
+// blogs page or index.php
+
+section.posts {
+  @extend .container;
+  padding: 20px 20px 20px 20px;
+}

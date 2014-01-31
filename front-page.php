@@ -389,7 +389,7 @@
 
   </section><!-- /WHERE FRAME -->
 
-  <!-- featured event frame --><!-- CURRENTLY DISABLED -->
+  <!-- featured event frame --><!-- CURRENTLY DISABLED --><?PHP /* ?>
   <section class="events frame" id="events">
     <!-- EVENT FRAME -->
     <!-- upcoming/featured events -->
@@ -421,6 +421,7 @@
     <!==    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <!==  </div><!== /container -->
   </section><!-- /EVENT FRAME -->
+  <?php */ ?>
 
   <!-- social media/twitter plugin frame --><!-- CURRENTLY ENABLED -->
   <section class="social frame" id="social">
