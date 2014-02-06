@@ -20,7 +20,7 @@ $primary-font: "proxima-nova",sans-serif;
 
 body {
   padding-top: 0px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: $primary-font;
   background: transparent;
 }
@@ -74,7 +74,6 @@ $lineheight: 1.35;   // affects spacing in headers
 @import "page";
 @import "post";
 
-
 /* And that's the mixin game. */
 
 /*** Let's play with fonts! */
@@ -85,8 +84,13 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6  {
-  text-transform: uppercase;
   font-family: $primary-font;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: $primary-font;
+  font-size: 14px;
 }
 
 /*** End font and text play. */
@@ -121,12 +125,6 @@ h1, h2, h3, h4, h5, h6  {
   margin-left: 0;
   margin-right: 0;
 }
-
-// .navbar {           // applies to *both* navbars
-//   z-index: 1001; 
-// }
-////// that didn't work out; see partials for _navbar and _subnav
-
 
 .boxy {
   border-radius: 0 0 0 0;
@@ -210,3 +208,24 @@ canvas.BWfade {
 }
 
 /*** end b+w fade effect formatting ***/
+
+// button color tweaks
+.btn {
+  &.orange {
+    color: #FFFFFF;
+    background-color: #F06928;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover{
+      background-color: #F56E2D;
+    }
+  }
+}
+
+// quick and dirty floats
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
