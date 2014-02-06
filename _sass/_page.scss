@@ -6,9 +6,29 @@
 
 section.pages {
   @extend .container;
+
+  // Drop the text-transform we enforced on landing
+  // yes this is a bit messy
+  h2 { text-transform: none; }
 }
 
 div.page.content {
   @extend .col-md-10;
   @extend .col-md-offset-1;
+}
+
+// this is specifically for the About page; pull in separately?
+.about-cleanweb-what-outer {
+  @extend .col-md-4
+}
+
+.about-cleanweb-what-inner {
+  @extend .center;
+
+  padding: 20px;
+  background-color: #EFEFEF;
+
+  .name {
+    font-weight: bold;
+  }
 }
