@@ -18,15 +18,24 @@ div.page.content {
 }
 
 // this is specifically for the About page; pull in separately?
-.about-cleanweb-what-outer {
-  @extend .col-md-4
-}
+.about {
+  .cleanweb-what-outer { @extend .col-md-4 }
+  .cleanweb-what-inner {
+    @extend .center;
 
-.about-cleanweb-what-inner {
-  @extend .center;
+    padding: 20px;
+    background-color: #efefef;
+    color: #666;
+    border: dashed 1px #666;
+    .copy { font-size: 12px; }
+  }
 
-  padding: 20px;
-  background-color: #EFEFEF;
+  .row { margin: 0px -15px; }
+
+  .profile {
+    @extend .col-md-2;
+    img { width: 90%; }
+  }
 
   .name {
     font-weight: bold;

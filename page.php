@@ -17,7 +17,7 @@ function more_posts() { // see if there are posts
 
       <div class="row">
         <div class="page col-sm-8 col-sm-offset-2"><?php //Alas, would that this were semantic. Sass's @import doesn't play nice.?>
-          <h2 class="title"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+          <!-- <h2 class="title"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2> -->
 
           <div class="entry content">
             <?php the_content(); ?>

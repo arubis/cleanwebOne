@@ -1,11 +1,11 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    autoprefixer-rails (1.0.20140117)
+    autoprefixer-rails (1.0.20140203)
       execjs
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.0.3.0)
+    bootstrap-sass (3.1.0.2)
       sass (~> 3.2)
     chunky_png (1.2.9)
     classifier (1.3.4)
@@ -53,14 +53,14 @@ GEM
     maruku (0.7.1)
     method_source (0.8.2)
     posix-spawn (0.3.8)
-    pry (0.9.12.4)
+    pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
     pry-debugger (0.2.2)
       debugger (~> 1.3)
       pry (~> 0.9.10)
-    pry-remote (0.1.7)
+    pry-remote (0.1.8)
       pry (~> 0.9)
       slop (~> 3.0)
     pry-stack_explorer (0.4.9.1)
@@ -78,7 +78,7 @@ GEM
     sass-css-importer (1.0.0.beta.0)
       sass (>= 3.1)
     slop (3.4.7)
-    therubyracer (0.12.0)
+    therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
     tilt (2.0.0)
