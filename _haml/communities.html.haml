@@ -1,289 +1,206 @@
-.container
-  .slogan.black
+.communities
+  .center
     %img.CleanwebC{:height => "41", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/Cleanweb-C.png", :width => "34"}/
-    %p The Cleanweb isn't in one place. It's a global movement solving the world's critical resource challenges.
-    %a.button.orange{:href => "/join"} Contribute your talent
+    %h2 The Cleanweb isn't in one place. It's a global movement solving the world's critical resource challenges.
+    %br/
+    %a.btn.btn-large.btn-default.orange{:href => "/join"} Contribute your talent
+    %br/
 
-.container
-  #map
-  :javascript
-    // create a map in the "map" div, set the view to a given place and zoom
-    var map = L.map('map').setView([51.505, -0.09], 2);
-    
-    // add an OpenStreetMap tile layer
-    //L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        //attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    L.tileLayer('http://{s}.tile.cloudmade.com/6375f24019e14089b0633450f8de4c9b/997/256/{z}/{x}/{y}.png', {
-    	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <ahref="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery � <a href="http://cloudmade.com">CloudMade</a>'
-    	}).addTo(map);
-    
-    
-    
-    // add a marker in the given location, attach some popup content to it and open the popup. Most lat / lons from http://open.mapquestapi.com/geocoding/
-    
-    
-    //Beijing, China
-    L.marker([39.913602, 116.397196]).addTo(map)
-        .bindPopup('Beijing, China<br><a href="http://www.cleanweb.co" target="_new">www.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Beijing/429597177119257" target="_new">facebook.com/pages/Cleanweb-Beijing/429597177119257</a><br><a href="http://www.twitter.com/cleanweb" target="_new">@Cleanweb</a>');
-    	
-    //Belgium
-    L.marker([50.85034, 4.35171]).addTo(map)
-        .bindPopup('Belgium<br><a href="http://belgium.cleanweb.co" target="_new">belgium.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Belgium/176575122511395" target="_new">facebook.com/pages/Cleanweb-Belgium/176575122511395</a><br><a href="http://www.twitter.com/cleanwebbe" target="_new">@CleanwebBE</a>');	
-    	
-    //Berkeley, CA
-    L.marker([37.88166, -122.28448]).addTo(map)
-        .bindPopup('Berkeley, CA<br><a href="http://berkeley.cleanweb.co" target="_new">berkeley.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Berkeley/296111370492236" target="_new">facebook.com/pages/Cleanweb-Berkeley/296111370492236</a><br><a href="http://www.twitter.com/cleanweb" target="_new">@Cleanweb</a>');
-    
-    // Boston
-    L.marker([42.360482, -71.059568]).addTo(map)
-        .bindPopup('Boston, MA<br><a href="http://boston.cleanweb.co/" target="_new">boston.cleanweb.co</a><br><a href="http://www.facebook.com/cleanwebbos" target="_new">facebook.com/cleanwebbos</a><br><a href="http://www.twitter.com/CleanWebBos" target="_new">@CleanwebBos</a>');
-    
-    // Brazil
-    L.marker([-1.45502, -48.502368]).addTo(map)
-        .bindPopup('Brazil<br><a href="http://www.cleanweb.co" target="_new">www.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Brasil/270768959716124" target="_new">Cleanweb-Brasil/270768959716124</a><br><a href="http://www.twitter.com/cleanwebBR" target="_new">@CleanwebBR</a>');		
-    	
-    	
-    // Chicago
-    L.marker([41.875621, -87.624371]).addTo(map)
-        .bindPopup('Chicago, IL<br><a href="http://chicago.cleanweb.co/" target="_new">chicago.cleanweb.co</a><br><a href="https://www.facebook.com/pages/Cleanweb-Chicago/340213486091614" target="_new">facebook.com/pages/Cleanweb-Chicago/340213486091614</a><br><a href="http://www.twitter.com/CleanWeb" target="_new">@Cleanweb</a>');
-    
-    
-    // France
-    L.marker([48.856506, 2.352133]).addTo(map)
-        .bindPopup('France<br><a href="http://france.cleanweb.co" target="_new">france.cleanweb.co</a><br><a href="http://www.facebook.com/cleanwebfrance" target="_new">facebook.com/cleanwebfrance</a><br><a href="http://www.twitter.com/cleanwebfr" target="_new">@CleanwebFR</a>');
-    
-    // Houston
-    L.marker([29.984167, -95.332889]).addTo(map)
-        .bindPopup('Houston, TX<br><a href="http://houston.cleanweb.co" target="_new">houston.cleanweb.co</a><br><a href="http://www.facebook.com/cleanwebtexas" target="_new">facebook.com/cleanwebtexas</a><br><a href="http://www.twitter.com/CleanwebTX" target="_new">@CleanwebTX</a>');
-    
-    
-    // Israel
-    L.marker([32.066157, 34.777821]).addTo(map)
-        .bindPopup('Israel<br><a href="http://israel.cleanweb.co" target="_new">israel.cleanweb.co</a><br><a href="http://www.facebook.com/pages/Cleanweb-Israel/335078466593728" target="_new">facebook.com/pages/Cleanweb-Israel/335078466593728</a><br><a href="http://www.twitter.com/Cleanweb" target="_new">@Cleanweb</a>');
-    
-    // Italy
-    L.marker([41.893258, 12.483062]).addTo(map)
-        .bindPopup('Italy<br><a href="http://italy.cleanweb.co" target="_new">italy.cleanweb.co</a><br><a href="http://www.facebook.com/cleanwebit" target="_new">facebook.com/cleanwebit</a><br><a href="http://www.twitter.com/CleanwebIT" target="_new">@CleanwebIT</a>');
-    
-    
-    // LA
-    L.marker([34.050171, -118.241971]).addTo(map)
-        .bindPopup('Los Angeles, CA<br><a href="http://losangeles.cleanweb.co" target="_new">losangeles.cleanweb.co</a><br><a href="http://www.facebook.com/cleanweb" target="_new">facebook.com/cleanweb</a><br><a href="http://www.twitter.com/Cleanweb" target="_new">@Cleanweb</a>');
-    
-    
-    // NYC
-    L.marker([40.730599, -73.986581]).addTo(map)
-        .bindPopup('New York City, NY<br><a href="http://nyc.cleanweb.co" target="_new">nyc.cleanweb.co</a><br><a href="http://www.facebook.com/CleanwebNYC" target="_new">facebook.com/CleanwebNYC</a><br><a href="http://www.twitter.com/CleanwebNYC" target="_new">@CleanwebNYC</a>');
-    
-    
-    // San Francisco
-    L.marker([37.764799, -122.46299]).addTo(map)
-        .bindPopup('San Francisco, CA<br><a href="http://sanfrancisco.cleanweb.co" target="_new">sanfrancisco.cleanweb.co</a><br><a href="http://www.facebook.com/Cleanweb" target="_new">facebook.com/Cleanweb</a><br><a href="http://www.twitter.com/Cleanweb" target="_new">@Cleanweb</a>');
-    
-    
-    // Scotland
-    L.marker([55.899956, -4.262695]).addTo(map)
-        .bindPopup('Scotland <br><a href="http://scotland.cleanweb.co" target="_new">scotland.cleanweb.co</a><br><a href="http://www.facebook.com/pages/Cleanweb-Scotland/474242292613069" target="_new">facebook.com/pages/Cleanweb-Scotland/474242292613069</a><br><a href="http://www.twitter.com/CleanwebSCO" target="_new">@CleanwebSCO</a>');
-    
-    
-    // Stanford	
-    L.marker([37.442156, -122.163447]).addTo(map)
-        .bindPopup('Stanford / Palo Alto, CA <br><a href="http://www.cleanweb.co" target="_new">www.cleanweb.co</a><br><a href="http://www.facebook.com/pages/Cleanweb" target="_new">facebook.com/pages/Cleanweb</a><br><a href="http://www.twitter.com/Cleanweb" target="_new">@Cleanweb</a>');
-    
-    // The Netherlands
-    L.marker([52.036846, 4.383428]).addTo(map)
-        .bindPopup('The Netherlands<br><a href="http://netherlands.cleanweb.co" target="_new">netherlands.cleanweb.co</a><br><a href="http://www.facebook.com/pages/Cleanweb-Netherlands/343848429068046?ref=ts&fref=ts" target="_new">facebook.com/pages/Cleanweb-Netherlands/343848429068046?ref=ts&fref=ts</a><br><a href="http://www.twitter.com/cleanweb" target="_new">@Cleanweb</a>');		
-    
-    // UK	
-    L.marker([51.590723, -0.131836]).addTo(map)
-        .bindPopup('United Kingdom<br><a href="http://www.cleanweb.co" target="_new">www.cleanweb.co</a><br><a href="http://www.facebook.com/pages/Cleanweb-UK/447637075290632" target="_new">facebook.com/pages/Cleanweb-UK/447637075290632</a><br><a href="http://www.twitter.com/CleanwebUK" target="_new">@CleanwebUK</a>');
+    -# Currently not displaying map (on landing instead)
 
-
-  %h5 Global Community Leaders
+  %h3 Global Community Leaders
+  // n.b. these bootstrap columns are NOT ideal
+  // consider swapping to the matrix used on landing
   .row
-    %img.alignleft.size-full.border{:alt => "Loic Barr", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/LoicBar.jpg", :width => "99"}/
-    .City Belgium
-    .Name2 Loic Bar
-    .Twitter
-      %a{:href => "http://www.twitter.com/", :target => "_blank"} @loicbar
-  .row
-    %img.alignleft.size-full.border{:alt => "Tim Quijano", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/TimQuijano.jpg", :width => "99"}/
-    .City Beijing
-    .Name2 Tim Quijano
-    .Twitter
-      %a{:href => "http://www.twitter.com/timquijano", :target => "_blank"} @timquijano
-  .row
-    %img.alignleft.size-full.border{:alt => "Jolie Chan", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JolieChan.jpg", :width => "99"}/
-    .City Berkeley
-    .Name2 Jolie Chan
-  .row
-    %img.alignleft.size-full.border{:alt => "John Romankiewicz", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JohnRomankiewicz.jpg", :width => "99"}/
-    .City Berkeley
-    .Name2 John Romankiewicz
-    .Twitter
-      %a{:href => "http://www.twitter.com/sustainablejohn", :target => "_blank"} @sustainablejohn
-  .row
-    %img.alignleft.size-full.border{:alt => "Mark Vasu", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/MarkVasu.jpg", :width => "99"}/
-    .City Boston
-    .Name2 Mark Vasu
-    .Twitter
-      %a{:href => "http://www.twitter.com/markvasu", :target => "_blank"} @markvasu
-  .row
-    %img.alignleft.size-full.border{:alt => "Leonardo Ricardo Arvate Alvares", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/LeonardoRicardoArvateAlvares.jpg", :width => "99"}/
-    .City Brazil
-    .Name2 Leonardo Ricardo Arvate Alvares
-    .Twitter
-      %a{:href => "http://www.twitter.com/lalvares14", :target => "_blank"} @lalvares14
-  .row
-    %img.alignleft.size-full.border{:alt => "Rafael Figueiredo", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/RafaelFigueiredo.jpg", :width => "99"}/
-    .City Brazil
-    .Name2 Rafael Figueiredo
-    .Twitter
-      %a{:href => "http://www.twitter.com/rdbfig", :target => "_blank"} @rdbfig
-  .row
-    %img.alignleft.size-full.border{:alt => "Robert Fuentre", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BlankHeadshot.jpg", :width => "99"}/
-    .City Brazil
-    .Name2 Robert Fuentre
+    .profile
+      %img{:alt => "Loic Barr", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/LoicBar.jpg"}/
+      .City Belgium
+      .name Loic Bar
+      .Twitter
+        %a{:href => "http://www.twitter.com/", :target => "_blank"} @loicbar
+    .profile
+      %img{:alt => "Tim Quijano", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/TimQuijano.jpg"}/
+      .City Beijing
+      .name Tim Quijano
+      .Twitter
+        %a{:href => "http://www.twitter.com/timquijano", :target => "_blank"} @timquijano
+    .profile
+      %img{:alt => "Jolie Chan", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JolieChan.jpg"}/
+      .City Berkeley
+      .name Jolie Chan
+    .profile
+      %img{:alt => "John Romankiewicz", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JohnRomankiewicz.jpg"}/
+      .City Berkeley
+      .name John Romankiewicz
+      .Twitter
+        %a{:href => "http://www.twitter.com/sustainablejohn", :target => "_blank"} @sustainablejohn
+    .profile
+      %img{:alt => "Mark Vasu", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/MarkVasu.jpg"}/
+      .City Boston
+      .name Mark Vasu
+      .Twitter
+        %a{:href => "http://www.twitter.com/markvasu", :target => "_blank"} @markvasu
+    .profile
+      %img{:alt => "Leonardo Ricardo Arvate Alvares", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/LeonardoRicardoArvateAlvares.jpg"}/
+      .City Brazil
+      .name Leonardo Ricardo Arvate Alvares
+      .Twitter
+        %a{:href => "http://www.twitter.com/lalvares14", :target => "_blank"} @lalvares14
 
   .row
-    %img.alignleft.size-full.border{:alt => "Derek Gallo", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/DerekGallo.jpg", :width => "99"}/
-    .City Brazil
-    .Name2 Derek Gallo
-    .Twitter
-      %a{:href => "http://www.twitter.com/prithvibhakti", :target => "_blank"} @prithvibhakti
-  .row
-    %img.alignleft.size-full.border{:alt => "Jamie Johnson", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JamieJohnson.jpg", :width => "99"}/
-    .City Chicago
-    .Name2 Jamie Johnson
-    .Twitter
-      %a{:href => "http://www.twitter.com/verdeL3C", :target => "_blank"} @verdeL3C
-  .row
-    %img.alignleft.size-full.border{:alt => "Fran�ois Girodolle", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/FrancoisGirodolle.jpg", :width => "99"}/
-    .City France
-    .Name2 Francois Girodolle
-    .Twitter
-      %a{:href => "http://www.twitter.com/fgirodolle", :target => "_blank"} @fgirodolle
-  .row
-    %img.alignleft.size-full.border{:alt => "Bryan Hassin", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BryanHassin.jpg", :width => "99"}/
-    .City Houston
-    .Name2 Bryan Hassin
-    .Twitter
-      %a{:href => "http://www.twitter.com/guido23", :target => "_blank"} @guido23
-  .row
-    %img.alignleft.size-full.border{:alt => "Jeff Reichman", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JeffReichman.jpg", :width => "99"}/
-    .City Houston
-    .Name2 Jeff Reichman
-    .Twitter
-      %a{:href => "http://www.twitter.com/fileunderjeff", :target => "_blank"} @fileunderjeff
-  .row
-    %img.alignleft.size-full.border{:alt => "Barak Goldstein", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BarakGoldstein.jpg", :width => "99"}/
-    .City Israel
-    .Name2 Barak Goldstein
-  .row
-    %img.alignleft.size-full.border{:alt => "Raphael Nejman", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/RaphaelNejman.jpg", :width => "99"}/
-    .City Israel
-    .Name2 Raphael Nejman
-  .row
-    %img.alignleft.size-full.border{:alt => "Chris Adams", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/ChrisAdams.jpg", :width => "99"}/
-    .City London
-    .Name2 Chris Adams
-    .Twitter
-      %a{:href => "http://www.twitter.com/mrchrisadams", :target => "_blank"} @mrchrisadams
+    .profile
+      %img{:alt => "Rafael Figueiredo", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/RafaelFigueiredo.jpg"}/
+      .City Brazil
+      .name Rafael Figueiredo
+      .Twitter
+        %a{:href => "http://www.twitter.com/rdbfig", :target => "_blank"} @rdbfig
+    .profile
+      %img{:alt => "Robert Fuentre", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BlankHeadshot.jpg"}/
+      .City Brazil
+      .name Robert Fuentre
+    .profile
+      %img{:alt => "Derek Gallo", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/DerekGallo.jpg"}/
+      .City Brazil
+      .name Derek Gallo
+      .Twitter
+        %a{:href => "http://www.twitter.com/prithvibhakti", :target => "_blank"} @prithvibhakti
+    .profile
+      %img{:alt => "Jamie Johnson", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JamieJohnson.jpg"}/
+      .City Chicago
+      .name Jamie Johnson
+      .Twitter
+        %a{:href => "http://www.twitter.com/verdeL3C", :target => "_blank"} @verdeL3C
+    .profile
+      %img{:alt => "Fran�ois Girodolle", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/FrancoisGirodolle.jpg"}/
+      .City France
+      .name Francois Girodolle
+      .Twitter
+        %a{:href => "http://www.twitter.com/fgirodolle", :target => "_blank"} @fgirodolle
+    .profile
+      %img{:alt => "Bryan Hassin", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BryanHassin.jpg"}/
+      .City Houston
+      .name Bryan Hassin
+      .Twitter
+        %a{:href => "http://www.twitter.com/guido23", :target => "_blank"} @guido23
 
   .row
-    %img.alignleft.size-full.border{:alt => "Patrick Morris", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/PatrickMorris.jpg", :width => "99"}/
-    .City New York City
-    .Name2 Patrick Morris
-    .Twitter
-      %a{:href => "http://www.twitter.com/patrickjmorris", :target => "_blank"} @patrickjmorris
-  .row
-    %img.alignleft.size-full.border{:alt => "Adam Siemiginowski", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/AdamSiemiginowski.jpg", :width => "99"}/
-    .City New York City
-    .Name2 Adam Siemiginowski
-    .Twitter
-      %a{:href => "http://www.twitter.com/atsiem", :target => "_blank"} @atsiem
-  .row
-    %img.alignleft.size-full.border{:alt => "Erik Simonsen", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/ErikSimonsen.jpg", :width => "99"}/
-    .City Northern Europe
-    .Name2 Erik Simonsen
-    .Twitter
-      %a{:href => "http://www.twitter.com/eriksimonsenIT", :target => "_blank"} @eriksimonsenIT
-  .row
-    %img.alignleft.size-full.border{:alt => "Jonathan Koomey", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JonathanKoomey.jpg", :width => "99"}/
-    .City Palo Alto
-    .Name2 Jonathan Koomey
-    .Twitter
-      %a{:href => "http://www.twitter.com/jgkoomey", :target => "_blank"} @jgkoomey
-  .row
-    %img.alignleft.size-full.border{:alt => "Jay-E Emmingham", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/Jay-EEmmingham.jpg", :width => "99"}/
-    .City Portland
-    .Name2 Jay-E Emmingham
-    .Twitter
-      %a{:href => "http://www.twitter.com/pdxje", :target => "_blank"} @pdxje
-  .row
-    %img.alignleft.size-full.border{:alt => "Francesco Petracchini", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/FrancescoPetracchini.jpg", :width => "99"}/
-    .City Rome
-    .Name2 Francesco Petracchini
-    .Twitter
-      %a{:href => "http://www.twitter.com/ecopetra", :target => "_blank"} @ecopetra
-  .row
-    %img.alignleft.size-full.border{:alt => "Maurizio de Gregorio", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BlankHeadshot.jpg", :width => "99"}/
-    .City Rome
-    .Name2 Maurizio de Gregorio
-  .row
-    %img.alignleft.size-full.border{:alt => "Justin Johnson", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JustinJohnson.jpg", :width => "99"}/
-    .City San Francisco Bay Area
-    .Name2 Justin Johnson
-    .Twitter
-      %a{:href => "http://www.twitter.com/elof", :target => "_blank"} @elof
+    .profile
+      %img{:alt => "Jeff Reichman", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JeffReichman.jpg"}/
+      .City Houston
+      .name Jeff Reichman
+      .Twitter
+        %a{:href => "http://www.twitter.com/fileunderjeff", :target => "_blank"} @fileunderjeff
+    .profile
+      %img{:alt => "Barak Goldstein", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BarakGoldstein.jpg"}/
+      .City Israel
+      .name Barak Goldstein
+    .profile
+      %img{:alt => "Raphael Nejman", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/RaphaelNejman.jpg"}/
+      .City Israel
+      .name Raphael Nejman
+    .profile
+      %img{:alt => "Chris Adams", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/ChrisAdams.jpg"}/
+      .City London
+      .name Chris Adams
+      .Twitter
+        %a{:href => "http://www.twitter.com/mrchrisadams", :target => "_blank"} @mrchrisadams
+    .profile
+      %img{:alt => "Patrick Morris", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/PatrickMorris.jpg"}/
+      .City New York City
+      .name Patrick Morris
+      .Twitter
+        %a{:href => "http://www.twitter.com/patrickjmorris", :target => "_blank"} @patrickjmorris
+    .profile
+      %img{:alt => "Adam Siemiginowski", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/AdamSiemiginowski.jpg"}/
+      .City New York City
+      .name Adam Siemiginowski
+      .Twitter
+        %a{:href => "http://www.twitter.com/atsiem", :target => "_blank"} @atsiem
 
   .row
-    %img.alignleft.size-full.border{:alt => "Brian Cary", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BrianCary.jpg", :width => "99"}/
-    .City San Francisco Bay Area
-    .Name2 Brian Cary
-    .Twitter
-      %a{:href => "http://www.twitter.com/briancary", :target => "_blank"} @briancary
-  .row
-    %img.alignleft.size-full.border{:alt => "Colin Willox", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/ColinWillox.jpg", :width => "99"}/
-    .City San Francisco Bay Area
-    .Name2 Colin Willox
-    .Twitter
-      %a{:href => "http://www.twitter.com/comfydanger", :target => "_blank"} @comfydanger
-  .row
-    %img.alignleft.size-full.border{:alt => "Rory Giani", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/RoryGiani.jpg", :width => "99"}/
-    .City Scotland
-    .Name2 Rory Giani
-    .Twitter
-      %a{:href => "http://www.twitter.com/digitalWestie", :target => "_blank"} @digitalWestie
-  .row
-    %img.alignleft.size-full.border{:alt => "Oriol Pascual", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/OriolPascual.jpg", :width => "99"}/
-    .City Spain
-    .Name2 Oriol Pascual
-    .Twitter
-      %a{:href => "http://www.twitter.com/onsustain", :target => "_blank"} @onsustain
-  .row
-    %img.alignleft.size-full.border{:alt => "Jean Richard Witteveen", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JeanRichardWitteveen.jpg", :width => "99"}/
-    .City The Netherlands
-    .Name2 Jean Richard Witteveen
-    .Twitter
-      %a{:href => "http://www.twitter.com/jeanrichard", :target => "_blank"} @jeanrichard
-  .row
-    %img.alignleft.size-full.border{:alt => "Jason Neylon", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JasonNeylon.jpg", :width => "99"}/
-    .City United Kingdom
-    .Name2 Jason Neylon
-    .Twitter
-      %a{:href => "http://www.twitter.com/jasonneylon", :target => "_blank"} @jasonneylon
-  .row
-    %img.alignleft.size-full.border{:alt => "James Smith", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JamesSmith.jpg", :width => "99"}/
-    .City United Kingdom
-    .Name2 James Smith
-    .Twitter
-      %a{:href => "http://www.twitter.com/floppy", :target => "_blank"} @floppy
-  .row
-    %img.alignleft.size-full.border{:alt => "Jack Townsend", :height => "99", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JackTownsend.jpg", :width => "99"}/
-    .City United Kingdom
-    .Name2 Jack Townsend
-    .Twitter
-      %a{:href => "http://www.twitter.com/jacktownsend_", :target => "_blank"} @jacktownsend_
+    .profile
+      %img{:alt => "Erik Simonsen", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/ErikSimonsen.jpg"}/
+      .City Northern Europe
+      .name Erik Simonsen
+      .Twitter
+        %a{:href => "http://www.twitter.com/eriksimonsenIT", :target => "_blank"} @eriksimonsenIT
+    .profile
+      %img{:alt => "Jonathan Koomey", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JonathanKoomey.jpg"}/
+      .City Palo Alto
+      .name Jonathan Koomey
+      .Twitter
+        %a{:href => "http://www.twitter.com/jgkoomey", :target => "_blank"} @jgkoomey
+    .profile
+      %img{:alt => "Jay-E Emmingham", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/Jay-EEmmingham.jpg"}/
+      .City Portland
+      .name Jay-E Emmingham
+      .Twitter
+        %a{:href => "http://www.twitter.com/pdxje", :target => "_blank"} @pdxje
+    .profile
+      %img{:alt => "Francesco Petracchini", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/FrancescoPetracchini.jpg"}/
+      .City Rome
+      .name Francesco Petracchini
+      .Twitter
+        %a{:href => "http://www.twitter.com/ecopetra", :target => "_blank"} @ecopetra
+    .profile
+      %img{:alt => "Maurizio de Gregorio", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BlankHeadshot.jpg"}/
+      .City Rome
+      .name Maurizio de Gregorio
+    .profile
+      %img{:alt => "Justin Johnson", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JustinJohnson.jpg"}/
+      .City San Francisco Bay Area
+      .name Justin Johnson
+      .Twitter
+        %a{:href => "http://www.twitter.com/elof", :target => "_blank"} @elof
 
-  %br.clear/
+  .row
+    .profile
+      %img{:alt => "Brian Cary", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/BrianCary.jpg"}/
+      .City San Francisco Bay Area
+      .name Brian Cary
+      .Twitter
+        %a{:href => "http://www.twitter.com/briancary", :target => "_blank"} @briancary
+    .profile
+      %img{:alt => "Colin Willox", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/ColinWillox.jpg"}/
+      .City San Francisco Bay Area
+      .name Colin Willox
+      .Twitter
+        %a{:href => "http://www.twitter.com/comfydanger", :target => "_blank"} @comfydanger
+    .profile
+      %img{:alt => "Rory Giani", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/RoryGiani.jpg"}/
+      .City Scotland
+      .name Rory Giani
+      .Twitter
+        %a{:href => "http://www.twitter.com/digitalWestie", :target => "_blank"} @digitalWestie
+    .profile
+      %img{:alt => "Oriol Pascual", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/OriolPascual.jpg"}/
+      .City Spain
+      .name Oriol Pascual
+      .Twitter
+        %a{:href => "http://www.twitter.com/onsustain", :target => "_blank"} @onsustain
+    .profile
+      %img{:alt => "Jean Richard Witteveen", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JeanRichardWitteveen.jpg"}/
+      .City The Netherlands
+      .name Jean Richard Witteveen
+      .Twitter
+        %a{:href => "http://www.twitter.com/jeanrichard", :target => "_blank"} @jeanrichard
+    .profile
+      %img{:alt => "Jason Neylon", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JasonNeylon.jpg"}/
+      .City United Kingdom
+      .name Jason Neylon
+      .Twitter
+        %a{:href => "http://www.twitter.com/jasonneylon", :target => "_blank"} @jasonneylon
+
+  .row
+    .profile
+      %img{:alt => "James Smith", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JamesSmith.jpg"}/
+      .City United Kingdom
+      .name James Smith
+      .Twitter
+        %a{:href => "http://www.twitter.com/floppy", :target => "_blank"} @floppy
+    .profile
+      %img{:alt => "Jack Townsend", :src => "http://cleanweb.co/wp-content/themes/immersedcleanweb/images/headshots/JackTownsend.jpg"}/
+      .City United Kingdom
+      .name Jack Townsend
+      .Twitter
+        %a{:href => "http://www.twitter.com/jacktownsend_", :target => "_blank"} @jacktownsend_
