@@ -9,3 +9,4 @@ css/
 .ruby-*
 
 static-html-for-pages/*.html
+.bundle
