@@ -39,7 +39,7 @@
     <script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 
-    <!-- get our custom CSS -->
+    <!-- get our custom CSS, including Bootstrap (via Compass and gems) -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css">
 
     <!-- We <3 Typekit for friendly beautiful webfonts! -->
