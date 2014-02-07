@@ -74,6 +74,9 @@ $lineheight: 1.35;   // affects spacing in headers
 @import "page";
 @import "post";
 
+/*** STYLES FOR WP WIDGETS ***/
+@import "wp_widget_styles";
+
 /* And that's the mixin game. */
 
 /*** Let's play with fonts! */

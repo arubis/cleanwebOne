@@ -205,12 +205,12 @@ remove_filter('template_redirect', 'redirect_canonical');
 function my_widgets_init() {
 
 	register_sidebar( array(
-		'name' => 'Home right sidebar',
+		'name' => 'Blog right sidebar',
 		'id' => 'sidebar',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h2 class="rounded">',
-		'after_title' => '</h2>',
+		'before_title' => '<p class="rounded name">',
+		'after_title' => '</p>',
 	) );
 }
 add_action( 'widgets_init', 'my_widgets_init' );
