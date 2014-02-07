@@ -57,12 +57,19 @@ div.page.content {
   iframe {
     height: 315px;
     width: 420px;
-    allowfullscreen: yes;
   }
 }
 
 .start-houston {
   iframe {
+    height: 315px;
     width: 560px;
+  }
+}
+
+.hangout-420 {
+  iframe {
+    height: 315px;
+    width: 420px;
   }
 }
