@@ -71,7 +71,7 @@
 
       <div class="row center closing-line">
         <p style="padding-bottom: 35px;">
-          <a href="#" title="Contact Us">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" title="Privacy Policy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved by The Cleanweb Initiative&nbsp;&nbsp;|&nbsp;&nbsp;Cleanweb 2013
+          <a href="#" title="Contact Us">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved by The Cleanweb Initiative&nbsp;&nbsp;|&nbsp;&nbsp;Cleanweb 2013
         </p>
       </div>
     </div>
