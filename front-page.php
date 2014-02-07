@@ -507,19 +507,19 @@
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="http://www.rockportcap.com" title="RockPort Capital" target="_blank" class="bwWrapper" width="168px" height="46px">
+              <a href="http://www.rockportcap.com" title="RockPort Capital" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-RockportCapital.gif" alt="Rockport Capital" />
               </a>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6">
-              <a href="http://www.terravp.com" title="TERRA Venture Partners" target="_blank" class="bwWrapper" width="168px" height="62px">
+              <a href="http://www.terravp.com" title="TERRA Venture Partners" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-TerraVenturePartners.jpg" alt="TERRA Venture Partners" />
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="http://www.blackcoralcapital.com" title="Black Coral Capital" target="_blank" class="bwWrapper" width="121px" height="109px">
+              <a href="http://www.blackcoralcapital.com" title="Black Coral Capital" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-BlackCoralCapital.png" alt="Black Coral Capital" />
               </a>
             </div>
@@ -527,17 +527,17 @@
 
           <div class="row">
             <div class="col-sm-4">
-              <a href="http://www.cleanskies.org" title="American Clean Skies" target="_blank" class="bwWrapper" width="104px" height="103px">
+              <a href="http://www.cleanskies.org" title="American Clean Skies" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-AmericanCleanSkiesFoundation.png" alt="American Clean Skies" />
               </a>
             </div>
             <div class="col-sm-4">
-              <a href="http://www.greenstart.com" title="Greenstart" target="_blank" class="bwWrapper" width="94px" height="103px">
+              <a href="http://www.greenstart.com" title="Greenstart" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-Greenstart.png" alt="Greenstart" />
               </a>
             </div>
             <div class="col-sm-4">
-              <a href="https://www.yerdle.com/" title="Yerdle" target="_blank" class="bwWrapper" width="87" height="65">
+              <a href="https://www.yerdle.com/" title="Yerdle" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-yerdle.jpg" alt="yerdle" />
               </a>
             </div>
@@ -545,12 +545,12 @@
 
           <div class="row">
             <div class="col-sm-6">
-              <a href="http://www.mdv.com" title="Mohr Davidow" target="_blank" class="bwWrapper" width="129px" height="75px">
+              <a href="http://www.mdv.com" title="Mohr Davidow" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-MohrDavidow.png" alt="Mohr Davidow" />
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="http://www.sungevity.com/" title="Sungevity" target="_blank" class="bwWrapper" width="168px" height="42px">
+              <a href="http://www.sungevity.com/" title="Sungevity" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-Sungevity.gif" alt="Sungevity" width="168px" height="42px" />
               </a>
             </div>
@@ -567,43 +567,43 @@
 
           <div class="row">
             <div class="col-sm-6">
-              <a href="http://energy.gov" title="US Department of Energy" target="_blank" class="bwWrapper" width="90" height="90">
+              <a href="http://energy.gov" title="US Department of Energy" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-DoE.jpg" alt="US Department of Energy" />
               </a>
             </div>
             <div class="col-sm-6">
-              <a href="http://sxsweco.com" title="SXSW Eco" target="_blank" class="bwWrapper" width="140" height="87">
+              <a href="http://sxsweco.com" title="SXSW Eco" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-SXSW-Eco.jpg" alt="SXSW Eco" />
               </a>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-              <a href="http://theclimategroup.org" title="The Climate Group" target="_blank" class="bwWrapper" width="215" height="24">
+              <a href="http://theclimategroup.org" title="The Climate Group" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-ClimateGroup.gif" alt="The Climate Group" />
               </a>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-4 col-sm-push-1">
-              <a href="http://c40cities.org" title="C40 Cities" target="_blank" class="bwWrapper" width="73" height="57">
+              <a href="http://c40cities.org" title="C40 Cities" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-C40.gif" alt="C40 Cities" />
               </a>
             </div>
             <div class="col-sm-4 col-sm-push-2">
-              <a href="http://www.whitehouse.gov/administration/eop/ostp" title="Office of Science and Technology Policy" target="_blank" class="bwWrapper" width="85" height="85">
+              <a href="http://www.whitehouse.gov/administration/eop/ostp" title="Office of Science and Technology Policy" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-POTUS.gif" alt="Office of Scienc and Technology Policy" />
               </a>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-4 col-sm-push-1">
-              <a href="http://nyc.gov" title="NYC.gov" target="_blank" class="bwWrapper" width="76" height="65">
+              <a href="http://nyc.gov" title="NYC.gov" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-NYCgov.gif" alt="NYC.gov">
               </a>
             </div>
             <div class="col-sm-4 col-sm-push-2">
-              <a href="http://subsite.kk.dk/sitecore/content/Subsites/CityOfCopenhagen/SubsiteFrontpage.aspx?element=header" title="City of Copenhagen" target="_blank" class="bwWrapper" width="67" height="86">
+              <a href="http://subsite.kk.dk/sitecore/content/Subsites/CityOfCopenhagen/SubsiteFrontpage.aspx?element=header" title="City of Copenhagen" target="_blank" class="bwWrapper">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-CityOfCopenhagen.png" alt="City of Copenhagen" />
               </a>
             </div>
