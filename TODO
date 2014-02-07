@@ -2,18 +2,20 @@
 
 ## Static pages ##
 
- - About
- - communities
+ + About
+ + communities
  - Events? (probably no)
- - Join
+ + Join
+
+# Style once on production (due to GravForms) 
    - member-join
    - corporate-membership
      - restructure this behavior to look better than four statics
 
 ## Thematics ##
 
- - Make blog render non-ugly   
- - Clean up page titles
+ + Make blog render non-ugly   
+ + Clean up page titles
 
 ## Menu assets ##
 
@@ -34,8 +36,8 @@
 
 ## NAVBAR ##
 
- - Confirm full list of outlinks: communities, events, etc.
-   - Can be added by Blake/Chris/other post-launch via WP admin interface
+ + Confirm full list of outlinks: communities, events, etc.
+   -- Can be added by Blake/Chris/other post-launch via WP admin interface
 
 ## FRAMES ##
 
