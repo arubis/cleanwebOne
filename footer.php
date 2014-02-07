@@ -28,8 +28,8 @@
           <ul>
             <li><a href="/join" title="Join the Cleanweb Initiative">Join the Cleanweb Initiative</a></li>
             <li><a href="/start-a-community" title="Community Building 101">Community Building 101</a></li>
-            <li><a href="https://docs.google.com/a/cleanweb.co/spreadsheet/viewform?formkey=dFFrZGZDUTFQdEVDeVdxNTY1a2NVWkE6MQ"  title="Become a Facilitator" target="_new">Become a Facilitator</a></li>
-            <li><a href="http://cleanweb.grouptie.com" title="Membership Platform" target="_new">Membership Platform</a></li>
+            <li><a href="https://docs.google.com/a/cleanweb.co/spreadsheet/viewform?formkey=dFFrZGZDUTFQdEVDeVdxNTY1a2NVWkE6MQ"  title="Become a Facilitator" target="_blank">Become a Facilitator</a></li>
+            <li><a href="http://cleanweb.grouptie.com" title="Membership Platform" target="_blank">Membership Platform</a></li>
             <li><a href="/live" title="Hangouts">Hangouts</a></li>
             <li><a href="http://collabfinder.com/groups/the-cleanweb-initiative" title="CollabFinder">CollabFinder</a></li>
           </ul>
@@ -38,9 +38,9 @@
         <div class="col-sm-3 sitemap sitemap--resources">
           <h3>Resources</h3>
           <ul>
-            <li><a href="https://drive.google.com/folderview?id=0B3cX2jK4-Emuc0NiQTFuajJBNkU&usp=sharing" title="Facilitator's Overview" target="_new">Facilitator's Overview</a></li>
-            <li><a href="https://drive.google.com/folderview?id=0B3cX2jK4-EmuN0VONUFwa09xRG8&usp=sharing" title="Starting Your Community" target="_new">Starting Your Community</a></li>
-            <li><a href="https://drive.google.com/folderview?id=0B3cX2jK4-Emua1V5RjhOUFF2YlE&usp=sharing" title="Organizing and Running a Hackathon" target="_new">Organizing and Running a Hackathon</a></li>
+            <li><a href="https://drive.google.com/folderview?id=0B3cX2jK4-Emuc0NiQTFuajJBNkU&amp;usp=sharing" title="Facilitator's Overview" target="_blank">Facilitator's Overview</a></li>
+            <li><a href="https://drive.google.com/folderview?id=0B3cX2jK4-EmuN0VONUFwa09xRG8&amp;usp=sharing" title="Starting Your Community" target="_blank">Starting Your Community</a></li>
+            <li><a href="https://drive.google.com/folderview?id=0B3cX2jK4-Emua1V5RjhOUFF2YlE&amp;usp=sharing" title="Organizing and Running a Hackathon" target="_blank">Organizing and Running a Hackathon</a></li>
             <li><a href="/resources" title="Technical Resources">Technical Resources</a></li>
             <li><a href="/apis" title="APIs">APIs</a></li>
             <li><a href="/datasets" title="Datasets">Datasets</a></li>
@@ -71,7 +71,7 @@
 
       <div class="row center closing-line">
         <p style="padding-bottom: 35px;">
-          <a href="#" alt="Contact Us">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" alt="Privacy Policy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved by The Cleanweb Initiative&nbsp;&nbsp;|&nbsp;&nbsp;Cleanweb 2013
+          <a href="#" title="Contact Us">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" title="Privacy Policy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved by The Cleanweb Initiative&nbsp;&nbsp;|&nbsp;&nbsp;Cleanweb 2013
         </p>
       </div>
     </div>
