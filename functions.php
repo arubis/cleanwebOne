@@ -27,26 +27,6 @@ define('THEME_URI', get_template_directory_uri());
 
 // load_theme_textdomain( THEME_SLUG, TEMPLATEPATH . '/languages' ); 
 
-//supports
-//function tf_theme_setup() {
-//	
-//	register_nav_menu('main_nav', THEME_NAME . ' Navigation');
-//	register_nav_menu('footer_nav', THEME_NAME . ' SubFooter Navigation');
-//	
-//	add_theme_support('post-thumbnails', array('post', 'page', 'portfolio'));
-//	add_theme_support('automatic-feed-links');
-//	add_theme_support( 'post-formats', array( 'gallery', 'image','video','quote', 'audio'));
-//
-//	add_post_type_support( 'portfolio', 'post-formats' );
-//	
-//	add_filter('wp_default_editor', create_function('', 'return "html";'));
-//	if ( ! isset( $content_width ) ) $content_width = 960;
-//	
-//
-//	
-//}
-//add_action( 'after_setup_theme', 'tf_theme_setup' );
-
 class BS3_Walker_Nav_Menu extends Walker_Nav_Menu {
 	/**
 	 * Traverse elements to create list from elements.
@@ -217,4 +197,22 @@ add_action( 'init', 'register_my_menu' );
 // The redirect here works fine on production but needs to be disabled for development.
 // Probably harmess?
 remove_filter('template_redirect', 'redirect_canonical');
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function my_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'Home right sidebar',
+		'id' => 'sidebar',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="rounded">',
+		'after_title' => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'my_widgets_init' );
+
 ?>

@@ -1,7 +1,12 @@
 // Set up appearance of dynamically-pulled posts, eg. on
 // blogs page or index.php
 
+div.sidebar, section.sidebar {
+  @extend .col-sm-2;
+}
+
 section.posts {
-  @extend .container;
+  @extend .col-sm-offset-2;
+  @extend .col-sm-8;
   padding: 20px 20px 20px 20px;
 }
