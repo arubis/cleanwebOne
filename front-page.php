@@ -551,7 +551,7 @@
             </div>
             <div class="col-sm-6">
               <a href="http://www.sungevity.com/" title="Sungevity" target="_blank" class="bwWrapper">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-Sungevity.gif" alt="Sungevity" width="168px" height="42px" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/supporters/Supporter-Sungevity.gif" alt="Sungevity" width="168" height="42" />
               </a>
             </div>
           </div>
