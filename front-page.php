@@ -195,8 +195,10 @@
     </div><!-- /frame-footer -->
   </section><!-- /HOW FRAME -->
 
+  <!-- now in functions.php 
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.transform2d.js" type="text/javascript" charset="utf-8"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.rotate-knobs.js" type="text/javascript" charset="utf-8" async></script>
+-->
 
   <!-- red-based grid frame with fancy mouseover/click behavior --><!-- CURRENTLY ENABLED -->
   <section class="who frame" id="who">
@@ -227,7 +229,7 @@
     <!-- cf. https://github.com/sapegin/jquery.mosaicflow -->
 
     <?php // in final template, automate this through a loop...? or leave hardcode? ?>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.mosaicflow.min.js"></script>
+    <!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.mosaicflow.min.js"></script> -->
 
 
     <div class="clearfix" id="who-mosaic">
@@ -317,8 +319,6 @@
       </div>
     </div>
 
-    <!-- animate pullquotes (DISABLED) -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.pullquotes.js" type="text/javascript" charset="utf-8"></script>
     <div id="mosaic-pull-quote-target"></div>
 
     <!-- set up the grid above -->

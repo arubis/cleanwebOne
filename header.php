@@ -32,32 +32,16 @@
     <!-- Bootstrap, jQuery, jQ UI, jQ Mobile import -->
     <!-- the main CSS is now pulled into our Sass... -->
     <!-- <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"> -->
+    <!-- Javascript is imported in functions.php -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" type="text/css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" type="text/css">
-    <script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- get our custom CSS, including Bootstrap (via Compass and gems) -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css">
 
-    <!-- We <3 Typekit for friendly beautiful webfonts! -->
-    <script type="text/javascript" src="//use.typekit.net/cfg6qvz.js"></script>
-    <script type="text/javascript">
-      try{Typekit.load();}catch(e){}
-    </script>
-
-    <!-- include jQuery plugin for b&w fade effect of sponsors -->
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.BlackAndWhite.js"></script>
-    <!-- source: http://gianlucaguarini.github.io/jQuery.BlackAndWhite/ -->
-
     <!-- Leaflet.js powers our map here... -->
     <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
-    <!--[if lte IE 8]>
-      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
-    <![endif]-->
-    <script src="//cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <!-- the js is imported in functions.php -->
     
     <!-- Facebook Open Graph -->
     <meta property="og:title" content="Cleanweb">
@@ -67,11 +51,14 @@
     <meta property="og:site_name" content="Cleanweb">
     <meta property="fb:admins" content="100002188895899">
 
-    <!-- get the Right(TM) visual effect on #landing's translucent headers -->
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/context_blender.js" type="text/javascript" async></script>
-
     <!-- Let Wordpress get the last word in -->
     <?php wp_head(); ?>
+
+    <!-- We <3 Typekit for friendly beautiful webfonts! -->
+    <!-- external js is imported in functions.php -->
+    <script type="text/javascript">
+      try{Typekit.load();}catch(e){}
+    </script>
   </head>
 
   <body <?php body_class(); ?> id="main" data-spy="scroll" data-target="#subnav" data-offset="100">
