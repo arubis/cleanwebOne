@@ -448,7 +448,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
-          <script src="http://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script>
+          <script src="//d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script>
           <div class="tintup" data-id="cleanwebone"></div>
         </div>
       </div>

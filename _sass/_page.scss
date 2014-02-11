@@ -19,7 +19,7 @@ div.page.content {
 
 // For the profile images/titles
 .profile {
-  @extend .col-md-2;
+  @extend .col-sm-2;
   img { width: 90%; }
 }
 
