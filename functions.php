@@ -217,47 +217,51 @@ add_action( 'widgets_init', 'my_widgets_init' );
 
 // We probably should have much earlier registered all our JavaScript here.
 
-if( !is_admin() ) {
-  wp_deregister_script('jquery');
-  wp_register_script('jquery', ("//code.jquery.com/jquery-1.10.2.min.js"), false, '1.10.2');
-  wp_enqueue_script('jquery');
+add_action( 'wp_enqueue_scripts', 'enqueue_and_register_scripts' );
 
-  wp_deregister_script('jquery-ui');
-  wp_register_script('jquery-ui', ("//code.jquery.com/ui/1.10.4/jquery-ui.min.js"), false, '1.10.4');
-  wp_enqueue_script('jquery-ui');
+function enqueue_and_register_scripts() {
+  if( !is_admin() ) {
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', ("//code.jquery.com/jquery-1.10.2.min.js"), false, '1.10.2');
+    wp_enqueue_script('jquery');
 
-  wp_deregister_script('jquery-mobile');
-  wp_register_script('jquery-mobile', ("//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css"), false, '1.4.0');
-  wp_enqueue_script('jquery-mobile');
+    wp_deregister_script('jquery-ui');
+    wp_register_script('jquery-ui', ("//code.jquery.com/ui/1.10.4/jquery-ui.min.js"), false, '1.10.4');
+    wp_enqueue_script('jquery-ui');
 
-  wp_deregister_script('bootstrap');
-  wp_register_script('bootstrap', ("//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"), false, '3.0.0');
-  wp_enqueue_script('bootstrap');
+    wp_deregister_script('jquery-mobile');
+    wp_register_script('jquery-mobile', ("//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css"), false, '1.4.0');
+    wp_enqueue_script('jquery-mobile');
 
-  wp_deregister_script('typekit');
-  wp_register_script('typekit', ("//use.typekit.net/cfg6qvz.js"), false);
-  wp_enqueue_script('typekit');
+    wp_deregister_script('bootstrap');
+    wp_register_script('bootstrap', ("//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"), false, '3.0.0');
+    wp_enqueue_script('bootstrap');
 
-  wp_deregister_script('jquery-blackandwhite');
-  wp_register_script('jquery-blackandwhite', (get_bloginfo('stylesheet_directory')."/js/jquery.BlackAndWhite.js"), false);
-  wp_enqueue_script('jquery-blackandwhite');
+    wp_deregister_script('typekit');
+    wp_register_script('typekit', ("//use.typekit.net/cfg6qvz.js"), false);
+    wp_enqueue_script('typekit');
 
-  wp_deregister_script('leaflet');
-  wp_register_script('leaflet', ("//cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"), false, '0.6.4');
-  wp_enqueue_script('leaflet');
+    wp_deregister_script('jquery-blackandwhite');
+    wp_register_script('jquery-blackandwhite', (get_bloginfo('stylesheet_directory')."/js/jquery.BlackAndWhite.js"), false);
+    wp_enqueue_script('jquery-blackandwhite');
 
-  wp_deregister_script('jquery-transform2d');
-  wp_register_script('jquery-transform2d', (get_bloginfo('stylesheet_directory')."/js/jquery.transform2d.js"), false);
-  wp_enqueue_script('jquery-transform2d');
+    wp_deregister_script('leaflet');
+    wp_register_script('leaflet', ("//cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"), false, '0.6.4');
+    wp_enqueue_script('leaflet');
 
-  wp_deregister_script('jquery-rotate-knobs');
-  wp_register_script('jquery-rotate-knobs', (get_bloginfo('stylesheet_directory')."/js/jquery.rotate-knobs.js"), false);
-  wp_enqueue_script('jquery-rotate-knobs');
+    wp_deregister_script('jquery-transform2d');
+    wp_register_script('jquery-transform2d', (get_bloginfo('stylesheet_directory')."/js/jquery.transform2d.js"), false);
+    wp_enqueue_script('jquery-transform2d');
 
-  wp_deregister_script('jquery-mosaic-flow');
-  wp_register_script('jquery-mosaic-flow', (get_bloginfo('stylesheet_directory')."/js/jquery.mosaicflow.min.js"), false);
-  wp_enqueue_script('jquery-mosaic-flow');
+    wp_deregister_script('jquery-rotate-knobs');
+    wp_register_script('jquery-rotate-knobs', (get_bloginfo('stylesheet_directory')."/js/jquery.rotate-knobs.js"), false);
+    wp_enqueue_script('jquery-rotate-knobs');
 
+    wp_deregister_script('jquery-mosaic-flow');
+    wp_register_script('jquery-mosaic-flow', (get_bloginfo('stylesheet_directory')."/js/jquery.mosaicflow.min.js"), false);
+    wp_enqueue_script('jquery-mosaic-flow');
+
+  }
 }
 
 ?>
