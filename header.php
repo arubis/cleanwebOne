@@ -65,19 +65,6 @@
   <!-- data-offset must be height of main navbar -->
   <!-- NOTE: when you change data-offset, also change the offset value in the inline javascript above! -->
 
-  <!-- BEGIN Facebook Open Graph -->
-  <div id="fb-root"></div>
-  <script type="text/javascript">
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=196524820509397";
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-  </script>
-  <!-- END Facebook Open Graph -->
-
   <!-- BEGIN black+white fadeup JS -->
   <script type="text/javascript">
   $(window).load(function(){
