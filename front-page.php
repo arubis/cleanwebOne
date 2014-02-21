@@ -53,13 +53,13 @@
     <nav class="navbar navbar-default navbar-inverse boxy" role="navigation" id="subnav">
       <!-- let screenreaders ditch this toy -->
       <div class="collapse navbar-collapse navbar-secondary-collapse">
-        <div class="container" style="margin: 0 auto;">
+        <div class="container" id="subnav-bg">
           <ul class="nav nav-justified">
             <li class="active"><a href="#what" title="what">What do we do?</a></li>
             <li><a href="#how" title="how">How do we do it?</a></li>
             <li><a href="#who" title="who">Who's part of it?</a></li>
             <li><a href="#where" title="where">Where are we?</a></li>
-            <li><a href="#social" title="social">Who's talking about it?</a></li>
+            <li><a href="#social" title="social">Who's&nbsp;talking about&nbsp;it?</a></li>
             <li><a href="#sponsors" title="sponsors">Who's supporting it?</a></li>
           </ul>
         </div>

@@ -11,6 +11,9 @@
  * style.scss _before_ this partial is included!
  */
 
+$subnav-bg-color: #333333;
+$subnav-active-bg-color: #444444;
+
 #subnav {
   min-height: 0;
   background-color: rgba(51, 51, 51, 0.9);
@@ -20,8 +23,8 @@
     font-weight: 600;
     letter-spacing: 0.05em;
     color: #ffffff;
-    background-color: #333333;
-    &:hover, &:focus { background: #444444; }
+    background-color: $subnav-bg-color;
+    &:hover, &:focus { background: $subnav-active-bg-color; }
   }
   z-index: 1001;
 }
@@ -38,10 +41,14 @@
   }
 }
 
-#subnav-wrapper {
-  background: rgba(51, 51, 51, 0.9);
+#subnav-bg {
+  margin: 0 auto;
+  width: 100%;
+  background-color: $subnav-bg-color;
+  opacity: 100%;
 }
 
-#subnav * .nav li a {
+#subnav * .nav li a { 
   padding: 20px 0px;
+  height: 100%;
 }
