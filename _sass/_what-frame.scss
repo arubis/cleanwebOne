@@ -34,3 +34,15 @@ $what-bg: rgba(220, 182, 37, 1); /* set background -- can set with image if pref
 		width: 80%;
 	}
 }
+
+#slidedeck_container {
+  iframe {
+    display: block;
+    border: 0;
+  }
+  display: block;
+  position: relative;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}

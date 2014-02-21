@@ -88,11 +88,33 @@
     </div>
 
     <div class="container" id="whiteboard">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/whiteboard.png" alt="Whiteboard with mindmap on it" />
+      <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/whiteboard.png" alt="Whiteboard with mindmap on it" /> -->
+      <div id="slidedeck_container">
+        <iframe id="slidedeck" src="https://www.slideshare.net/slideshow/embed_code/31486871" frameborder="0" scrolling="no" allowfullscreen> </iframe> 
+      </div>
       <div class="col-sm-10 col-sm-offset-1">
         <h1 class="secondary">We’re engineering serendipity and unleashing the Cleanweb network on the biggest opportunities of our lifetime</h1>
       </div>
     </div><!-- /container -->
+
+    <script type="text/javascript">    
+    //<![CDATA[
+      // in-page jQuery plug to dynamically resize the above iFrame at its original
+      // ratio when the viewport size changes
+      $(document).ready(function() {
+        var setupWhiteboard = function() {
+          $("#slidedeck").width( $("#slidedeck_container").width() );
+          $("#slidedeck").height( $("#slidedeck").width() * (485/595) );
+        }
+
+        setupWhiteboard();
+
+        $(window).resize(function() {
+          setupWhiteboard();
+        });
+      });
+    //]]>
+    </script>
 
     <div class="frame-footer">
       <div class="container">
