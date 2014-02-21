@@ -90,10 +90,10 @@
     <div class="container" id="whiteboard">
       <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/whiteboard.png" alt="Whiteboard with mindmap on it" /> -->
       <div id="slidedeck_container">
-        <iframe id="slidedeck" src="https://www.slideshare.net/slideshow/embed_code/31486871" frameborder="0" scrolling="no" allowfullscreen> </iframe> 
+        <iframe id="slidedeck" src="//www.slideshare.net/slideshow/embed_code/31486871" frameborder="0" scrolling="no" allowfullscreen> </iframe> 
       </div>
       <div class="col-sm-10 col-sm-offset-1">
-        <h1 class="secondary">We’re engineering serendipity and unleashing the Cleanweb network on the biggest opportunities of our lifetime</h1>
+        <h1 class="secondary">We're leading entrepreneurs to the biggest opportunities of our lifetimes.</h1>
       </div>
     </div><!-- /container -->
 

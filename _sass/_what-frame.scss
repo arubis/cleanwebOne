@@ -25,11 +25,11 @@ $what-bg: rgba(220, 182, 37, 1); /* set background -- can set with image if pref
 
 #whiteboard.container {
 	position: relative;
-	top: -50px;
-	img {
+	top: -30px;
+	img {                   // this isn't currently used -- replaced with slideshare
 		display: block;				// horizontally center the whiteboard image
-		margin-left: auto;			// within this container. n.b. max-width
-		margin-right: auto;			// here is the actual image width; adjust
+		margin-left: auto;		// within this container. n.b. max-width
+		margin-right: auto;		// here is the actual image width; adjust
 		max-width: 681px;			// accordingly if ever necessary.
 		width: 80%;
 	}
@@ -40,9 +40,7 @@ $what-bg: rgba(220, 182, 37, 1); /* set background -- can set with image if pref
     display: block;
     border: 0;
   }
-  display: block;
-  position: relative;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+
+  @extend .col-sm-8;
+  @extend .col-sm-offset-2;
 }
